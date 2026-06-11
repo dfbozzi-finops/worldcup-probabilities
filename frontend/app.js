@@ -90,36 +90,28 @@ function renderOpportunities(data) {
  */
 function renderMatches(data) {
     const container = document.getElementById('matches-container');
-    if (!data || Object.keys(data).length === 0) {
+    if (!data || !Array.isArray(data) || data.length === 0) {
         container.innerHTML = `<div class="text-slate-400 italic p-4">No match predictions available.</div>`;
         return;
     }
 
     container.innerHTML = '';
     
-    // Flatten grouped matches to display
-    let allMatches = [];
-    for (const [group, matches] of Object.entries(data)) {
-        allMatches.push(...matches);
-    }
-    
     // Render top 6 marquee matches
-    allMatches.slice(0, 6).forEach(match => {
-        const homeWin = (match.probabilities["1X2"].Home * 100).toFixed(1);
-        const draw = (match.probabilities["1X2"].Draw * 100).toFixed(1);
-        const awayWin = (match.probabilities["1X2"].Away * 100).toFixed(1);
-        const o25 = (match.probabilities["Over/Under 2.5"].Over * 100).toFixed(1);
-        const btts = (match.probabilities["BTTS"]["Yes"] * 100).toFixed(1);
-        
-        const teams = match.match.split(' vs ');
+    data.slice(0, 6).forEach(match => {
+        const homeWin = (match["1X2"].home * 100).toFixed(1);
+        const draw = (match["1X2"].draw * 100).toFixed(1);
+        const awayWin = (match["1X2"].away * 100).toFixed(1);
+        const o25 = (match.over_under_2_5.over * 100).toFixed(1);
+        const btts = (match.btts.yes * 100).toFixed(1);
         
         const card = document.createElement('div');
         card.className = 'p-5 bg-slate-800/50 rounded-xl border border-slate-600/50 flex flex-col justify-between';
         card.innerHTML = `
             <div class="flex justify-between items-center mb-4">
-                <span class="font-bold text-white truncate w-5/12">${teams[0]}</span>
+                <span class="font-bold text-white truncate w-5/12">${match.home_team}</span>
                 <span class="text-slate-500 text-xs font-bold uppercase tracking-widest w-2/12 text-center">vs</span>
-                <span class="font-bold text-white truncate text-right w-5/12">${teams[1]}</span>
+                <span class="font-bold text-white truncate text-right w-5/12">${match.away_team}</span>
             </div>
             
             <!-- Custom Progress Bar for 1X2 Probabilities -->
