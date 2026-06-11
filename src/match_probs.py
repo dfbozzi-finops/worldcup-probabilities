@@ -2,6 +2,8 @@ import json
 import logging
 from itertools import combinations
 from pathlib import Path
+from src.api_football import APIFootballClient
+from src.data_loader import normalize_team_name
 
 logger = logging.getLogger(__name__)
 
@@ -11,6 +13,25 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
     for all group stage matches and export to JSON.
     """
     matches = []
+    
+    # Fetch live state from API
+    try:
+        client = APIFootballClient()
+        fixtures_data = client.get_league_fixtures(1, season=2026)
+        fixture_list = fixtures_data.get('response', [])
+    except Exception as e:
+        logger.error(f"Failed to fetch live API fixtures: {e}")
+        fixture_list = []
+        
+    fixture_map = {}
+    for f in fixture_list:
+        try:
+            h = normalize_team_name(f['teams']['home']['name'])
+            a = normalize_team_name(f['teams']['away']['name'])
+            fixture_map[f"{h} vs {a}"] = f
+            fixture_map[f"{a} vs {h}"] = f
+        except KeyError:
+            continue
     
     for group_name, teams in groups_dict.items():
         for home, away in combinations(teams, 2):
@@ -50,10 +71,35 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
                     if i > 0 and j > 0:
                         p_btts += prob
                         
+            # Determine Live State
+            status = "Not Started"
+            home_goals = None
+            away_goals = None
+            fixture_id = None
+            
+            f_key = f"{home} vs {away}"
+            if f_key in fixture_map:
+                f = fixture_map[f_key]
+                fixture_id = f['fixture']['id']
+                status_short = f['fixture']['status']['short']
+                
+                if status_short in ['FT', 'AET', 'PEN']:
+                    status = "Match Finished"
+                    home_goals = f['goals']['home']
+                    away_goals = f['goals']['away']
+                elif status_short in ['1H', 'HT', '2H', 'ET', 'BT', 'P', 'LIVE']:
+                    status = "In Play"
+                    home_goals = f['goals']['home']
+                    away_goals = f['goals']['away']
+
             match_data = {
                 "group": group_name,
                 "home_team": home,
                 "away_team": away,
+                "status": status,
+                "home_goals": home_goals,
+                "away_goals": away_goals,
+                "fixture_id": fixture_id,
                 "1X2": {
                     "home": round(p_home, 4),
                     "draw": round(p_draw, 4),

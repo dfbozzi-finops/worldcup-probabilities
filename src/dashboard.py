@@ -247,13 +247,36 @@ def export_json(
 
     # Build per-team probability breakdown
     all_probabilities: dict[str, dict[str, float]] = {}
+    tracked_markets = []
+    
     for team in sorted(p_consensus):
+        pc = p_consensus.get(team, 0.0)
+        pm = p_market.get(team, 0.0)
+        
         all_probabilities[team] = {
-            "p_consensus": round(p_consensus.get(team, 0.0), 6),
+            "p_consensus": round(pc, 6),
             "p_stat": round(p_stat.get(team, 0.0), 6),
             "p_ml": round(p_ml.get(team, 0.0), 6),
-            "p_market": round(p_market.get(team, 0.0), 6),
+            "p_market": round(pm, 6),
         }
+        
+        odds = (1.0 / pm) if pm > 0 else 0.0
+        ev = (pc * odds) - 1.0 if pm > 0 else 0.0
+        b = odds - 1.0
+        kelly = (ev / b) if b > 0 else 0.0
+        kelly = max(0.0, kelly)
+        
+        tracked_markets.append({
+            "team": team,
+            "p_consensus": round(pc, 6),
+            "p_market": round(pm, 6),
+            "odds": round(odds, 2),
+            "ev_percent": round(ev * 100, 2),
+            "kelly_fraction": round(kelly * 100, 2)
+        })
+        
+    # Sort tracked_markets by consensus probability
+    tracked_markets.sort(key=lambda x: x['p_consensus'], reverse=True)
 
     count = len(opportunities)
     total_position = sum(o.position_size for o in opportunities)
@@ -262,6 +285,7 @@ def export_json(
     payload: dict[str, Any] = {
         "timestamp": now.isoformat(),
         "all_probabilities": all_probabilities,
+        "tracked_markets": tracked_markets,
         "opportunities": [o.to_dict() for o in opportunities],
         "summary": {
             "count": count,

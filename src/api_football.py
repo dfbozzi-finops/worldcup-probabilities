@@ -72,6 +72,10 @@ class APIFootballClient:
         """Get fixtures for a team in a specific season (Free tier compatible)."""
         return self._cached_get("/fixtures", {"team": team_id, "season": season})
 
+    def get_league_fixtures(self, league_id: int, season: int = 2026) -> dict:
+        """Get all fixtures for a specific league and season."""
+        return self._cached_get("/fixtures", {"league": league_id, "season": season})
+
     def get_fixture_statistics(self, fixture_id: int) -> dict:
         """Get team-level event counts (Corners, Cards, etc.) for a specific fixture."""
         return self._cached_get("/fixtures/statistics", {"fixture": fixture_id})
