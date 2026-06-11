@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quant Terminal</title>
+    <title>Arbitrage Model DFBSex</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="p-4 flex flex-col h-screen">
+<body class="p-6 flex flex-col h-screen">
     <!-- Header -->
-    <header class="flex justify-between items-end mb-4 border-b border-slate-800 pb-2" style="border-color: var(--color-border);">
+    <header class="flex justify-between items-end mb-6 pb-4 border-b" style="border-color: var(--color-border);">
         <div>
-            <h1 class="text-xl font-bold text-accent uppercase tracking-widest">Global Macro Arb // Polymarket</h1>
-            <div class="text-xs text-neutral font-medium">WC 2026 Statistical Model Engine</div>
+            <h1 class="text-2xl font-bold text-accent uppercase tracking-widest">Arbitrage Model DFBSex</h1>
+            <div class="text-sm text-neutral font-medium mt-1">Institutional Statistical Model & Analytics</div>
         </div>
-        <div class="text-xs flex items-center gap-4">
-            <button id="theme-toggle" class="theme-toggle">☀ Light Mode</button>
-            <span id="clock" class="font-bold tabular-nums">--:--:--</span>
-            <div class="flex items-center gap-2 text-accent bg-sky-900/10 px-2 py-1 rounded border" style="border-color: var(--color-accent);">
-                <div class="w-2 h-2 bg-sky-400 rounded-full animate-pulse" style="background-color: var(--color-accent);"></div>
-                API LIVE
+        <div class="text-sm flex items-center gap-6">
+            <button id="theme-toggle" class="theme-toggle">☾ Dark Mode</button>
+            <div class="flex items-center gap-2 font-bold tabular-nums text-neutral">
+                <span id="clock">--:--:--</span>
+            </div>
+            <div class="flex items-center gap-2 text-accent bg-blue-100 dark:bg-blue-900/20 px-3 py-1.5 rounded-md border" style="border-color: var(--color-accent);">
+                <div class="w-2.5 h-2.5 bg-blue-600 dark:bg-blue-400 rounded-full animate-pulse" style="background-color: var(--color-accent);"></div>
+                <span class="font-bold">SYSTEM ACTIVE</span>
             </div>
         </div>
     </header>
 
+    <!-- Highlights Section -->
+    <div class="highlights-grid" id="highlights-container">
+        <!-- Populated by JS -->
+    </div>
+
     <!-- Global Controls -->
     <div class="filter-bar">
         <div class="flex flex-col">
-            <label class="text-[10px] font-bold text-neutral uppercase tracking-wider mb-1">Search Team</label>
-            <input type="text" id="search-input" placeholder="e.g. Mexico" class="w-48 text-sm">
+            <label class="text-[11px] font-bold text-neutral uppercase tracking-wider mb-1.5">Search Match or Team</label>
+            <input type="text" id="search-input" placeholder="e.g. Mexico..." class="w-64 text-sm">
         </div>
         <div class="flex flex-col">
-            <label class="text-[10px] font-bold text-neutral uppercase tracking-wider mb-1">Actionable Arbs</label>
+            <label class="text-[11px] font-bold text-neutral uppercase tracking-wider mb-1.5">Actionable Arbitrage</label>
             <div class="flex items-center h-full">
                 <label class="inline-flex items-center cursor-pointer">
                     <input type="checkbox" id="ev-toggle" class="sr-only peer">
-                    <div class="relative w-9 h-5 bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"></div>
-                    <span class="ms-2 text-sm font-medium">EV > 0</span>
+                    <div class="relative w-11 h-6 bg-slate-300 dark:bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
+                    <span class="ms-3 text-sm font-semibold">Only Positive EV</span>
                 </label>
             </div>
         </div>
     </div>
 
     <!-- Main Grid -->
-    <main class="grid grid-cols-12 gap-4 flex-1 min-h-0">
+    <main class="grid grid-cols-12 gap-6 flex-1 min-h-0">
         
-        <!-- Left Column: Opportunities Data Table -->
-        <div class="col-span-12 lg:col-span-5 flex flex-col min-h-0">
+        <!-- Left Column: Opportunities Data Table & Chart -->
+        <div class="col-span-12 lg:col-span-5 flex flex-col min-h-0 gap-6">
             <div class="terminal-panel flex-1 flex flex-col">
                 <div class="panel-header">
-                    <span>MARKET LEADERS & ARB EDGES</span>
-                    <span class="text-xs text-neutral" id="opp-count">Loading...</span>
+                    <span>ARBITRAGE OPPORTUNITIES</span>
+                    <span class="text-xs text-neutral font-normal" id="opp-count">Loading...</span>
                 </div>
+                <!-- Chart Area -->
+                <div class="chart-container">
+                    <canvas id="evChart"></canvas>
+                </div>
+                <!-- Table Area -->
                 <div class="flex-1 overflow-auto">
                     <table class="w-full text-right tabular-nums">
                         <thead>
@@ -73,7 +86,7 @@
         </div>
 
         <!-- Right Column: Match Grids -->
-        <div class="col-span-12 lg:col-span-7 flex flex-col min-h-0 gap-4">
+        <div class="col-span-12 lg:col-span-7 flex flex-col min-h-0 gap-6">
             
             <!-- Live/Completed Matches -->
             <div class="terminal-panel h-1/2 flex flex-col">
@@ -84,6 +97,7 @@
                     <table class="w-full text-center tabular-nums">
                         <thead>
                             <tr>
+                                <th class="text-left">Date (UTC)</th>
                                 <th class="text-left">Matchup</th>
                                 <th>Status</th>
                                 <th>Score</th>
@@ -108,6 +122,7 @@
                     <table class="w-full text-center tabular-nums">
                         <thead>
                             <tr>
+                                <th class="text-left">Date (UTC)</th>
                                 <th class="text-left">Matchup</th>
                                 <th>1X2 Model</th>
                                 <th>O1.5 Prob</th>

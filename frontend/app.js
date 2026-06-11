@@ -1,4 +1,4 @@
-console.log("Terminal App Initialized");
+console.log("Arbitrage Model Initialized");
 
 const ENDPOINTS = {
     opportunities: '../data/processed/opportunities.json',
@@ -8,21 +8,29 @@ const ENDPOINTS = {
 // Global State
 let globalOpps = null;
 let globalMatches = null;
+let evChartInstance = null;
 
 let filterSearch = "";
 let filterActionable = false;
 
 // Theme Toggle
 const themeBtn = document.getElementById('theme-toggle');
-let isLightMode = false;
+let isDarkMode = false;
 themeBtn.addEventListener('click', () => {
-    isLightMode = !isLightMode;
-    if (isLightMode) {
-        document.body.classList.add('light-mode');
-        themeBtn.textContent = '☾ Dark Mode';
-    } else {
-        document.body.classList.remove('light-mode');
+    isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
         themeBtn.textContent = '☀ Light Mode';
+    } else {
+        document.body.classList.remove('dark-mode');
+        themeBtn.textContent = '☾ Dark Mode';
+    }
+    // Update chart colors if chart exists
+    if (evChartInstance) {
+        evChartInstance.options.scales.x.ticks.color = isDarkMode ? '#94A3B8' : '#64748B';
+        evChartInstance.options.scales.y.ticks.color = isDarkMode ? '#94A3B8' : '#64748B';
+        evChartInstance.options.plugins.legend.labels.color = isDarkMode ? '#F8FAFC' : '#1E3A8A';
+        evChartInstance.update();
     }
 });
 
@@ -59,13 +67,108 @@ async function fetchPipelineData() {
     } catch (error) {
         console.error("Pipeline failure:", error);
         document.getElementById('opportunities-tbody').innerHTML = 
-            `<tr><td colspan="5" class="text-negative text-center py-4">ERR: ${error.message}</td></tr>`;
+            `<tr><td colspan="5" class="text-negative text-center py-4 font-bold">ERR: ${error.message}</td></tr>`;
     }
 }
 
 function renderAll() {
+    renderHighlights();
     renderOpportunities();
     renderMatches();
+}
+
+function renderHighlights() {
+    const container = document.getElementById('highlights-container');
+    if (!globalOpps || !globalOpps.tracked_markets) return;
+
+    const markets = globalOpps.tracked_markets;
+    const actionable = markets.filter(m => m.ev_percent > 0);
+    
+    // Top Target
+    const topTarget = actionable.length > 0 ? actionable[0] : markets[0];
+    const topName = topTarget ? topTarget.team : "N/A";
+    const topEv = topTarget && topTarget.ev_percent > 0 ? `+${topTarget.ev_percent.toFixed(2)}%` : "0.00%";
+    
+    // Average Edge
+    const avgEdge = actionable.length > 0 
+        ? (actionable.reduce((sum, m) => sum + m.ev_percent, 0) / actionable.length).toFixed(2) 
+        : 0;
+
+    container.innerHTML = `
+        <div class="highlight-card">
+            <span class="highlight-label">Top Arbitrage Target</span>
+            <span class="highlight-value">${topName}</span>
+            <span class="highlight-sub text-positive font-bold">Edge: ${topEv}</span>
+        </div>
+        <div class="highlight-card">
+            <span class="highlight-label">Actionable Markets</span>
+            <span class="highlight-value">${actionable.length}</span>
+            <span class="highlight-sub">Out of ${markets.length} tracked entities</span>
+        </div>
+        <div class="highlight-card">
+            <span class="highlight-label">Average Actionable Edge</span>
+            <span class="highlight-value text-positive">+${avgEdge}%</span>
+            <span class="highlight-sub">Mean EV across positive markets</span>
+        </div>
+    `;
+}
+
+function renderChart(data) {
+    const ctx = document.getElementById('evChart');
+    if (!ctx) return;
+
+    // Take top 8 for the chart
+    const chartData = data.slice(0, 8);
+    const labels = chartData.map(m => m.team);
+    const evs = chartData.map(m => m.ev_percent);
+    
+    const bgColors = evs.map(ev => ev > 0 ? 'rgba(22, 163, 74, 0.7)' : 'rgba(148, 163, 184, 0.4)');
+    const borderColors = evs.map(ev => ev > 0 ? 'rgba(22, 163, 74, 1)' : 'rgba(148, 163, 184, 1)');
+
+    if (evChartInstance) {
+        evChartInstance.destroy();
+    }
+
+    const textColor = isDarkMode ? '#F8FAFC' : '#1E3A8A';
+    const gridColor = isDarkMode ? '#1E293B' : '#E2E8F0';
+
+    evChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Statistical Edge (EV %)',
+                data: evs,
+                backgroundColor: bgColors,
+                borderColor: borderColors,
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: textColor,
+                        font: { family: "'Fira Sans', sans-serif" }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: gridColor },
+                    ticks: { color: isDarkMode ? '#94A3B8' : '#64748B', font: { family: "'Fira Code', monospace" } }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { color: isDarkMode ? '#94A3B8' : '#64748B', font: { family: "'Fira Sans', sans-serif", weight: 'bold' } }
+                }
+            }
+        }
+    });
 }
 
 function renderOpportunities() {
@@ -85,8 +188,11 @@ function renderOpportunities() {
         markets = markets.filter(opp => opp.ev_percent > 0);
     }
 
-    markets = markets.slice(0, 15); // Show up to 15 now that it's scrollable
-    document.getElementById('opp-count').textContent = `Total Match: ${markets.length}`;
+    // Render Chart before slicing if possible, or just render top 10 of filtered
+    renderChart(markets);
+
+    markets = markets.slice(0, 15); // Show up to 15
+    document.getElementById('opp-count').textContent = `Showing ${markets.length} entities`;
 
     tbody.innerHTML = markets.map(opp => {
         const isPos = opp.ev_percent > 0;
@@ -103,7 +209,7 @@ function renderOpportunities() {
                 <td>${(opp.p_consensus * 100).toFixed(1)}%</td>
                 <td>${(opp.p_market * 100).toFixed(1)}%</td>
                 <td class="${evColor} font-bold">${evVal} ${barHtml}</td>
-                <td>${(opp.kelly_fraction * 100).toFixed(1)}%</td>
+                <td class="text-highlight font-bold">${(opp.kelly_fraction * 100).toFixed(1)}%</td>
             </tr>
         `;
     }).join('');
@@ -113,15 +219,25 @@ function renderOpportunities() {
     }
 }
 
+function formatShortDate(isoString) {
+    if (!isoString) return "TBD";
+    const d = new Date(isoString);
+    const month = d.toLocaleString('default', { month: 'short' });
+    const day = d.getDate().toString().padStart(2, '0');
+    const hr = d.getHours().toString().padStart(2, '0');
+    const min = d.getMinutes().toString().padStart(2, '0');
+    return `${month} ${day}, ${hr}:${min}`;
+}
+
 function renderMatches() {
     const liveBody = document.getElementById('completed-matches-tbody');
     const upBody = document.getElementById('upcoming-matches-tbody');
     
     if (!globalMatches || !Array.isArray(globalMatches)) return;
 
-    let matches = globalMatches;
+    let matches = [...globalMatches]; // Clone array to sort
 
-    // Apply Filter
+    // Filter
     if (filterSearch) {
         matches = matches.filter(match => 
             match.home_team.toLowerCase().includes(filterSearch) || 
@@ -129,11 +245,19 @@ function renderMatches() {
         );
     }
 
+    // Sort Chronologically
+    matches.sort((a, b) => {
+        if (!a.date) return 1;
+        if (!b.date) return -1;
+        return new Date(a.date) - new Date(b.date);
+    });
+
     let liveRows = [];
     let upRows = [];
 
     matches.forEach(match => {
         const isLive = match.status !== "Not Started";
+        const dateStr = formatShortDate(match.date);
         
         if (isLive) {
             // Actual results
@@ -154,8 +278,9 @@ function renderMatches() {
 
             liveRows.push(`
                 <tr>
+                    <td class="text-left text-neutral text-xs">${dateStr}</td>
                     <td class="text-left font-bold">${match.home_team} - ${match.away_team}</td>
-                    <td class="text-accent text-xs tracking-wider">${match.status}</td>
+                    <td class="text-accent text-xs tracking-wider font-bold">${match.status}</td>
                     <td class="font-bold text-[14px]">${hg} - ${ag}</td>
                     <td class="text-neutral">${o15}%</td>
                     <td>${o25Badge}</td>
@@ -173,8 +298,9 @@ function renderMatches() {
 
             upRows.push(`
                 <tr>
+                    <td class="text-left text-neutral text-xs">${dateStr}</td>
                     <td class="text-left font-bold">${match.home_team} - ${match.away_team}</td>
-                    <td class="text-neutral"><span class="text-accent">${h}</span> / ${d} / <span class="text-indigo-400">${a}</span></td>
+                    <td class="text-neutral"><span class="text-accent">${h}</span> / ${d} / <span class="text-highlight">${a}</span></td>
                     <td class="text-positive">${o15}%</td>
                     <td class="text-positive">${o25}%</td>
                     <td class="text-positive">${btts}%</td>
@@ -183,8 +309,8 @@ function renderMatches() {
         }
     });
 
-    liveBody.innerHTML = liveRows.length ? liveRows.join('') : `<tr><td colspan="6" class="text-neutral py-4 text-center">No live/completed matches found</td></tr>`;
-    upBody.innerHTML = upRows.length ? upRows.slice(0, 15).join('') : `<tr><td colspan="5" class="text-neutral py-4 text-center">No upcoming fixtures found</td></tr>`;
+    liveBody.innerHTML = liveRows.length ? liveRows.join('') : `<tr><td colspan="7" class="text-neutral py-4 text-center">No live/completed matches found</td></tr>`;
+    upBody.innerHTML = upRows.length ? upRows.slice(0, 15).join('') : `<tr><td colspan="6" class="text-neutral py-4 text-center">No upcoming fixtures found</td></tr>`;
 }
 
 fetchPipelineData();

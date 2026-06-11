@@ -1,5 +1,6 @@
 import json
 import logging
+from datetime import datetime, timedelta
 from itertools import combinations
 from pathlib import Path
 from src.api_football import APIFootballClient
@@ -47,9 +48,16 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
             fixture_map[f"{a} vs {h}"] = f
         except KeyError:
             continue
+            
+    # Simulated starting date for group stages
+    current_sim_time = datetime(2026, 6, 11, 11, 0)
     
     for group_name, teams in groups_dict.items():
         for home, away in combinations(teams, 2):
+            # Advance simulated time by 4 hours per match
+            current_sim_time += timedelta(hours=4)
+            sim_date_iso = current_sim_time.isoformat() + "Z"
+            
             # Get the probability matrix from Dixon-Coles
             mat = dc_model.predict_score_probs(home, away, neutral=True, max_goals=10)
             
@@ -111,6 +119,7 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
                 "group": group_name,
                 "home_team": home,
                 "away_team": away,
+                "date": sim_date_iso,
                 "status": status,
                 "home_goals": home_goals,
                 "away_goals": away_goals,
