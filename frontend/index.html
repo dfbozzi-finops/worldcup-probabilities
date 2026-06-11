@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup Quantitative Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-10 border-b border-slate-700 pb-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+            <div>
+                <h1 class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 tracking-tight">
+                    Quantitative Arbitrage Engine
+                </h1>
+                <p class="text-slate-400 mt-2 font-medium">World Cup 2026 Statistical Models & Edge Detection</p>
+            </div>
+            <div id="status-indicator" class="text-sm font-semibold flex items-center gap-2 text-cyan-400 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+                </span>
+                LIVE PIPELINE
+            </div>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column: Opportunities and Matches -->
+            <section class="lg:col-span-2 space-y-8">
+                <!-- Opportunities Panel -->
+                <div class="glass rounded-xl border border-slate-700 p-6 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-700"></div>
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        Arbitrage Opportunities
+                    </h2>
+                    <div id="opportunities-container" class="space-y-3">
+                        <div class="animate-pulse flex space-x-4">
+                            <div class="flex-1 space-y-4 py-1">
+                                <div class="h-4 bg-slate-700 rounded w-3/4"></div>
+                                <div class="space-y-2">
+                                    <div class="h-4 bg-slate-700 rounded"></div>
+                                    <div class="h-4 bg-slate-700 rounded w-5/6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match by Match Panel -->
+                <div class="glass rounded-xl border border-slate-700 p-6 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-700"></div>
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                        Match Predictions Grid
+                    </h2>
+                    <div id="matches-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="animate-pulse h-24 bg-slate-700 rounded-lg"></div>
+                        <div class="animate-pulse h-24 bg-slate-700 rounded-lg"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column: Props and System Status -->
+            <aside class="space-y-8">
+                <!-- Props Panel -->
+                <div class="glass rounded-xl border border-slate-700 p-6 shadow-2xl relative overflow-hidden">
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                        Stochastic Props Engine
+                    </h2>
+                    <div id="props-container">
+                         <div class="animate-pulse h-40 bg-slate-700 rounded-lg"></div>
+                    </div>
+                </div>
+                
+                <!-- Status Panel -->
+                <div class="bg-slate-800/80 rounded-xl border border-slate-700 p-6 shadow-xl">
+                     <h3 class="text-xs uppercase tracking-widest text-slate-400 mb-4 font-bold">System Status</h3>
+                     <ul class="text-sm space-y-3 text-slate-300">
+                         <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                             <span>Dixon-Coles Model</span>
+                             <span class="text-green-400 font-medium">Optimized</span>
+                         </li>
+                         <li class="flex justify-between items-center border-b border-slate-700/50 pb-2">
+                             <span>API-Football Cache</span>
+                             <span class="text-green-400 font-medium">Active</span>
+                         </li>
+                         <li class="flex justify-between items-center pb-2">
+                             <span>Last Sync</span>
+                             <span id="last-update" class="text-cyan-400 font-medium">Just now</span>
+                         </li>
+                     </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
