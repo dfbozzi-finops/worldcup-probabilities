@@ -1,0 +1,27 @@
+{
+  "polling_interval_minutes": 60,
+  "event_slug": "world-cup-winner",
+  "gamma_api_base": "https://gamma-api.polymarket.com",
+  "clob_api_base": "https://clob.polymarket.com",
+  "consensus_weights": {
+    "statistical": 0.5,
+    "ml": 0.5
+  },
+  "kelly_fraction": 0.25,
+  "max_position_pct": 0.05,
+  "ev_threshold": 0.02,
+  "monte_carlo_iterations": 10000,
+  "dixon_coles": {
+    "time_decay_half_life_years": 2,
+    "home_advantage_host_fraction": 0.5,
+    "max_goals_grid": 10,
+    "history_years": 20
+  },
+  "ml": {
+    "catboost_iterations": 500,
+    "early_stopping_rounds": 20,
+    "train_history_years": 8,
+    "validation_split": 0.2
+  },
+  "host_nations": ["United States", "Mexico", "Canada"]
+}

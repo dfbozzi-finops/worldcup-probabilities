@@ -1,0 +1,41 @@
+{
+  "year": 2022,
+  "host": "Qatar",
+  "start_date": "2022-11-20",
+  "format": "32_teams_8_groups",
+  "winner": "Argentina",
+  "runner_up": "France",
+  "third": "Croatia",
+  "fourth": "Morocco",
+  "groups": {
+    "A": ["Qatar", "Ecuador", "Senegal", "Netherlands"],
+    "B": ["England", "Iran", "United States", "Wales"],
+    "C": ["Argentina", "Saudi Arabia", "Mexico", "Poland"],
+    "D": ["France", "Australia", "Denmark", "Tunisia"],
+    "E": ["Spain", "Costa Rica", "Germany", "Japan"],
+    "F": ["Belgium", "Canada", "Morocco", "Croatia"],
+    "G": ["Brazil", "Serbia", "Switzerland", "Cameroon"],
+    "H": ["Portugal", "Ghana", "Uruguay", "South Korea"]
+  },
+  "r16": [
+    {"match": 1, "home": "Netherlands", "away": "United States", "winner": "Netherlands"},
+    {"match": 2, "home": "Argentina", "away": "Australia", "winner": "Argentina"},
+    {"match": 3, "home": "France", "away": "Poland", "winner": "France"},
+    {"match": 4, "home": "England", "away": "Senegal", "winner": "England"},
+    {"match": 5, "home": "Japan", "away": "Croatia", "winner": "Croatia"},
+    {"match": 6, "home": "Brazil", "away": "South Korea", "winner": "Brazil"},
+    {"match": 7, "home": "Morocco", "away": "Spain", "winner": "Morocco"},
+    {"match": 8, "home": "Portugal", "away": "Switzerland", "winner": "Portugal"}
+  ],
+  "qf": [
+    {"match": 1, "home": "Croatia", "away": "Brazil", "winner": "Croatia"},
+    {"match": 2, "home": "Netherlands", "away": "Argentina", "winner": "Argentina"},
+    {"match": 3, "home": "Morocco", "away": "Portugal", "winner": "Morocco"},
+    {"match": 4, "home": "England", "away": "France", "winner": "France"}
+  ],
+  "sf": [
+    {"match": 1, "home": "Argentina", "away": "Croatia", "winner": "Argentina"},
+    {"match": 2, "home": "France", "away": "Morocco", "winner": "France"}
+  ],
+  "final": {"home": "Argentina", "away": "France", "winner": "Argentina"}
+}

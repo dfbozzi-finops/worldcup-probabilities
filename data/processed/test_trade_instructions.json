@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-11T21:17:05.087719+00:00",
+    "bankroll": 10000.0,
+    "total_orders": 3,
+    "total_capital": 640.0,
+    "mode": "DRY-RUN / ADVISORY ONLY"
+  },
+  "orders": [
+    {
+      "team": "Argentina",
+      "token_id": "tok_999888777666555444333222111000aaa",
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 330.0,
+      "limit_price": 0.12,
+      "quantity": 2750.0,
+      "ev_pct": 120.0,
+      "p_consensus": 0.22,
+      "p_market": 0.12,
+      "kelly_fraction": 3.3,
+      "edge": 0.1
+    },
+    {
+      "team": "Brazil",
+      "token_id": "tok_abc123xyz",
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 170.0,
+      "limit_price": 0.1,
+      "quantity": 1700.0,
+      "ev_pct": 62.0,
+      "p_consensus": 0.18,
+      "p_market": 0.1,
+      "kelly_fraction": 1.7,
+      "edge": 0.08
+    },
+    {
+      "team": "France",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 140.0,
+      "limit_price": 0.09,
+      "quantity": 1555.5556,
+      "ev_pct": 56.0,
+      "p_consensus": 0.15,
+      "p_market": 0.09,
+      "kelly_fraction": 1.4,
+      "edge": 0.06
+    }
+  ]
+}

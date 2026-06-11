@@ -1,0 +1,20 @@
+[project]
+name = "world-cup-quant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "catboost>=1.2.10",
+    "category-encoders>=2.9.0",
+    "html5lib>=1.1",
+    "httpx>=0.28.1",
+    "kaggle>=2.2.1",
+    "lxml>=6.1.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "python-dotenv>=1.2.2",
+    "rich>=15.0.0",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.17.1",
+]

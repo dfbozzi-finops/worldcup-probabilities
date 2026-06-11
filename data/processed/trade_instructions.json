@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-11T22:20:46.073503+00:00",
+    "bankroll": 0.0,
+    "total_orders": 8,
+    "total_capital": 1740.37,
+    "mode": "DRY-RUN / ADVISORY ONLY"
+  },
+  "orders": [
+    {
+      "team": "United States",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 302.07,
+      "limit_price": 0.0112,
+      "quantity": 26970.5357,
+      "ev_pct": 214.23,
+      "p_consensus": 0.03505,
+      "p_market": 0.011154,
+      "kelly_fraction": 0.6,
+      "edge": 0.023896
+    },
+    {
+      "team": "Switzerland",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 297.68,
+      "limit_price": 0.0121,
+      "quantity": 24601.6529,
+      "ev_pct": 194.04,
+      "p_consensus": 0.03565,
+      "p_market": 0.012124,
+      "kelly_fraction": 0.6,
+      "edge": 0.023526
+    },
+    {
+      "team": "Türkiye",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 211.73,
+      "limit_price": 0.0102,
+      "quantity": 20757.8431,
+      "ev_pct": 164.62,
+      "p_consensus": 0.02695,
+      "p_market": 0.010184,
+      "kelly_fraction": 0.42,
+      "edge": 0.016766
+    },
+    {
+      "team": "Mexico",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 230.59,
+      "limit_price": 0.0131,
+      "quantity": 17602.2901,
+      "ev_pct": 139.04,
+      "p_consensus": 0.0313,
+      "p_market": 0.013094,
+      "kelly_fraction": 0.46,
+      "edge": 0.018206
+    },
+    {
+      "team": "Morocco",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 260.36,
+      "limit_price": 0.015,
+      "quantity": 17357.3333,
+      "ev_pct": 136.46,
+      "p_consensus": 0.03555,
+      "p_market": 0.015034,
+      "kelly_fraction": 0.52,
+      "edge": 0.020516
+    },
+    {
+      "team": "Colombia",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 255.92,
+      "limit_price": 0.017,
+      "quantity": 15054.1176,
+      "ev_pct": 118.57,
+      "p_consensus": 0.0371,
+      "p_market": 0.016974,
+      "kelly_fraction": 0.51,
+      "edge": 0.020126
+    },
+    {
+      "team": "Japan",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 86.8,
+      "limit_price": 0.017,
+      "quantity": 5105.8824,
+      "ev_pct": 40.22,
+      "p_consensus": 0.0238,
+      "p_market": 0.016974,
+      "kelly_fraction": 0.17,
+      "edge": 0.006826
+    },
+    {
+      "team": "Belgium",
+      "token_id": null,
+      "side": "BUY",
+      "type": "LIMIT",
+      "size_usd": 95.22,
+      "limit_price": 0.0199,
+      "quantity": 4784.9246,
+      "ev_pct": 37.55,
+      "p_consensus": 0.02735,
+      "p_market": 0.019884,
+      "kelly_fraction": 0.19,
+      "edge": 0.007466
+    }
+  ]
+}

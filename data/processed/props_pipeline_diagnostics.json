@@ -1,0 +1,33 @@
+{
+  "Argentina": {
+    "sample_fixture_stats": {
+      "Fouls": 14,
+      "Corner Kicks": 6,
+      "Yellow Cards": 2,
+      "Red Cards": 0
+    },
+    "sample_player_stats": [
+      {
+        "\u00c1. Correa": {
+          "goals": 1,
+          "assists": null,
+          "shots_on": 1,
+          "penalty_scored": 0,
+          "penalty_missed": 0
+        }
+      },
+      {
+        "L. Messi": {
+          "goals": 7,
+          "assists": 3,
+          "shots_on": 23,
+          "penalty_scored": 4,
+          "penalty_missed": 0
+        }
+      }
+    ]
+  },
+  "France": {
+    "sample_player_stats": []
+  }
+}

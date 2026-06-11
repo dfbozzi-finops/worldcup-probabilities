@@ -1,0 +1,48 @@
+name: World Cup Arbitrage Update
+
+on:
+  schedule:
+    # Run every 3 hours
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+    # Allow manual triggers
+
+jobs:
+  update-models:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install 3.13
+
+      - name: Create .env file
+        run: |
+          echo "API_FOOTBALL_KEY=${{ secrets.API_FOOTBALL_KEY }}" >> .env
+          echo "KAGGLE_USERNAME=${{ secrets.KAGGLE_USERNAME }}" >> .env
+          echo "KAGGLE_KEY=${{ secrets.KAGGLE_KEY }}" >> .env
+          echo "POLYMARKET_API_KEY=${{ secrets.POLYMARKET_API_KEY }}" >> .env
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run Arbitrage Engine
+        run: uv run main.py --once --dry-run
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/processed/opportunities.json data/processed/match_by_match.json data/processed/arbitrage_log.csv
+          git commit -m "Auto-update odds and match probabilities" || echo "No changes to commit"
+          git push

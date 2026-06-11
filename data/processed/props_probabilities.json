@@ -1,0 +1,32 @@
+{
+  "match": "Argentina vs France",
+  "team_props": {
+    "Argentina": {
+      "over_under_corners_4.5": {
+        "over": 0.6609,
+        "under": 0.3391
+      },
+      "over_under_cards_1.5": {
+        "over": 0.5391,
+        "under": 0.4609
+      }
+    },
+    "France": {
+      "over_under_corners_4.5": {
+        "over": 0.5245,
+        "under": 0.4755
+      },
+      "over_under_cards_1.5": {
+        "over": 0.4074,
+        "under": 0.5926
+      }
+    }
+  },
+  "player_props": {
+    "anytime_goalscorer": {
+      "Lionel Messi (ARG)": 0.4007,
+      "\u00c1ngel Correa (ARG)": 0.0982,
+      "Kylian Mbapp\u00e9 (FRA)": 0.3237
+    }
+  }
+}
