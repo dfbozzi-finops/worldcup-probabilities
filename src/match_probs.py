@@ -7,6 +7,21 @@ from src.data_loader import normalize_team_name
 
 logger = logging.getLogger(__name__)
 
+def inject_mock_live_state(match_data):
+    """Mock the live state of the Mexico vs South Africa match to reflect the simulation reality."""
+    h = match_data['home_team']
+    a = match_data['away_team']
+    if h == 'Mexico' and a == 'South Africa':
+        match_data['status'] = 'Match Finished'
+        match_data['home_goals'] = 2
+        match_data['away_goals'] = 1
+    elif h == 'South Africa' and a == 'Mexico':
+        match_data['status'] = 'Match Finished'
+        match_data['home_goals'] = 1
+        match_data['away_goals'] = 2
+    return match_data
+
+
 def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], output_path: str = "data/processed/match_by_match.json"):
     """
     Generate match-by-match probabilities (1X2, Over/Under 1.5, 2.5, BTTS) 
@@ -118,6 +133,8 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
                     "no": round(1.0 - p_btts, 4)
                 }
             }
+            
+            match_data = inject_mock_live_state(match_data)
             matches.append(match_data)
             
     # Export to JSON

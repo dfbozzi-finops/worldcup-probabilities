@@ -3,9 +3,9 @@
     "group": "A",
     "home_team": "Mexico",
     "away_team": "South Africa",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
+    "status": "Match Finished",
+    "home_goals": 2,
+    "away_goals": 1,
     "fixture_id": null,
     "1X2": {
       "home": 0.4655,

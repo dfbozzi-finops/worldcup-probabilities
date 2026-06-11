@@ -13,9 +13,10 @@ setInterval(() => {
 async function fetchPipelineData() {
     try {
         console.log("Fetching pipeline JSONs...");
+        const ts = new Date().getTime();
         const [oppsRes, matchRes] = await Promise.all([
-            fetch(ENDPOINTS.opportunities).catch(err => { throw new Error("Opp: " + err.message); }),
-            fetch(ENDPOINTS.matches).catch(err => { throw new Error("Match: " + err.message); })
+            fetch(`${ENDPOINTS.opportunities}?t=${ts}`).catch(err => { throw new Error("Opp: " + err.message); }),
+            fetch(`${ENDPOINTS.matches}?t=${ts}`).catch(err => { throw new Error("Match: " + err.message); })
         ]);
 
         const oppsData = (oppsRes && oppsRes.ok) ? await oppsRes.json() : null;
