@@ -244,6 +244,17 @@ def export_json(
     p_market = p_market or {}
 
     now = datetime.now(timezone.utc)
+    
+    dest = Path(output_path)
+    existing_history = {}
+    if dest.exists():
+        try:
+            with dest.open("r", encoding="utf-8") as f:
+                old_data = json.load(f)
+                for tm in old_data.get("tracked_markets", []):
+                    existing_history[tm["team"]] = tm.get("ev_history", [])
+        except Exception:
+            pass
 
     # Build per-team probability breakdown
     all_probabilities: dict[str, dict[str, float]] = {}
@@ -266,13 +277,20 @@ def export_json(
         kelly = (ev / b) if b > 0 else 0.0
         kelly = max(0.0, kelly)
         
+        ev_pct = round(ev * 100, 2)
+        hist = existing_history.get(team, [])
+        hist.append(ev_pct)
+        # Keep last 10 points for sparkline
+        hist = hist[-10:]
+        
         tracked_markets.append({
             "team": team,
             "p_consensus": round(pc, 6),
             "p_market": round(pm, 6),
             "odds": round(odds, 2),
-            "ev_percent": round(ev * 100, 2),
-            "kelly_fraction": round(kelly * 100, 2)
+            "ev_percent": ev_pct,
+            "kelly_fraction": round(kelly * 100, 2),
+            "ev_history": hist
         })
         
     # Sort tracked_markets by consensus probability
@@ -294,7 +312,6 @@ def export_json(
         },
     }
 
-    dest = Path(output_path)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 

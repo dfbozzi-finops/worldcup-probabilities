@@ -12,6 +12,7 @@ let evChartInstance = null;
 
 let filterSearch = "";
 let filterActionable = false;
+let filterGroup = "All";
 
 // Theme Toggle
 const themeBtn = document.getElementById('theme-toggle');
@@ -42,6 +43,11 @@ document.getElementById('search-input').addEventListener('input', (e) => {
 
 document.getElementById('ev-toggle').addEventListener('change', (e) => {
     filterActionable = e.target.checked;
+    renderAll();
+});
+
+document.getElementById('group-filter').addEventListener('change', (e) => {
+    filterGroup = e.target.value;
     renderAll();
 });
 
@@ -171,6 +177,30 @@ function renderChart(data) {
     });
 }
 
+function generateSparkline(history) {
+    if (!history || history.length < 2) return '';
+    const min = Math.min(...history);
+    const max = Math.max(...history);
+    const range = max - min || 1;
+    const width = 40;
+    const height = 15;
+    
+    const points = history.map((val, i) => {
+        const x = (i / (history.length - 1)) * width;
+        const y = height - ((val - min) / range) * height;
+        return `${x},${y}`;
+    }).join(' ');
+    
+    const isUp = history[history.length - 1] >= history[0];
+    const color = isUp ? '#16a34a' : '#ef4444';
+
+    return `
+        <svg width="${width}" height="${height}" class="inline-block ml-2 opacity-80" viewBox="-2 -2 ${width+4} ${height+4}">
+            <polyline fill="none" stroke="${color}" stroke-width="2" points="${points}" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    `;
+}
+
 function renderOpportunities() {
     const tbody = document.getElementById('opportunities-tbody');
     if (!globalOpps || !globalOpps.tracked_markets) {
@@ -198,6 +228,7 @@ function renderOpportunities() {
         const isPos = opp.ev_percent > 0;
         const evColor = isPos ? 'text-positive bg-positive' : 'text-neutral';
         const evVal = isPos ? `+${opp.ev_percent.toFixed(2)}%` : `${opp.ev_percent.toFixed(2)}%`;
+        const sparklineHtml = generateSparkline(opp.ev_history);
         
         // Visual edge bar
         const barWidth = isPos ? Math.min(100, opp.ev_percent / 2) : 0;
@@ -205,7 +236,7 @@ function renderOpportunities() {
 
         return `
             <tr>
-                <td class="text-left font-bold text-accent">${opp.team}</td>
+                <td class="text-left font-bold text-accent">${opp.team} ${sparklineHtml}</td>
                 <td>${(opp.p_consensus * 100).toFixed(1)}%</td>
                 <td>${(opp.p_market * 100).toFixed(1)}%</td>
                 <td class="${evColor} font-bold">${evVal} ${barHtml}</td>
@@ -243,6 +274,10 @@ function renderMatches() {
             match.home_team.toLowerCase().includes(filterSearch) || 
             match.away_team.toLowerCase().includes(filterSearch)
         );
+    }
+    
+    if (filterGroup !== "All") {
+        matches = matches.filter(match => match.group === filterGroup);
     }
 
     // Sort Chronologically

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="p-6 flex flex-col h-screen">
+<body class="p-6 flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
     <!-- Header -->
     <header class="flex justify-between items-end mb-6 pb-4 border-b" style="border-color: var(--color-border);">
         <div>
@@ -48,6 +48,24 @@
                     <span class="ms-3 text-sm font-semibold">Only Positive EV</span>
                 </label>
             </div>
+        </div>
+        <div class="flex flex-col ml-auto">
+            <label class="text-[11px] font-bold text-neutral uppercase tracking-wider mb-1.5">World Cup Group</label>
+            <select id="group-filter" class="w-48 text-sm cursor-pointer">
+                <option value="All">All Groups</option>
+                <option value="Group A">Group A</option>
+                <option value="Group B">Group B</option>
+                <option value="Group C">Group C</option>
+                <option value="Group D">Group D</option>
+                <option value="Group E">Group E</option>
+                <option value="Group F">Group F</option>
+                <option value="Group G">Group G</option>
+                <option value="Group H">Group H</option>
+                <option value="Group I">Group I</option>
+                <option value="Group J">Group J</option>
+                <option value="Group K">Group K</option>
+                <option value="Group L">Group L</option>
+            </select>
         </div>
     </div>
 
