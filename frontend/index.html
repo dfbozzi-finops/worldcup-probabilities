@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="p-6 flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
+<body class="p-6 flex flex-col min-h-screen">
     <!-- Header -->
     <header class="flex justify-between items-end mb-6 pb-4 border-b" style="border-color: var(--color-border);">
         <div>
@@ -70,10 +70,10 @@
     </div>
 
     <!-- Main Grid -->
-    <main class="grid grid-cols-12 gap-6 flex-1 min-h-0">
-        
-        <!-- Left Column: Opportunities Data Table & Chart -->
-        <div class="col-span-12 lg:col-span-5 flex flex-col min-h-0 gap-6">
+    <main class="flex-1 flex flex-col gap-6">
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Left Column: Highlights & Opportunities -->
+            <div class="col-span-12 lg:col-span-5 flex flex-col gap-6">
             <div class="terminal-panel flex-1 flex flex-col">
                 <div class="panel-header">
                     <span>ARBITRAGE OPPORTUNITIES</span>
@@ -101,13 +101,13 @@
                     </table>
                 </div>
             </div>
-        </div>
+            </div>
 
         <!-- Right Column: Match Grids -->
         <div class="col-span-12 lg:col-span-7 flex flex-col min-h-0 gap-6">
             
             <!-- Live/Completed Matches -->
-            <div class="terminal-panel h-1/3 flex flex-col">
+            <div class="terminal-panel flex-1 flex flex-col min-h-[300px]">
                 <div class="panel-header">
                     <span>LIVE / COMPLETED FIXTURES</span>
                 </div>
@@ -115,13 +115,13 @@
                     <table class="w-full text-center tabular-nums">
                         <thead>
                             <tr>
-                                <th class="text-left">Date (UTC)</th>
+                                <th class="text-left">Date</th>
                                 <th class="text-left">Matchup</th>
-                                <th>Status</th>
                                 <th>Score</th>
+                                <th>Status</th>
+                                <th>1X2 Pre-Match</th>
                                 <th>O1.5 Prob</th>
-                                <th>O2.5 Hit</th>
-                                <th>BTTS Hit</th>
+                                <th>BTTS Prob</th>
                             </tr>
                         </thead>
                         <tbody id="completed-matches-tbody">
@@ -130,53 +130,62 @@
                     </table>
                 </div>
             </div>
-
-            <!-- Upcoming Matches -->
-            <div class="terminal-panel h-1/3 flex flex-col">
-                <div class="panel-header">
-                    <span>UPCOMING FIXTURE PREDICTIONS</span>
-                </div>
-                <div class="flex-1 overflow-auto">
-                    <table class="w-full text-center tabular-nums">
-                        <thead>
-                            <tr>
-                                <th class="text-left">Date (UTC)</th>
-                                <th class="text-left">Matchup</th>
-                                <th>1X2 Model</th>
-                                <th>O1.5 Prob</th>
-                                <th>O2.5 Prob</th>
-                                <th>BTTS Prob</th>
-                            </tr>
-                        </thead>
-                        <tbody id="upcoming-matches-tbody">
-                            <!-- Populated by JS -->
-                        </tbody>
-                    </table>
-                </div>
             </div>
+        </div>
 
-            <!-- Betting Recommendations -->
-            <div class="terminal-panel h-1/3 flex flex-col">
-                <div class="panel-header">
-                    <span>UPCOMING FIXTURE RECOMMENDATIONS</span>
-                </div>
-                <div class="flex-1 overflow-auto">
-                    <table class="w-full text-center tabular-nums">
-                        <thead>
-                            <tr>
-                                <th class="text-left">Date (UTC)</th>
-                                <th class="text-left">Matchup</th>
-                                <th class="text-left">Recommended Play</th>
-                                <th>Model Prob</th>
-                            </tr>
-                        </thead>
-                        <tbody id="recommendations-tbody">
-                            <!-- Populated by JS -->
-                        </tbody>
-                    </table>
-                </div>
+        <!-- Combined Upcoming Matches & Recommendations -->
+        <div class="terminal-panel flex-1 flex flex-col min-h-[400px]">
+            <div class="panel-header">
+                <span>UPCOMING FIXTURES & RECOMMENDATIONS</span>
             </div>
-
+            <div class="flex-1 overflow-auto">
+                <table class="w-full text-center tabular-nums">
+                    <thead>
+                        <tr>
+                            <th class="text-left min-w-[120px]">Date (UTC)</th>
+                            <th class="text-left min-w-[180px]">Matchup</th>
+                            <th>
+                                <div class="tooltip-container">
+                                    1X2 Model
+                                    <div class="tooltip-icon">?</div>
+                                    <div class="tooltip-text">Probabilities for Home Win, Draw, or Away Win derived from the Dixon-Coles Bivariate Poisson simulation.</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="tooltip-container">
+                                    O1.5
+                                    <div class="tooltip-icon">?</div>
+                                    <div class="tooltip-text">Probability of Over 1.5 total goals scored in the match.</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="tooltip-container">
+                                    O2.5
+                                    <div class="tooltip-icon">?</div>
+                                    <div class="tooltip-text">Probability of Over 2.5 total goals scored in the match.</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="tooltip-container">
+                                    BTTS
+                                    <div class="tooltip-icon">?</div>
+                                    <div class="tooltip-text">Both Teams To Score probability.</div>
+                                </div>
+                            </th>
+                            <th class="text-left">
+                                <div class="tooltip-container">
+                                    Top Plays &gt;50%
+                                    <div class="tooltip-icon">?</div>
+                                    <div class="tooltip-text">Aggregated Match and Player Prop predictions that exceed a 50% statistical probability threshold.</div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="upcoming-matches-tbody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 

@@ -85,7 +85,6 @@ function renderAll() {
     renderHighlights();
     renderOpportunities();
     renderMatches();
-    renderRecommendations();
 }
 
 function renderHighlights() {
@@ -328,107 +327,75 @@ function renderMatches() {
                 </tr>
             `);
         } else {
-            // Upcoming Predictions
-            const h = (match["1X2"].home * 100).toFixed(1);
-            const d = (match["1X2"].draw * 100).toFixed(1);
-            const a = (match["1X2"].away * 100).toFixed(1);
-            const o15 = (match.over_under_1_5.over * 100).toFixed(1);
-            const o25 = (match.over_under_2_5.over * 100).toFixed(1);
-            const btts = (match.btts.yes * 100).toFixed(1);
-
+            const pHome = (match["1X2"].home * 100).toFixed(0);
+            const pDraw = (match["1X2"].draw * 100).toFixed(0);
+            const pAway = (match["1X2"].away * 100).toFixed(0);
+            const pred1X2 = `H: ${pHome}% | D: ${pDraw}% | A: ${pAway}%`;
+            
+            const pO15 = (match.over_under_1_5.over * 100).toFixed(0);
+            const pO25 = (match.over_under_2_5.over * 100).toFixed(0);
+            const pBTTS = (match.btts.yes * 100).toFixed(0);
+            
+            // Gather Recommendations > 50%
+            let recs = [];
+            
+            if (match["1X2"].home > 0.50) recs.push(`${match.home_team} ML (${pHome}%)`);
+            if (match["1X2"].draw > 0.50) recs.push(`Draw (${pDraw}%)`);
+            if (match["1X2"].away > 0.50) recs.push(`${match.away_team} ML (${pAway}%)`);
+            
+            if (match.over_under_1_5.over > 0.50) recs.push(`Over 1.5 Goals (${pO15}%)`);
+            if (match.over_under_1_5.under > 0.50) recs.push(`Under 1.5 Goals (${(match.over_under_1_5.under*100).toFixed(0)}%)`);
+            
+            if (match.over_under_2_5.over > 0.50) recs.push(`Over 2.5 Goals (${pO25}%)`);
+            if (match.over_under_2_5.under > 0.50) recs.push(`Under 2.5 Goals (${(match.over_under_2_5.under*100).toFixed(0)}%)`);
+            
+            if (match.btts.yes > 0.50) recs.push(`BTTS Yes (${pBTTS}%)`);
+            if (match.btts.no > 0.50) recs.push(`BTTS No (${(match.btts.no*100).toFixed(0)}%)`);
+            
+            // Player props
+            if (globalProps && Array.isArray(globalProps)) {
+                const pData = globalProps.find(p => p.match === matchup);
+                if (pData && pData.player_props) {
+                    const pp = pData.player_props;
+                    if (pp.anytime_goalscorer) {
+                        for (const [player, prob] of Object.entries(pp.anytime_goalscorer)) {
+                            if (prob > 0.50) recs.push(`${player} to Score (${(prob*100).toFixed(0)}%)`);
+                        }
+                    }
+                    if (pp["over_under_shots_on_target_1.5"]) {
+                        for (const [player, odds] of Object.entries(pp["over_under_shots_on_target_1.5"])) {
+                            if (odds.over > 0.50) recs.push(`${player} O1.5 SoT (${(odds.over*100).toFixed(0)}%)`);
+                        }
+                    }
+                    if (pp["over_under_assists_0.5"]) {
+                        for (const [player, odds] of Object.entries(pp["over_under_assists_0.5"])) {
+                            if (odds.over > 0.50) recs.push(`${player} O0.5 Assists (${(odds.over*100).toFixed(0)}%)`);
+                        }
+                    }
+                }
+            }
+            
+            // Render pills
+            const pillsHtml = recs.length > 0 
+                ? recs.map(r => `<span class="inline-block bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 text-[10px] font-bold px-2 py-1 rounded shadow-sm border border-blue-200 dark:border-blue-800 mb-1 mr-1">${r}</span>`).join('')
+                : `<span class="text-neutral text-xs italic">No strong edges</span>`;
+            
             upRows.push(`
-                <tr>
-                    <td class="text-left text-neutral text-xs">${dateStr}</td>
-                    <td class="text-left font-bold">${match.home_team} - ${match.away_team}</td>
-                    <td class="text-neutral"><span class="text-accent">${h}</span> / ${d} / <span class="text-highlight">${a}</span></td>
-                    <td class="text-positive">${o15}%</td>
-                    <td class="text-positive">${o25}%</td>
-                    <td class="text-positive">${btts}%</td>
+                <tr class="border-b border-gray-100 dark:border-gray-800/50 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                    <td class="text-left text-neutral text-xs py-3">${dateStr}</td>
+                    <td class="text-left font-bold py-3">${matchup}</td>
+                    <td class="text-xs py-3">${pred1X2}</td>
+                    <td class="font-bold py-3">${pO15}%</td>
+                    <td class="font-bold py-3">${pO25}%</td>
+                    <td class="font-bold py-3">${pBTTS}%</td>
+                    <td class="text-left py-2 max-w-[300px] leading-tight">${pillsHtml}</td>
                 </tr>
             `);
         }
     });
 
     liveBody.innerHTML = liveRows.length ? liveRows.join('') : `<tr><td colspan="7" class="text-neutral py-4 text-center">No live/completed matches found</td></tr>`;
-    upBody.innerHTML = upRows.length ? upRows.slice(0, 15).join('') : `<tr><td colspan="6" class="text-neutral py-4 text-center">No upcoming fixtures found</td></tr>`;
-}
-
-function renderRecommendations() {
-    const tbody = document.getElementById('recommendations-tbody');
-    if (!globalMatches || !Array.isArray(globalMatches)) return;
-
-    let matches = [...globalMatches];
-    if (filterGroup !== "All") {
-        matches = matches.filter(match => match.group === filterGroup);
-    }
-    
-    let upcoming = matches.filter(m => m.status === "Not Started");
-    
-    // Sort Chronologically
-    upcoming.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    let rows = [];
-
-    upcoming.forEach(match => {
-        const dateStr = formatShortDate(match.date);
-        const matchup = `${match.home_team} - ${match.away_team}`;
-        
-        let bestPlay = null;
-        let maxProb = 0;
-        
-        // Match props
-        const p_1 = match["1X2"].home;
-        if (p_1 > maxProb) { maxProb = p_1; bestPlay = `${match.home_team} Moneyline`; }
-        const p_X = match["1X2"].draw;
-        if (p_X > maxProb) { maxProb = p_X; bestPlay = `Draw`; }
-        const p_2 = match["1X2"].away;
-        if (p_2 > maxProb) { maxProb = p_2; bestPlay = `${match.away_team} Moneyline`; }
-        
-        if (match.over_under_1_5.over > maxProb) { maxProb = match.over_under_1_5.over; bestPlay = `Over 1.5 Goals`; }
-        if (match.over_under_1_5.under > maxProb) { maxProb = match.over_under_1_5.under; bestPlay = `Under 1.5 Goals`; }
-        
-        if (match.over_under_2_5.over > maxProb) { maxProb = match.over_under_2_5.over; bestPlay = `Over 2.5 Goals`; }
-        if (match.over_under_2_5.under > maxProb) { maxProb = match.over_under_2_5.under; bestPlay = `Under 2.5 Goals`; }
-        
-        if (match.btts.yes > maxProb) { maxProb = match.btts.yes; bestPlay = `BTTS Yes`; }
-        if (match.btts.no > maxProb) { maxProb = match.btts.no; bestPlay = `BTTS No`; }
-        
-        // Player props
-        if (globalProps && Array.isArray(globalProps)) {
-            const pData = globalProps.find(p => p.match === matchup);
-            if (pData && pData.player_props) {
-                const pp = pData.player_props;
-                if (pp.anytime_goalscorer) {
-                    for (const [player, prob] of Object.entries(pp.anytime_goalscorer)) {
-                        if (prob > maxProb) { maxProb = prob; bestPlay = `${player} to Score`; }
-                    }
-                }
-                if (pp["over_under_shots_on_target_1.5"]) {
-                    for (const [player, odds] of Object.entries(pp["over_under_shots_on_target_1.5"])) {
-                        if (odds.over > maxProb) { maxProb = odds.over; bestPlay = `${player} Over 1.5 SoT`; }
-                    }
-                }
-                if (pp["over_under_assists_0.5"]) {
-                    for (const [player, odds] of Object.entries(pp["over_under_assists_0.5"])) {
-                        if (odds.over > maxProb) { maxProb = odds.over; bestPlay = `${player} Over 0.5 Assists`; }
-                    }
-                }
-            }
-        }
-        
-        const probPct = (maxProb * 100).toFixed(1);
-        
-        rows.push(`
-            <tr>
-                <td class="text-left text-neutral text-xs">${dateStr}</td>
-                <td class="text-left font-bold">${matchup}</td>
-                <td class="text-left text-accent font-bold tracking-wide">${bestPlay}</td>
-                <td class="text-positive font-bold">${probPct}%</td>
-            </tr>
-        `);
-    });
-
-    tbody.innerHTML = rows.length ? rows.slice(0, 15).join('') : `<tr><td colspan="4" class="text-neutral py-4 text-center">No recommendations found</td></tr>`;
+    upBody.innerHTML = upRows.length ? upRows.join('') : `<tr><td colspan="7" class="text-neutral py-4 text-center">No upcoming fixtures found</td></tr>`;
 }
 
 fetchPipelineData();
