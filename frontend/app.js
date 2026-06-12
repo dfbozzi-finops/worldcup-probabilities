@@ -125,7 +125,6 @@ async function fetchPipelineData() {
         // Element removed from DOM
         // document.getElementById('last-updated').textContent = new Date().toLocaleTimeString();
 
-        renderDashboard();
         if (currentCountry) {
             renderCountryView();
         }
