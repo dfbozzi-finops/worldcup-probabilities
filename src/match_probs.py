@@ -69,13 +69,37 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
     # Sort by matchday, then group
     matchdays.sort(key=lambda x: (x[0], x[1]))
 
-    from datetime import timezone
+    import requests
+    from datetime import datetime, timezone, timedelta
+
+    real_dates_iso = []
+    try:
+        api_data = requests.get("https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json").json()
+        group_matches = [m for m in api_data["matches"] if "Matchday" in m["round"]]
+        
+        def parse_api_time(m):
+            date_str, time_str = m.get("date", ""), m.get("time", "")
+            if "UTC" in time_str:
+                time_part, tz_part = time_str.split(" UTC")
+                hours = int(tz_part)
+                dt = datetime.strptime(f"{date_str} {time_part}", "%Y-%m-%d %H:%M")
+                dt = dt.replace(tzinfo=timezone(timedelta(hours=hours)))
+                return dt.astimezone(timezone.utc)
+            return datetime.now(timezone.utc)
+            
+        group_matches.sort(key=parse_api_time)
+        real_dates_iso = [parse_api_time(m).isoformat().replace('+00:00', 'Z') for m in group_matches]
+    except Exception as e:
+        print(f"Warning: Failed to fetch real schedule API: {e}")
+
     current_sim_time = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
     
-    for md, group_name, home, away in matchdays:
-        # Advance simulated time by 3 hours per match
-        current_sim_time += timedelta(hours=3)
-        sim_date_iso = current_sim_time.isoformat().replace('+00:00', 'Z')
+    for idx, (md, group_name, home, away) in enumerate(matchdays):
+        if idx < len(real_dates_iso):
+            sim_date_iso = real_dates_iso[idx]
+        else:
+            current_sim_time += timedelta(hours=3)
+            sim_date_iso = current_sim_time.isoformat().replace('+00:00', 'Z')
             
         # Get the probability matrix from Dixon-Coles
         mat = dc_model.predict_score_probs(home, away, neutral=True, max_goals=10)
