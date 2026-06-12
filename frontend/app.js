@@ -257,10 +257,13 @@ function renderOpportunities() {
 function formatShortDate(isoString) {
     if (!isoString) return "TBD";
     const d = new Date(isoString);
+    
+    // Format to user's Local Time automatically
     const month = d.toLocaleString('default', { month: 'short' });
-    const day = d.getDate().toString().padStart(2, '0');
+    const day = d.getDate();
     const hr = d.getHours().toString().padStart(2, '0');
     const min = d.getMinutes().toString().padStart(2, '0');
+    
     return `${month} ${day}, ${hr}:${min}`;
 }
 
