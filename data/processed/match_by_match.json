@@ -3,7 +3,7 @@
     "group": "A",
     "home_team": "Mexico",
     "away_team": "South Africa",
-    "date": "2026-06-11T15:00:00Z",
+    "date": "2026-06-12T04:00:00+00:00Z",
     "status": "Match Finished",
     "home_goals": 2,
     "away_goals": 1,
@@ -28,117 +28,9 @@
   },
   {
     "group": "A",
-    "home_team": "Mexico",
-    "away_team": "South Korea",
-    "date": "2026-06-11T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3798,
-      "draw": 0.312,
-      "away": 0.3082
-    },
-    "over_under_1_5": {
-      "over": 0.6198,
-      "under": 0.3802
-    },
-    "over_under_2_5": {
-      "over": 0.3438,
-      "under": 0.6562
-    },
-    "btts": {
-      "yes": 0.421,
-      "no": 0.579
-    }
-  },
-  {
-    "group": "A",
-    "home_team": "Mexico",
-    "away_team": "Czechia",
-    "date": "2026-06-11T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4208,
-      "draw": 0.3022,
-      "away": 0.2769
-    },
-    "over_under_1_5": {
-      "over": 0.6396,
-      "under": 0.3604
-    },
-    "over_under_2_5": {
-      "over": 0.3649,
-      "under": 0.6351
-    },
-    "btts": {
-      "yes": 0.4335,
-      "no": 0.5665
-    }
-  },
-  {
-    "group": "A",
-    "home_team": "South Africa",
-    "away_team": "South Korea",
-    "date": "2026-06-12T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.2566,
-      "draw": 0.31,
-      "away": 0.4334
-    },
-    "over_under_1_5": {
-      "over": 0.6099,
-      "under": 0.3901
-    },
-    "over_under_2_5": {
-      "over": 0.3338,
-      "under": 0.6662
-    },
-    "btts": {
-      "yes": 0.4035,
-      "no": 0.5965
-    }
-  },
-  {
-    "group": "A",
-    "home_team": "South Africa",
-    "away_team": "Czechia",
-    "date": "2026-06-12T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.2897,
-      "draw": 0.31,
-      "away": 0.4004
-    },
-    "over_under_1_5": {
-      "over": 0.6216,
-      "under": 0.3784
-    },
-    "over_under_2_5": {
-      "over": 0.3457,
-      "under": 0.6543
-    },
-    "btts": {
-      "yes": 0.4202,
-      "no": 0.5798
-    }
-  },
-  {
-    "group": "A",
     "home_team": "South Korea",
     "away_team": "Czechia",
-    "date": "2026-06-12T11:00:00Z",
+    "date": "2026-06-12T07:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -165,7 +57,7 @@
     "group": "B",
     "home_team": "Canada",
     "away_team": "Switzerland",
-    "date": "2026-06-12T15:00:00Z",
+    "date": "2026-06-12T10:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -190,117 +82,9 @@
   },
   {
     "group": "B",
-    "home_team": "Canada",
-    "away_team": "Qatar",
-    "date": "2026-06-12T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5139,
-      "draw": 0.2791,
-      "away": 0.2069
-    },
-    "over_under_1_5": {
-      "over": 0.6647,
-      "under": 0.3353
-    },
-    "over_under_2_5": {
-      "over": 0.393,
-      "under": 0.607
-    },
-    "btts": {
-      "yes": 0.4311,
-      "no": 0.5689
-    }
-  },
-  {
-    "group": "B",
-    "home_team": "Canada",
-    "away_team": "Bosnia and Herzegovina",
-    "date": "2026-06-12T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4567,
-      "draw": 0.3075,
-      "away": 0.2358
-    },
-    "over_under_1_5": {
-      "over": 0.6063,
-      "under": 0.3937
-    },
-    "over_under_2_5": {
-      "over": 0.3302,
-      "under": 0.6698
-    },
-    "btts": {
-      "yes": 0.3943,
-      "no": 0.6057
-    }
-  },
-  {
-    "group": "B",
-    "home_team": "Switzerland",
-    "away_team": "Qatar",
-    "date": "2026-06-13T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5623,
-      "draw": 0.2511,
-      "away": 0.1866
-    },
-    "over_under_1_5": {
-      "over": 0.7253,
-      "under": 0.2747
-    },
-    "over_under_2_5": {
-      "over": 0.466,
-      "under": 0.534
-    },
-    "btts": {
-      "yes": 0.4742,
-      "no": 0.5258
-    }
-  },
-  {
-    "group": "B",
-    "home_team": "Switzerland",
-    "away_team": "Bosnia and Herzegovina",
-    "date": "2026-06-13T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5019,
-      "draw": 0.281,
-      "away": 0.2171
-    },
-    "over_under_1_5": {
-      "over": 0.6673,
-      "under": 0.3327
-    },
-    "over_under_2_5": {
-      "over": 0.3958,
-      "under": 0.6042
-    },
-    "btts": {
-      "yes": 0.4381,
-      "no": 0.5619
-    }
-  },
-  {
-    "group": "B",
     "home_team": "Qatar",
     "away_team": "Bosnia and Herzegovina",
-    "date": "2026-06-13T11:00:00Z",
+    "date": "2026-06-12T13:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -327,7 +111,7 @@
     "group": "C",
     "home_team": "Brazil",
     "away_team": "Morocco",
-    "date": "2026-06-13T15:00:00Z",
+    "date": "2026-06-12T16:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -352,117 +136,9 @@
   },
   {
     "group": "C",
-    "home_team": "Brazil",
-    "away_team": "Haiti",
-    "date": "2026-06-13T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.6627,
-      "draw": 0.2136,
-      "away": 0.1238
-    },
-    "over_under_1_5": {
-      "over": 0.7507,
-      "under": 0.2493
-    },
-    "over_under_2_5": {
-      "over": 0.5001,
-      "under": 0.4999
-    },
-    "btts": {
-      "yes": 0.4435,
-      "no": 0.5565
-    }
-  },
-  {
-    "group": "C",
-    "home_team": "Brazil",
-    "away_team": "Scotland",
-    "date": "2026-06-13T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5519,
-      "draw": 0.2639,
-      "away": 0.1842
-    },
-    "over_under_1_5": {
-      "over": 0.6869,
-      "under": 0.3131
-    },
-    "over_under_2_5": {
-      "over": 0.4188,
-      "under": 0.5812
-    },
-    "btts": {
-      "yes": 0.4375,
-      "no": 0.5625
-    }
-  },
-  {
-    "group": "C",
-    "home_team": "Morocco",
-    "away_team": "Haiti",
-    "date": "2026-06-14T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5282,
-      "draw": 0.2861,
-      "away": 0.1857
-    },
-    "over_under_1_5": {
-      "over": 0.6272,
-      "under": 0.3728
-    },
-    "over_under_2_5": {
-      "over": 0.3521,
-      "under": 0.6479
-    },
-    "btts": {
-      "yes": 0.3881,
-      "no": 0.6119
-    }
-  },
-  {
-    "group": "C",
-    "home_team": "Morocco",
-    "away_team": "Scotland",
-    "date": "2026-06-14T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4257,
-      "draw": 0.3231,
-      "away": 0.2512
-    },
-    "over_under_1_5": {
-      "over": 0.5721,
-      "under": 0.4279
-    },
-    "over_under_2_5": {
-      "over": 0.2966,
-      "under": 0.7034
-    },
-    "btts": {
-      "yes": 0.3715,
-      "no": 0.6285
-    }
-  },
-  {
-    "group": "C",
     "home_team": "Haiti",
     "away_team": "Scotland",
-    "date": "2026-06-14T11:00:00Z",
+    "date": "2026-06-12T19:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -489,7 +165,7 @@
     "group": "D",
     "home_team": "United States",
     "away_team": "Paraguay",
-    "date": "2026-06-14T15:00:00Z",
+    "date": "2026-06-12T22:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -514,117 +190,9 @@
   },
   {
     "group": "D",
-    "home_team": "United States",
-    "away_team": "Australia",
-    "date": "2026-06-14T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3224,
-      "draw": 0.3079,
-      "away": 0.3697
-    },
-    "over_under_1_5": {
-      "over": 0.6339,
-      "under": 0.3661
-    },
-    "over_under_2_5": {
-      "over": 0.3586,
-      "under": 0.6414
-    },
-    "btts": {
-      "yes": 0.4345,
-      "no": 0.5655
-    }
-  },
-  {
-    "group": "D",
-    "home_team": "United States",
-    "away_team": "T\u00fcrkiye",
-    "date": "2026-06-14T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3392,
-      "draw": 0.289,
-      "away": 0.3718
-    },
-    "over_under_1_5": {
-      "over": 0.6924,
-      "under": 0.3076
-    },
-    "over_under_2_5": {
-      "over": 0.4247,
-      "under": 0.5753
-    },
-    "btts": {
-      "yes": 0.489,
-      "no": 0.511
-    }
-  },
-  {
-    "group": "D",
-    "home_team": "Paraguay",
-    "away_team": "Australia",
-    "date": "2026-06-15T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3514,
-      "draw": 0.3347,
-      "away": 0.3139
-    },
-    "over_under_1_5": {
-      "over": 0.5572,
-      "under": 0.4428
-    },
-    "over_under_2_5": {
-      "over": 0.2824,
-      "under": 0.7176
-    },
-    "btts": {
-      "yes": 0.369,
-      "no": 0.631
-    }
-  },
-  {
-    "group": "D",
-    "home_team": "Paraguay",
-    "away_team": "T\u00fcrkiye",
-    "date": "2026-06-15T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3716,
-      "draw": 0.3133,
-      "away": 0.3151
-    },
-    "over_under_1_5": {
-      "over": 0.6173,
-      "under": 0.3827
-    },
-    "over_under_2_5": {
-      "over": 0.3413,
-      "under": 0.6587
-    },
-    "btts": {
-      "yes": 0.4195,
-      "no": 0.5805
-    }
-  },
-  {
-    "group": "D",
     "home_team": "Australia",
     "away_team": "T\u00fcrkiye",
-    "date": "2026-06-15T11:00:00Z",
+    "date": "2026-06-13T01:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -651,7 +219,7 @@
     "group": "E",
     "home_team": "Germany",
     "away_team": "Cura\u00e7ao",
-    "date": "2026-06-15T15:00:00Z",
+    "date": "2026-06-13T04:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -676,117 +244,9 @@
   },
   {
     "group": "E",
-    "home_team": "Germany",
-    "away_team": "Ivory Coast",
-    "date": "2026-06-15T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4453,
-      "draw": 0.2945,
-      "away": 0.2602
-    },
-    "over_under_1_5": {
-      "over": 0.655,
-      "under": 0.345
-    },
-    "over_under_2_5": {
-      "over": 0.3817,
-      "under": 0.6183
-    },
-    "btts": {
-      "yes": 0.4429,
-      "no": 0.5571
-    }
-  },
-  {
-    "group": "E",
-    "home_team": "Germany",
-    "away_team": "Ecuador",
-    "date": "2026-06-15T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3192,
-      "draw": 0.3225,
-      "away": 0.3583
-    },
-    "over_under_1_5": {
-      "over": 0.5914,
-      "under": 0.4086
-    },
-    "over_under_2_5": {
-      "over": 0.3151,
-      "under": 0.6849
-    },
-    "btts": {
-      "yes": 0.3977,
-      "no": 0.6023
-    }
-  },
-  {
-    "group": "E",
-    "home_team": "Cura\u00e7ao",
-    "away_team": "Ivory Coast",
-    "date": "2026-06-16T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.1973,
-      "draw": 0.2867,
-      "away": 0.516
-    },
-    "over_under_1_5": {
-      "over": 0.6358,
-      "under": 0.3642
-    },
-    "over_under_2_5": {
-      "over": 0.3612,
-      "under": 0.6388
-    },
-    "btts": {
-      "yes": 0.4016,
-      "no": 0.5984
-    }
-  },
-  {
-    "group": "E",
-    "home_team": "Cura\u00e7ao",
-    "away_team": "Ecuador",
-    "date": "2026-06-16T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.1264,
-      "draw": 0.262,
-      "away": 0.6116
-    },
-    "over_under_1_5": {
-      "over": 0.6217,
-      "under": 0.3783
-    },
-    "over_under_2_5": {
-      "over": 0.3471,
-      "under": 0.6529
-    },
-    "btts": {
-      "yes": 0.3366,
-      "no": 0.6634
-    }
-  },
-  {
-    "group": "E",
     "home_team": "Ivory Coast",
     "away_team": "Ecuador",
-    "date": "2026-06-16T11:00:00Z",
+    "date": "2026-06-13T07:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -813,7 +273,7 @@
     "group": "F",
     "home_team": "Netherlands",
     "away_team": "Japan",
-    "date": "2026-06-16T15:00:00Z",
+    "date": "2026-06-13T10:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -838,117 +298,9 @@
   },
   {
     "group": "F",
-    "home_team": "Netherlands",
-    "away_team": "Tunisia",
-    "date": "2026-06-16T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4622,
-      "draw": 0.2994,
-      "away": 0.2384
-    },
-    "over_under_1_5": {
-      "over": 0.63,
-      "under": 0.37
-    },
-    "over_under_2_5": {
-      "over": 0.3548,
-      "under": 0.6452
-    },
-    "btts": {
-      "yes": 0.4148,
-      "no": 0.5852
-    }
-  },
-  {
-    "group": "F",
-    "home_team": "Netherlands",
-    "away_team": "Ukraine",
-    "date": "2026-06-16T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4663,
-      "draw": 0.2835,
-      "away": 0.2502
-    },
-    "over_under_1_5": {
-      "over": 0.6816,
-      "under": 0.3184
-    },
-    "over_under_2_5": {
-      "over": 0.4121,
-      "under": 0.5879
-    },
-    "btts": {
-      "yes": 0.4636,
-      "no": 0.5364
-    }
-  },
-  {
-    "group": "F",
-    "home_team": "Japan",
-    "away_team": "Tunisia",
-    "date": "2026-06-17T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4451,
-      "draw": 0.3165,
-      "away": 0.2384
-    },
-    "over_under_1_5": {
-      "over": 0.5837,
-      "under": 0.4163
-    },
-    "over_under_2_5": {
-      "over": 0.3078,
-      "under": 0.6922
-    },
-    "btts": {
-      "yes": 0.3769,
-      "no": 0.6231
-    }
-  },
-  {
-    "group": "F",
-    "home_team": "Japan",
-    "away_team": "Ukraine",
-    "date": "2026-06-17T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4498,
-      "draw": 0.2996,
-      "away": 0.2507
-    },
-    "over_under_1_5": {
-      "over": 0.6359,
-      "under": 0.3641
-    },
-    "over_under_2_5": {
-      "over": 0.361,
-      "under": 0.639
-    },
-    "btts": {
-      "yes": 0.4237,
-      "no": 0.5763
-    }
-  },
-  {
-    "group": "F",
     "home_team": "Tunisia",
     "away_team": "Ukraine",
-    "date": "2026-06-17T11:00:00Z",
+    "date": "2026-06-13T13:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -975,7 +327,7 @@
     "group": "G",
     "home_team": "Belgium",
     "away_team": "Egypt",
-    "date": "2026-06-17T15:00:00Z",
+    "date": "2026-06-13T16:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1000,117 +352,9 @@
   },
   {
     "group": "G",
-    "home_team": "Belgium",
-    "away_team": "Iran",
-    "date": "2026-06-17T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4048,
-      "draw": 0.2982,
-      "away": 0.297
-    },
-    "over_under_1_5": {
-      "over": 0.6577,
-      "under": 0.3423
-    },
-    "over_under_2_5": {
-      "over": 0.3846,
-      "under": 0.6154
-    },
-    "btts": {
-      "yes": 0.4529,
-      "no": 0.5471
-    }
-  },
-  {
-    "group": "G",
-    "home_team": "Belgium",
-    "away_team": "New Zealand",
-    "date": "2026-06-17T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5368,
-      "draw": 0.273,
-      "away": 0.1902
-    },
-    "over_under_1_5": {
-      "over": 0.6674,
-      "under": 0.3326
-    },
-    "over_under_2_5": {
-      "over": 0.3962,
-      "under": 0.6038
-    },
-    "btts": {
-      "yes": 0.4243,
-      "no": 0.5757
-    }
-  },
-  {
-    "group": "G",
-    "home_team": "Egypt",
-    "away_team": "Iran",
-    "date": "2026-06-18T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.304,
-      "draw": 0.3211,
-      "away": 0.3749
-    },
-    "over_under_1_5": {
-      "over": 0.5933,
-      "under": 0.4067
-    },
-    "over_under_2_5": {
-      "over": 0.317,
-      "under": 0.683
-    },
-    "btts": {
-      "yes": 0.3981,
-      "no": 0.6019
-    }
-  },
-  {
-    "group": "G",
-    "home_team": "Egypt",
-    "away_team": "New Zealand",
-    "date": "2026-06-18T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4214,
-      "draw": 0.32,
-      "away": 0.2587
-    },
-    "over_under_1_5": {
-      "over": 0.5836,
-      "under": 0.4164
-    },
-    "over_under_2_5": {
-      "over": 0.3076,
-      "under": 0.6924
-    },
-    "btts": {
-      "yes": 0.3825,
-      "no": 0.6175
-    }
-  },
-  {
-    "group": "G",
     "home_team": "Iran",
     "away_team": "New Zealand",
-    "date": "2026-06-18T11:00:00Z",
+    "date": "2026-06-13T19:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1137,7 +381,7 @@
     "group": "H",
     "home_team": "Spain",
     "away_team": "Cape Verde",
-    "date": "2026-06-18T15:00:00Z",
+    "date": "2026-06-13T22:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1162,117 +406,9 @@
   },
   {
     "group": "H",
-    "home_team": "Spain",
-    "away_team": "Saudi Arabia",
-    "date": "2026-06-18T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5643,
-      "draw": 0.2687,
-      "away": 0.167
-    },
-    "over_under_1_5": {
-      "over": 0.6555,
-      "under": 0.3445
-    },
-    "over_under_2_5": {
-      "over": 0.383,
-      "under": 0.617
-    },
-    "btts": {
-      "yes": 0.3989,
-      "no": 0.6011
-    }
-  },
-  {
-    "group": "H",
-    "home_team": "Spain",
-    "away_team": "Uruguay",
-    "date": "2026-06-18T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3719,
-      "draw": 0.3233,
-      "away": 0.3048
-    },
-    "over_under_1_5": {
-      "over": 0.5874,
-      "under": 0.4126
-    },
-    "over_under_2_5": {
-      "over": 0.3112,
-      "under": 0.6888
-    },
-    "btts": {
-      "yes": 0.3933,
-      "no": 0.6067
-    }
-  },
-  {
-    "group": "H",
-    "home_team": "Cape Verde",
-    "away_team": "Saudi Arabia",
-    "date": "2026-06-19T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3067,
-      "draw": 0.3316,
-      "away": 0.3618
-    },
-    "over_under_1_5": {
-      "over": 0.5648,
-      "under": 0.4352
-    },
-    "over_under_2_5": {
-      "over": 0.2895,
-      "under": 0.7105
-    },
-    "btts": {
-      "yes": 0.3748,
-      "no": 0.6252
-    }
-  },
-  {
-    "group": "H",
-    "home_team": "Cape Verde",
-    "away_team": "Uruguay",
-    "date": "2026-06-19T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.1706,
-      "draw": 0.3029,
-      "away": 0.5265
-    },
-    "over_under_1_5": {
-      "over": 0.5698,
-      "under": 0.4302
-    },
-    "over_under_2_5": {
-      "over": 0.2949,
-      "under": 0.7051
-    },
-    "btts": {
-      "yes": 0.3346,
-      "no": 0.6654
-    }
-  },
-  {
-    "group": "H",
     "home_team": "Saudi Arabia",
     "away_team": "Uruguay",
-    "date": "2026-06-19T11:00:00Z",
+    "date": "2026-06-14T01:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1299,7 +435,7 @@
     "group": "I",
     "home_team": "France",
     "away_team": "Senegal",
-    "date": "2026-06-19T15:00:00Z",
+    "date": "2026-06-14T04:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1324,117 +460,9 @@
   },
   {
     "group": "I",
-    "home_team": "France",
-    "away_team": "Norway",
-    "date": "2026-06-19T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3979,
-      "draw": 0.2943,
-      "away": 0.3079
-    },
-    "over_under_1_5": {
-      "over": 0.6718,
-      "under": 0.3282
-    },
-    "over_under_2_5": {
-      "over": 0.4006,
-      "under": 0.5994
-    },
-    "btts": {
-      "yes": 0.4672,
-      "no": 0.5328
-    }
-  },
-  {
-    "group": "I",
-    "home_team": "France",
-    "away_team": "Iraq",
-    "date": "2026-06-19T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.5243,
-      "draw": 0.2894,
-      "away": 0.1863
-    },
-    "over_under_1_5": {
-      "over": 0.619,
-      "under": 0.381
-    },
-    "over_under_2_5": {
-      "over": 0.3435,
-      "under": 0.6565
-    },
-    "btts": {
-      "yes": 0.3819,
-      "no": 0.6181
-    }
-  },
-  {
-    "group": "I",
-    "home_team": "Senegal",
-    "away_team": "Norway",
-    "date": "2026-06-20T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3268,
-      "draw": 0.3063,
-      "away": 0.3669
-    },
-    "over_under_1_5": {
-      "over": 0.6392,
-      "under": 0.3608
-    },
-    "over_under_2_5": {
-      "over": 0.3643,
-      "under": 0.6357
-    },
-    "btts": {
-      "yes": 0.4394,
-      "no": 0.5606
-    }
-  },
-  {
-    "group": "I",
-    "home_team": "Senegal",
-    "away_team": "Iraq",
-    "date": "2026-06-20T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.448,
-      "draw": 0.3201,
-      "away": 0.2318
-    },
-    "over_under_1_5": {
-      "over": 0.5706,
-      "under": 0.4294
-    },
-    "over_under_2_5": {
-      "over": 0.2952,
-      "under": 0.7048
-    },
-    "btts": {
-      "yes": 0.3645,
-      "no": 0.6355
-    }
-  },
-  {
-    "group": "I",
     "home_team": "Norway",
     "away_team": "Iraq",
-    "date": "2026-06-20T11:00:00Z",
+    "date": "2026-06-14T07:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1461,7 +489,7 @@
     "group": "J",
     "home_team": "Argentina",
     "away_team": "Algeria",
-    "date": "2026-06-20T15:00:00Z",
+    "date": "2026-06-14T10:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1486,117 +514,9 @@
   },
   {
     "group": "J",
-    "home_team": "Argentina",
-    "away_team": "Austria",
-    "date": "2026-06-20T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.515,
-      "draw": 0.3036,
-      "away": 0.1815
-    },
-    "over_under_1_5": {
-      "over": 0.5779,
-      "under": 0.4221
-    },
-    "over_under_2_5": {
-      "over": 0.3025,
-      "under": 0.6975
-    },
-    "btts": {
-      "yes": 0.3472,
-      "no": 0.6528
-    }
-  },
-  {
-    "group": "J",
-    "home_team": "Argentina",
-    "away_team": "Jordan",
-    "date": "2026-06-20T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.6518,
-      "draw": 0.235,
-      "away": 0.1132
-    },
-    "over_under_1_5": {
-      "over": 0.6727,
-      "under": 0.3273
-    },
-    "over_under_2_5": {
-      "over": 0.4032,
-      "under": 0.5968
-    },
-    "btts": {
-      "yes": 0.3612,
-      "no": 0.6388
-    }
-  },
-  {
-    "group": "J",
-    "home_team": "Algeria",
-    "away_team": "Austria",
-    "date": "2026-06-21T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3328,
-      "draw": 0.3117,
-      "away": 0.3555
-    },
-    "over_under_1_5": {
-      "over": 0.6236,
-      "under": 0.3764
-    },
-    "over_under_2_5": {
-      "over": 0.3478,
-      "under": 0.6522
-    },
-    "btts": {
-      "yes": 0.4259,
-      "no": 0.5741
-    }
-  },
-  {
-    "group": "J",
-    "home_team": "Algeria",
-    "away_team": "Jordan",
-    "date": "2026-06-21T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4632,
-      "draw": 0.2842,
-      "away": 0.2526
-    },
-    "over_under_1_5": {
-      "over": 0.6806,
-      "under": 0.3194
-    },
-    "over_under_2_5": {
-      "over": 0.411,
-      "under": 0.589
-    },
-    "btts": {
-      "yes": 0.4635,
-      "no": 0.5365
-    }
-  },
-  {
-    "group": "J",
     "home_team": "Austria",
     "away_team": "Jordan",
-    "date": "2026-06-21T11:00:00Z",
+    "date": "2026-06-14T13:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1623,7 +543,7 @@
     "group": "K",
     "home_team": "Portugal",
     "away_team": "Uzbekistan",
-    "date": "2026-06-21T15:00:00Z",
+    "date": "2026-06-14T16:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1648,117 +568,9 @@
   },
   {
     "group": "K",
-    "home_team": "Portugal",
-    "away_team": "Colombia",
-    "date": "2026-06-21T19:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3055,
-      "draw": 0.3001,
-      "away": 0.3944
-    },
-    "over_under_1_5": {
-      "over": 0.654,
-      "under": 0.346
-    },
-    "over_under_2_5": {
-      "over": 0.3806,
-      "under": 0.6194
-    },
-    "btts": {
-      "yes": 0.4508,
-      "no": 0.5492
-    }
-  },
-  {
-    "group": "K",
-    "home_team": "Portugal",
-    "away_team": "DR Congo",
-    "date": "2026-06-21T23:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4941,
-      "draw": 0.303,
-      "away": 0.2029
-    },
-    "over_under_1_5": {
-      "over": 0.5967,
-      "under": 0.4033
-    },
-    "over_under_2_5": {
-      "over": 0.3208,
-      "under": 0.6792
-    },
-    "btts": {
-      "yes": 0.3731,
-      "no": 0.6269
-    }
-  },
-  {
-    "group": "K",
-    "home_team": "Uzbekistan",
-    "away_team": "Colombia",
-    "date": "2026-06-22T03:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.186,
-      "draw": 0.2882,
-      "away": 0.5258
-    },
-    "over_under_1_5": {
-      "over": 0.622,
-      "under": 0.378
-    },
-    "over_under_2_5": {
-      "over": 0.3467,
-      "under": 0.6533
-    },
-    "btts": {
-      "yes": 0.3841,
-      "no": 0.6159
-    }
-  },
-  {
-    "group": "K",
-    "home_team": "Uzbekistan",
-    "away_team": "DR Congo",
-    "date": "2026-06-22T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.342,
-      "draw": 0.3502,
-      "away": 0.3078
-    },
-    "over_under_1_5": {
-      "over": 0.5156,
-      "under": 0.4844
-    },
-    "over_under_2_5": {
-      "over": 0.2456,
-      "under": 0.7544
-    },
-    "btts": {
-      "yes": 0.3356,
-      "no": 0.6644
-    }
-  },
-  {
-    "group": "K",
     "home_team": "Colombia",
     "away_team": "DR Congo",
-    "date": "2026-06-22T11:00:00Z",
+    "date": "2026-06-14T19:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1785,7 +597,7 @@
     "group": "L",
     "home_team": "England",
     "away_team": "Croatia",
-    "date": "2026-06-22T15:00:00Z",
+    "date": "2026-06-14T22:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1810,9 +622,630 @@
   },
   {
     "group": "L",
+    "home_team": "Ghana",
+    "away_team": "Panama",
+    "date": "2026-06-15T01:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3236,
+      "draw": 0.301,
+      "away": 0.3754
+    },
+    "over_under_1_5": {
+      "over": 0.6545,
+      "under": 0.3455
+    },
+    "over_under_2_5": {
+      "over": 0.3811,
+      "under": 0.6189
+    },
+    "btts": {
+      "yes": 0.453,
+      "no": 0.547
+    }
+  },
+  {
+    "group": "A",
+    "home_team": "Mexico",
+    "away_team": "South Korea",
+    "date": "2026-06-15T04:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3798,
+      "draw": 0.312,
+      "away": 0.3082
+    },
+    "over_under_1_5": {
+      "over": 0.6198,
+      "under": 0.3802
+    },
+    "over_under_2_5": {
+      "over": 0.3438,
+      "under": 0.6562
+    },
+    "btts": {
+      "yes": 0.421,
+      "no": 0.579
+    }
+  },
+  {
+    "group": "A",
+    "home_team": "South Africa",
+    "away_team": "Czechia",
+    "date": "2026-06-15T07:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.2897,
+      "draw": 0.31,
+      "away": 0.4004
+    },
+    "over_under_1_5": {
+      "over": 0.6216,
+      "under": 0.3784
+    },
+    "over_under_2_5": {
+      "over": 0.3457,
+      "under": 0.6543
+    },
+    "btts": {
+      "yes": 0.4202,
+      "no": 0.5798
+    }
+  },
+  {
+    "group": "B",
+    "home_team": "Canada",
+    "away_team": "Qatar",
+    "date": "2026-06-15T10:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5139,
+      "draw": 0.2791,
+      "away": 0.2069
+    },
+    "over_under_1_5": {
+      "over": 0.6647,
+      "under": 0.3353
+    },
+    "over_under_2_5": {
+      "over": 0.393,
+      "under": 0.607
+    },
+    "btts": {
+      "yes": 0.4311,
+      "no": 0.5689
+    }
+  },
+  {
+    "group": "B",
+    "home_team": "Switzerland",
+    "away_team": "Bosnia and Herzegovina",
+    "date": "2026-06-15T13:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5019,
+      "draw": 0.281,
+      "away": 0.2171
+    },
+    "over_under_1_5": {
+      "over": 0.6673,
+      "under": 0.3327
+    },
+    "over_under_2_5": {
+      "over": 0.3958,
+      "under": 0.6042
+    },
+    "btts": {
+      "yes": 0.4381,
+      "no": 0.5619
+    }
+  },
+  {
+    "group": "C",
+    "home_team": "Brazil",
+    "away_team": "Haiti",
+    "date": "2026-06-15T16:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.6627,
+      "draw": 0.2136,
+      "away": 0.1238
+    },
+    "over_under_1_5": {
+      "over": 0.7507,
+      "under": 0.2493
+    },
+    "over_under_2_5": {
+      "over": 0.5001,
+      "under": 0.4999
+    },
+    "btts": {
+      "yes": 0.4435,
+      "no": 0.5565
+    }
+  },
+  {
+    "group": "C",
+    "home_team": "Morocco",
+    "away_team": "Scotland",
+    "date": "2026-06-15T19:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4257,
+      "draw": 0.3231,
+      "away": 0.2512
+    },
+    "over_under_1_5": {
+      "over": 0.5721,
+      "under": 0.4279
+    },
+    "over_under_2_5": {
+      "over": 0.2966,
+      "under": 0.7034
+    },
+    "btts": {
+      "yes": 0.3715,
+      "no": 0.6285
+    }
+  },
+  {
+    "group": "D",
+    "home_team": "United States",
+    "away_team": "Australia",
+    "date": "2026-06-15T22:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3224,
+      "draw": 0.3079,
+      "away": 0.3697
+    },
+    "over_under_1_5": {
+      "over": 0.6339,
+      "under": 0.3661
+    },
+    "over_under_2_5": {
+      "over": 0.3586,
+      "under": 0.6414
+    },
+    "btts": {
+      "yes": 0.4345,
+      "no": 0.5655
+    }
+  },
+  {
+    "group": "D",
+    "home_team": "Paraguay",
+    "away_team": "T\u00fcrkiye",
+    "date": "2026-06-16T01:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3716,
+      "draw": 0.3133,
+      "away": 0.3151
+    },
+    "over_under_1_5": {
+      "over": 0.6173,
+      "under": 0.3827
+    },
+    "over_under_2_5": {
+      "over": 0.3413,
+      "under": 0.6587
+    },
+    "btts": {
+      "yes": 0.4195,
+      "no": 0.5805
+    }
+  },
+  {
+    "group": "E",
+    "home_team": "Germany",
+    "away_team": "Ivory Coast",
+    "date": "2026-06-16T04:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4453,
+      "draw": 0.2945,
+      "away": 0.2602
+    },
+    "over_under_1_5": {
+      "over": 0.655,
+      "under": 0.345
+    },
+    "over_under_2_5": {
+      "over": 0.3817,
+      "under": 0.6183
+    },
+    "btts": {
+      "yes": 0.4429,
+      "no": 0.5571
+    }
+  },
+  {
+    "group": "E",
+    "home_team": "Cura\u00e7ao",
+    "away_team": "Ecuador",
+    "date": "2026-06-16T07:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.1264,
+      "draw": 0.262,
+      "away": 0.6116
+    },
+    "over_under_1_5": {
+      "over": 0.6217,
+      "under": 0.3783
+    },
+    "over_under_2_5": {
+      "over": 0.3471,
+      "under": 0.6529
+    },
+    "btts": {
+      "yes": 0.3366,
+      "no": 0.6634
+    }
+  },
+  {
+    "group": "F",
+    "home_team": "Netherlands",
+    "away_team": "Tunisia",
+    "date": "2026-06-16T10:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4622,
+      "draw": 0.2994,
+      "away": 0.2384
+    },
+    "over_under_1_5": {
+      "over": 0.63,
+      "under": 0.37
+    },
+    "over_under_2_5": {
+      "over": 0.3548,
+      "under": 0.6452
+    },
+    "btts": {
+      "yes": 0.4148,
+      "no": 0.5852
+    }
+  },
+  {
+    "group": "F",
+    "home_team": "Japan",
+    "away_team": "Ukraine",
+    "date": "2026-06-16T13:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4498,
+      "draw": 0.2996,
+      "away": 0.2507
+    },
+    "over_under_1_5": {
+      "over": 0.6359,
+      "under": 0.3641
+    },
+    "over_under_2_5": {
+      "over": 0.361,
+      "under": 0.639
+    },
+    "btts": {
+      "yes": 0.4237,
+      "no": 0.5763
+    }
+  },
+  {
+    "group": "G",
+    "home_team": "Belgium",
+    "away_team": "Iran",
+    "date": "2026-06-16T16:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4048,
+      "draw": 0.2982,
+      "away": 0.297
+    },
+    "over_under_1_5": {
+      "over": 0.6577,
+      "under": 0.3423
+    },
+    "over_under_2_5": {
+      "over": 0.3846,
+      "under": 0.6154
+    },
+    "btts": {
+      "yes": 0.4529,
+      "no": 0.5471
+    }
+  },
+  {
+    "group": "G",
+    "home_team": "Egypt",
+    "away_team": "New Zealand",
+    "date": "2026-06-16T19:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4214,
+      "draw": 0.32,
+      "away": 0.2587
+    },
+    "over_under_1_5": {
+      "over": 0.5836,
+      "under": 0.4164
+    },
+    "over_under_2_5": {
+      "over": 0.3076,
+      "under": 0.6924
+    },
+    "btts": {
+      "yes": 0.3825,
+      "no": 0.6175
+    }
+  },
+  {
+    "group": "H",
+    "home_team": "Spain",
+    "away_team": "Saudi Arabia",
+    "date": "2026-06-16T22:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5643,
+      "draw": 0.2687,
+      "away": 0.167
+    },
+    "over_under_1_5": {
+      "over": 0.6555,
+      "under": 0.3445
+    },
+    "over_under_2_5": {
+      "over": 0.383,
+      "under": 0.617
+    },
+    "btts": {
+      "yes": 0.3989,
+      "no": 0.6011
+    }
+  },
+  {
+    "group": "H",
+    "home_team": "Cape Verde",
+    "away_team": "Uruguay",
+    "date": "2026-06-17T01:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.1706,
+      "draw": 0.3029,
+      "away": 0.5265
+    },
+    "over_under_1_5": {
+      "over": 0.5698,
+      "under": 0.4302
+    },
+    "over_under_2_5": {
+      "over": 0.2949,
+      "under": 0.7051
+    },
+    "btts": {
+      "yes": 0.3346,
+      "no": 0.6654
+    }
+  },
+  {
+    "group": "I",
+    "home_team": "France",
+    "away_team": "Norway",
+    "date": "2026-06-17T04:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3979,
+      "draw": 0.2943,
+      "away": 0.3079
+    },
+    "over_under_1_5": {
+      "over": 0.6718,
+      "under": 0.3282
+    },
+    "over_under_2_5": {
+      "over": 0.4006,
+      "under": 0.5994
+    },
+    "btts": {
+      "yes": 0.4672,
+      "no": 0.5328
+    }
+  },
+  {
+    "group": "I",
+    "home_team": "Senegal",
+    "away_team": "Iraq",
+    "date": "2026-06-17T07:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.448,
+      "draw": 0.3201,
+      "away": 0.2318
+    },
+    "over_under_1_5": {
+      "over": 0.5706,
+      "under": 0.4294
+    },
+    "over_under_2_5": {
+      "over": 0.2952,
+      "under": 0.7048
+    },
+    "btts": {
+      "yes": 0.3645,
+      "no": 0.6355
+    }
+  },
+  {
+    "group": "J",
+    "home_team": "Argentina",
+    "away_team": "Austria",
+    "date": "2026-06-17T10:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.515,
+      "draw": 0.3036,
+      "away": 0.1815
+    },
+    "over_under_1_5": {
+      "over": 0.5779,
+      "under": 0.4221
+    },
+    "over_under_2_5": {
+      "over": 0.3025,
+      "under": 0.6975
+    },
+    "btts": {
+      "yes": 0.3472,
+      "no": 0.6528
+    }
+  },
+  {
+    "group": "J",
+    "home_team": "Algeria",
+    "away_team": "Jordan",
+    "date": "2026-06-17T13:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4632,
+      "draw": 0.2842,
+      "away": 0.2526
+    },
+    "over_under_1_5": {
+      "over": 0.6806,
+      "under": 0.3194
+    },
+    "over_under_2_5": {
+      "over": 0.411,
+      "under": 0.589
+    },
+    "btts": {
+      "yes": 0.4635,
+      "no": 0.5365
+    }
+  },
+  {
+    "group": "K",
+    "home_team": "Portugal",
+    "away_team": "Colombia",
+    "date": "2026-06-17T16:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3055,
+      "draw": 0.3001,
+      "away": 0.3944
+    },
+    "over_under_1_5": {
+      "over": 0.654,
+      "under": 0.346
+    },
+    "over_under_2_5": {
+      "over": 0.3806,
+      "under": 0.6194
+    },
+    "btts": {
+      "yes": 0.4508,
+      "no": 0.5492
+    }
+  },
+  {
+    "group": "K",
+    "home_team": "Uzbekistan",
+    "away_team": "DR Congo",
+    "date": "2026-06-17T19:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.342,
+      "draw": 0.3502,
+      "away": 0.3078
+    },
+    "over_under_1_5": {
+      "over": 0.5156,
+      "under": 0.4844
+    },
+    "over_under_2_5": {
+      "over": 0.2456,
+      "under": 0.7544
+    },
+    "btts": {
+      "yes": 0.3356,
+      "no": 0.6644
+    }
+  },
+  {
+    "group": "L",
     "home_team": "England",
     "away_team": "Ghana",
-    "date": "2026-06-22T19:00:00Z",
+    "date": "2026-06-17T22:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1837,9 +1270,630 @@
   },
   {
     "group": "L",
+    "home_team": "Croatia",
+    "away_team": "Panama",
+    "date": "2026-06-18T01:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4755,
+      "draw": 0.2829,
+      "away": 0.2416
+    },
+    "over_under_1_5": {
+      "over": 0.6783,
+      "under": 0.3217
+    },
+    "over_under_2_5": {
+      "over": 0.4083,
+      "under": 0.5917
+    },
+    "btts": {
+      "yes": 0.4578,
+      "no": 0.5422
+    }
+  },
+  {
+    "group": "A",
+    "home_team": "Mexico",
+    "away_team": "Czechia",
+    "date": "2026-06-18T04:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4208,
+      "draw": 0.3022,
+      "away": 0.2769
+    },
+    "over_under_1_5": {
+      "over": 0.6396,
+      "under": 0.3604
+    },
+    "over_under_2_5": {
+      "over": 0.3649,
+      "under": 0.6351
+    },
+    "btts": {
+      "yes": 0.4335,
+      "no": 0.5665
+    }
+  },
+  {
+    "group": "A",
+    "home_team": "South Africa",
+    "away_team": "South Korea",
+    "date": "2026-06-18T07:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.2566,
+      "draw": 0.31,
+      "away": 0.4334
+    },
+    "over_under_1_5": {
+      "over": 0.6099,
+      "under": 0.3901
+    },
+    "over_under_2_5": {
+      "over": 0.3338,
+      "under": 0.6662
+    },
+    "btts": {
+      "yes": 0.4035,
+      "no": 0.5965
+    }
+  },
+  {
+    "group": "B",
+    "home_team": "Canada",
+    "away_team": "Bosnia and Herzegovina",
+    "date": "2026-06-18T10:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4567,
+      "draw": 0.3075,
+      "away": 0.2358
+    },
+    "over_under_1_5": {
+      "over": 0.6063,
+      "under": 0.3937
+    },
+    "over_under_2_5": {
+      "over": 0.3302,
+      "under": 0.6698
+    },
+    "btts": {
+      "yes": 0.3943,
+      "no": 0.6057
+    }
+  },
+  {
+    "group": "B",
+    "home_team": "Switzerland",
+    "away_team": "Qatar",
+    "date": "2026-06-18T13:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5623,
+      "draw": 0.2511,
+      "away": 0.1866
+    },
+    "over_under_1_5": {
+      "over": 0.7253,
+      "under": 0.2747
+    },
+    "over_under_2_5": {
+      "over": 0.466,
+      "under": 0.534
+    },
+    "btts": {
+      "yes": 0.4742,
+      "no": 0.5258
+    }
+  },
+  {
+    "group": "C",
+    "home_team": "Brazil",
+    "away_team": "Scotland",
+    "date": "2026-06-18T16:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5519,
+      "draw": 0.2639,
+      "away": 0.1842
+    },
+    "over_under_1_5": {
+      "over": 0.6869,
+      "under": 0.3131
+    },
+    "over_under_2_5": {
+      "over": 0.4188,
+      "under": 0.5812
+    },
+    "btts": {
+      "yes": 0.4375,
+      "no": 0.5625
+    }
+  },
+  {
+    "group": "C",
+    "home_team": "Morocco",
+    "away_team": "Haiti",
+    "date": "2026-06-18T19:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5282,
+      "draw": 0.2861,
+      "away": 0.1857
+    },
+    "over_under_1_5": {
+      "over": 0.6272,
+      "under": 0.3728
+    },
+    "over_under_2_5": {
+      "over": 0.3521,
+      "under": 0.6479
+    },
+    "btts": {
+      "yes": 0.3881,
+      "no": 0.6119
+    }
+  },
+  {
+    "group": "D",
+    "home_team": "United States",
+    "away_team": "T\u00fcrkiye",
+    "date": "2026-06-18T22:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3392,
+      "draw": 0.289,
+      "away": 0.3718
+    },
+    "over_under_1_5": {
+      "over": 0.6924,
+      "under": 0.3076
+    },
+    "over_under_2_5": {
+      "over": 0.4247,
+      "under": 0.5753
+    },
+    "btts": {
+      "yes": 0.489,
+      "no": 0.511
+    }
+  },
+  {
+    "group": "D",
+    "home_team": "Paraguay",
+    "away_team": "Australia",
+    "date": "2026-06-19T01:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3514,
+      "draw": 0.3347,
+      "away": 0.3139
+    },
+    "over_under_1_5": {
+      "over": 0.5572,
+      "under": 0.4428
+    },
+    "over_under_2_5": {
+      "over": 0.2824,
+      "under": 0.7176
+    },
+    "btts": {
+      "yes": 0.369,
+      "no": 0.631
+    }
+  },
+  {
+    "group": "E",
+    "home_team": "Germany",
+    "away_team": "Ecuador",
+    "date": "2026-06-19T04:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3192,
+      "draw": 0.3225,
+      "away": 0.3583
+    },
+    "over_under_1_5": {
+      "over": 0.5914,
+      "under": 0.4086
+    },
+    "over_under_2_5": {
+      "over": 0.3151,
+      "under": 0.6849
+    },
+    "btts": {
+      "yes": 0.3977,
+      "no": 0.6023
+    }
+  },
+  {
+    "group": "E",
+    "home_team": "Cura\u00e7ao",
+    "away_team": "Ivory Coast",
+    "date": "2026-06-19T07:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.1973,
+      "draw": 0.2867,
+      "away": 0.516
+    },
+    "over_under_1_5": {
+      "over": 0.6358,
+      "under": 0.3642
+    },
+    "over_under_2_5": {
+      "over": 0.3612,
+      "under": 0.6388
+    },
+    "btts": {
+      "yes": 0.4016,
+      "no": 0.5984
+    }
+  },
+  {
+    "group": "F",
+    "home_team": "Netherlands",
+    "away_team": "Ukraine",
+    "date": "2026-06-19T10:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4663,
+      "draw": 0.2835,
+      "away": 0.2502
+    },
+    "over_under_1_5": {
+      "over": 0.6816,
+      "under": 0.3184
+    },
+    "over_under_2_5": {
+      "over": 0.4121,
+      "under": 0.5879
+    },
+    "btts": {
+      "yes": 0.4636,
+      "no": 0.5364
+    }
+  },
+  {
+    "group": "F",
+    "home_team": "Japan",
+    "away_team": "Tunisia",
+    "date": "2026-06-19T13:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4451,
+      "draw": 0.3165,
+      "away": 0.2384
+    },
+    "over_under_1_5": {
+      "over": 0.5837,
+      "under": 0.4163
+    },
+    "over_under_2_5": {
+      "over": 0.3078,
+      "under": 0.6922
+    },
+    "btts": {
+      "yes": 0.3769,
+      "no": 0.6231
+    }
+  },
+  {
+    "group": "G",
+    "home_team": "Belgium",
+    "away_team": "New Zealand",
+    "date": "2026-06-19T16:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5368,
+      "draw": 0.273,
+      "away": 0.1902
+    },
+    "over_under_1_5": {
+      "over": 0.6674,
+      "under": 0.3326
+    },
+    "over_under_2_5": {
+      "over": 0.3962,
+      "under": 0.6038
+    },
+    "btts": {
+      "yes": 0.4243,
+      "no": 0.5757
+    }
+  },
+  {
+    "group": "G",
+    "home_team": "Egypt",
+    "away_team": "Iran",
+    "date": "2026-06-19T19:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.304,
+      "draw": 0.3211,
+      "away": 0.3749
+    },
+    "over_under_1_5": {
+      "over": 0.5933,
+      "under": 0.4067
+    },
+    "over_under_2_5": {
+      "over": 0.317,
+      "under": 0.683
+    },
+    "btts": {
+      "yes": 0.3981,
+      "no": 0.6019
+    }
+  },
+  {
+    "group": "H",
+    "home_team": "Spain",
+    "away_team": "Uruguay",
+    "date": "2026-06-19T22:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3719,
+      "draw": 0.3233,
+      "away": 0.3048
+    },
+    "over_under_1_5": {
+      "over": 0.5874,
+      "under": 0.4126
+    },
+    "over_under_2_5": {
+      "over": 0.3112,
+      "under": 0.6888
+    },
+    "btts": {
+      "yes": 0.3933,
+      "no": 0.6067
+    }
+  },
+  {
+    "group": "H",
+    "home_team": "Cape Verde",
+    "away_team": "Saudi Arabia",
+    "date": "2026-06-20T01:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3067,
+      "draw": 0.3316,
+      "away": 0.3618
+    },
+    "over_under_1_5": {
+      "over": 0.5648,
+      "under": 0.4352
+    },
+    "over_under_2_5": {
+      "over": 0.2895,
+      "under": 0.7105
+    },
+    "btts": {
+      "yes": 0.3748,
+      "no": 0.6252
+    }
+  },
+  {
+    "group": "I",
+    "home_team": "France",
+    "away_team": "Iraq",
+    "date": "2026-06-20T04:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.5243,
+      "draw": 0.2894,
+      "away": 0.1863
+    },
+    "over_under_1_5": {
+      "over": 0.619,
+      "under": 0.381
+    },
+    "over_under_2_5": {
+      "over": 0.3435,
+      "under": 0.6565
+    },
+    "btts": {
+      "yes": 0.3819,
+      "no": 0.6181
+    }
+  },
+  {
+    "group": "I",
+    "home_team": "Senegal",
+    "away_team": "Norway",
+    "date": "2026-06-20T07:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3268,
+      "draw": 0.3063,
+      "away": 0.3669
+    },
+    "over_under_1_5": {
+      "over": 0.6392,
+      "under": 0.3608
+    },
+    "over_under_2_5": {
+      "over": 0.3643,
+      "under": 0.6357
+    },
+    "btts": {
+      "yes": 0.4394,
+      "no": 0.5606
+    }
+  },
+  {
+    "group": "J",
+    "home_team": "Argentina",
+    "away_team": "Jordan",
+    "date": "2026-06-20T10:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.6518,
+      "draw": 0.235,
+      "away": 0.1132
+    },
+    "over_under_1_5": {
+      "over": 0.6727,
+      "under": 0.3273
+    },
+    "over_under_2_5": {
+      "over": 0.4032,
+      "under": 0.5968
+    },
+    "btts": {
+      "yes": 0.3612,
+      "no": 0.6388
+    }
+  },
+  {
+    "group": "J",
+    "home_team": "Algeria",
+    "away_team": "Austria",
+    "date": "2026-06-20T13:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.3328,
+      "draw": 0.3117,
+      "away": 0.3555
+    },
+    "over_under_1_5": {
+      "over": 0.6236,
+      "under": 0.3764
+    },
+    "over_under_2_5": {
+      "over": 0.3478,
+      "under": 0.6522
+    },
+    "btts": {
+      "yes": 0.4259,
+      "no": 0.5741
+    }
+  },
+  {
+    "group": "K",
+    "home_team": "Portugal",
+    "away_team": "DR Congo",
+    "date": "2026-06-20T16:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.4941,
+      "draw": 0.303,
+      "away": 0.2029
+    },
+    "over_under_1_5": {
+      "over": 0.5967,
+      "under": 0.4033
+    },
+    "over_under_2_5": {
+      "over": 0.3208,
+      "under": 0.6792
+    },
+    "btts": {
+      "yes": 0.3731,
+      "no": 0.6269
+    }
+  },
+  {
+    "group": "K",
+    "home_team": "Uzbekistan",
+    "away_team": "Colombia",
+    "date": "2026-06-20T19:00:00+00:00Z",
+    "status": "Not Started",
+    "home_goals": null,
+    "away_goals": null,
+    "fixture_id": null,
+    "1X2": {
+      "home": 0.186,
+      "draw": 0.2882,
+      "away": 0.5258
+    },
+    "over_under_1_5": {
+      "over": 0.622,
+      "under": 0.378
+    },
+    "over_under_2_5": {
+      "over": 0.3467,
+      "under": 0.6533
+    },
+    "btts": {
+      "yes": 0.3841,
+      "no": 0.6159
+    }
+  },
+  {
+    "group": "L",
     "home_team": "England",
     "away_team": "Panama",
-    "date": "2026-06-22T23:00:00Z",
+    "date": "2026-06-20T22:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1866,7 +1920,7 @@
     "group": "L",
     "home_team": "Croatia",
     "away_team": "Ghana",
-    "date": "2026-06-23T03:00:00Z",
+    "date": "2026-06-21T01:00:00+00:00Z",
     "status": "Not Started",
     "home_goals": null,
     "away_goals": null,
@@ -1887,60 +1941,6 @@
     "btts": {
       "yes": 0.4137,
       "no": 0.5863
-    }
-  },
-  {
-    "group": "L",
-    "home_team": "Croatia",
-    "away_team": "Panama",
-    "date": "2026-06-23T07:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.4755,
-      "draw": 0.2829,
-      "away": 0.2416
-    },
-    "over_under_1_5": {
-      "over": 0.6783,
-      "under": 0.3217
-    },
-    "over_under_2_5": {
-      "over": 0.4083,
-      "under": 0.5917
-    },
-    "btts": {
-      "yes": 0.4578,
-      "no": 0.5422
-    }
-  },
-  {
-    "group": "L",
-    "home_team": "Ghana",
-    "away_team": "Panama",
-    "date": "2026-06-23T11:00:00Z",
-    "status": "Not Started",
-    "home_goals": null,
-    "away_goals": null,
-    "fixture_id": null,
-    "1X2": {
-      "home": 0.3236,
-      "draw": 0.301,
-      "away": 0.3754
-    },
-    "over_under_1_5": {
-      "over": 0.6545,
-      "under": 0.3455
-    },
-    "over_under_2_5": {
-      "over": 0.3811,
-      "under": 0.6189
-    },
-    "btts": {
-      "yes": 0.453,
-      "no": 0.547
     }
   }
 ]

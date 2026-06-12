@@ -1,60 +1,912 @@
 [
   {
+    "match": "Mexico - South Africa",
+    "player_props": {
+      "Mexico": {
+        "anytime_goalscorer": {
+          "Santiago Giménez": 0.3767,
+          "Edson Álvarez": 0.2758
+        },
+        "over_under_shots_on_target_1.5": {
+          "Santiago Giménez": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Edson Álvarez": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Santiago Giménez": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Edson Álvarez": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "South Africa": {
+        "anytime_goalscorer": {
+          "Percy Tau": 0.1681,
+          "Lyle Foster": 0.1681
+        },
+        "over_under_shots_on_target_1.5": {
+          "Percy Tau": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Lyle Foster": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Percy Tau": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Lyle Foster": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "South Korea - Czechia",
+    "player_props": {
+      "South Korea": {
+        "anytime_goalscorer": {
+          "Son Heung-min": 0.2667,
+          "Lee Kang-in": 0.3689
+        },
+        "over_under_shots_on_target_1.5": {
+          "Son Heung-min": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Lee Kang-in": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Son Heung-min": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Lee Kang-in": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Czechia": {
+        "anytime_goalscorer": {
+          "Patrik Schick": 0.2339,
+          "Tomáš Souček": 0.2339
+        },
+        "over_under_shots_on_target_1.5": {
+          "Patrik Schick": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Tomáš Souček": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Patrik Schick": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Tomáš Souček": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Canada - Switzerland",
+    "player_props": {
+      "Canada": {
+        "anytime_goalscorer": {
+          "Alphonso Davies": 0.2283,
+          "Jonathan David": 0.3358
+        },
+        "over_under_shots_on_target_1.5": {
+          "Alphonso Davies": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Jonathan David": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Alphonso Davies": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Jonathan David": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Switzerland": {
+        "anytime_goalscorer": {
+          "Granit Xhaka": 0.3558,
+          "Breel Embolo": 0.2516
+        },
+        "over_under_shots_on_target_1.5": {
+          "Granit Xhaka": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Breel Embolo": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Granit Xhaka": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Breel Embolo": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Qatar - Bosnia and Herzegovina",
+    "player_props": {
+      "Qatar": {
+        "anytime_goalscorer": {
+          "Akram Afif": 0.2347,
+          "Almoez Ali": 0.3413
+        },
+        "over_under_shots_on_target_1.5": {
+          "Akram Afif": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Almoez Ali": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Akram Afif": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Almoez Ali": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Bosnia and Herzegovina": {
+        "anytime_goalscorer": {
+          "Edin Džeko": 0.372,
+          "Miralem Pjanić": 0.2704
+        },
+        "over_under_shots_on_target_1.5": {
+          "Edin Džeko": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Miralem Pjanić": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Edin Džeko": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Miralem Pjanić": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
     "match": "Brazil - Morocco",
     "player_props": {
-      "anytime_goalscorer": {
-        "Vinícius Júnior": 0.3904
-      },
-      "over_under_shots_on_target_1.5": {
-        "Vinícius Júnior": {
-          "over": 0.2642,
-          "under": 0.7358
+      "Brazil": {
+        "anytime_goalscorer": {
+          "Vinícius Júnior": 0.2573,
+          "Rodrygo": 0.3607
+        },
+        "over_under_shots_on_target_1.5": {
+          "Vinícius Júnior": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Rodrygo": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Vinícius Júnior": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Rodrygo": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Vinícius Júnior": {
-          "over": 0.3297,
-          "under": 0.6703
+      "Morocco": {
+        "anytime_goalscorer": {
+          "Hakim Ziyech": 0.1818,
+          "Achraf Hakimi": 0.2958
+        },
+        "over_under_shots_on_target_1.5": {
+          "Hakim Ziyech": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Achraf Hakimi": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Hakim Ziyech": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Achraf Hakimi": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
         }
       }
     }
   },
   {
-    "match": "Brazil - Haiti",
+    "match": "Haiti - Scotland",
     "player_props": {
-      "anytime_goalscorer": {
-        "Vinícius Júnior": 0.3904
-      },
-      "over_under_shots_on_target_1.5": {
-        "Vinícius Júnior": {
-          "over": 0.2642,
-          "under": 0.7358
+      "Haiti": {
+        "anytime_goalscorer": {
+          "Frantzdy Pierrot": 0.2193,
+          "Duckens Nazon": 0.3281
+        },
+        "over_under_shots_on_target_1.5": {
+          "Frantzdy Pierrot": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Duckens Nazon": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Frantzdy Pierrot": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Duckens Nazon": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Vinícius Júnior": {
-          "over": 0.3297,
-          "under": 0.6703
+      "Scotland": {
+        "anytime_goalscorer": {
+          "Scott McTominay": 0.3993,
+          "Andrew Robertson": 0.3993
+        },
+        "over_under_shots_on_target_1.5": {
+          "Scott McTominay": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Andrew Robertson": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Scott McTominay": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Andrew Robertson": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
         }
       }
     }
   },
   {
-    "match": "Brazil - Scotland",
+    "match": "United States - Paraguay",
     "player_props": {
-      "anytime_goalscorer": {
-        "Vinícius Júnior": 0.3904
-      },
-      "over_under_shots_on_target_1.5": {
-        "Vinícius Júnior": {
-          "over": 0.2642,
-          "under": 0.7358
+      "United States": {
+        "anytime_goalscorer": {
+          "Christian Pulisic": 0.208,
+          "Folarin Balogun": 0.3183
+        },
+        "over_under_shots_on_target_1.5": {
+          "Christian Pulisic": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Folarin Balogun": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Christian Pulisic": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Folarin Balogun": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Vinícius Júnior": {
-          "over": 0.3297,
-          "under": 0.6703
+      "Paraguay": {
+        "anytime_goalscorer": {
+          "Miguel Almirón": 0.2459,
+          "Julio Enciso": 0.2459
+        },
+        "over_under_shots_on_target_1.5": {
+          "Miguel Almirón": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Julio Enciso": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Miguel Almirón": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Julio Enciso": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Australia - Türkiye",
+    "player_props": {
+      "Australia": {
+        "anytime_goalscorer": {
+          "Mitchell Duke": 0.25,
+          "Harry Souttar": 0.3545
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mitchell Duke": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Harry Souttar": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mitchell Duke": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Harry Souttar": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Türkiye": {
+        "anytime_goalscorer": {
+          "Hakan Çalhanoğlu": 0.3479,
+          "Arda Güler": 0.3479
+        },
+        "over_under_shots_on_target_1.5": {
+          "Hakan Çalhanoğlu": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Arda Güler": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Hakan Çalhanoğlu": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Arda Güler": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Germany - Curaçao",
+    "player_props": {
+      "Germany": {
+        "anytime_goalscorer": {
+          "Jamal Musiala": 0.495,
+          "Leroy Sané": 0.495
+        },
+        "over_under_shots_on_target_1.5": {
+          "Jamal Musiala": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Leroy Sané": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Jamal Musiala": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Leroy Sané": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Curaçao": {
+        "anytime_goalscorer": {
+          "Leandro Bacuna": 0.2796,
+          "Jürgen Locadia": 0.163
+        },
+        "over_under_shots_on_target_1.5": {
+          "Leandro Bacuna": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Jürgen Locadia": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Leandro Bacuna": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Jürgen Locadia": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Ivory Coast - Ecuador",
+    "player_props": {
+      "Ivory Coast": {
+        "anytime_goalscorer": {
+          "Sébastien Haller": 0.2665,
+          "Nicolas Pépé": 0.2665
+        },
+        "over_under_shots_on_target_1.5": {
+          "Sébastien Haller": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Nicolas Pépé": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Sébastien Haller": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Nicolas Pépé": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Ecuador": {
+        "anytime_goalscorer": {
+          "Enner Valencia": 0.2326,
+          "Moisés Caicedo": 0.3395
+        },
+        "over_under_shots_on_target_1.5": {
+          "Enner Valencia": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Moisés Caicedo": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Enner Valencia": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Moisés Caicedo": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Netherlands - Japan",
+    "player_props": {
+      "Netherlands": {
+        "anytime_goalscorer": {
+          "Cody Gakpo": 0.2445,
+          "Xavi Simons": 0.3497
+        },
+        "over_under_shots_on_target_1.5": {
+          "Cody Gakpo": {
+            "over": 0.4751,
+            "under": 0.5249
+          },
+          "Xavi Simons": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Cody Gakpo": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Xavi Simons": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Japan": {
+        "anytime_goalscorer": {
+          "Kaoru Mitoma": 0.2413,
+          "Takefusa Kubo": 0.3469
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kaoru Mitoma": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Takefusa Kubo": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kaoru Mitoma": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Takefusa Kubo": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Tunisia - Ukraine",
+    "player_props": {
+      "Tunisia": {
+        "anytime_goalscorer": {
+          "Youssef Msakni": 0.223,
+          "Ellyes Skhiri": 0.3312
+        },
+        "over_under_shots_on_target_1.5": {
+          "Youssef Msakni": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ellyes Skhiri": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Youssef Msakni": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Ellyes Skhiri": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Ukraine": {
+        "anytime_goalscorer": {
+          "Artem Dovbyk": 0.2319,
+          "Mykhailo Mudryk": 0.2319
+        },
+        "over_under_shots_on_target_1.5": {
+          "Artem Dovbyk": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Mykhailo Mudryk": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Artem Dovbyk": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Mykhailo Mudryk": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Belgium - Egypt",
+    "player_props": {
+      "Belgium": {
+        "anytime_goalscorer": {
+          "Kevin De Bruyne": 0.2678,
+          "Romelu Lukaku": 0.3698
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kevin De Bruyne": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Romelu Lukaku": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kevin De Bruyne": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Romelu Lukaku": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Egypt": {
+        "anytime_goalscorer": {
+          "Mohamed Salah": 0.3032,
+          "Trezeguet": 0.1904
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mohamed Salah": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Trezeguet": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mohamed Salah": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Trezeguet": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Iran - New Zealand",
+    "player_props": {
+      "Iran": {
+        "anytime_goalscorer": {
+          "Mehdi Taremi": 0.395,
+          "Sardar Azmoun": 0.2971
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mehdi Taremi": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Sardar Azmoun": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mehdi Taremi": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Sardar Azmoun": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "New Zealand": {
+        "anytime_goalscorer": {
+          "Chris Wood": 0.3,
+          "Liberato Cacace": 0.1867
+        },
+        "over_under_shots_on_target_1.5": {
+          "Chris Wood": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Liberato Cacace": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Chris Wood": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Liberato Cacace": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Spain - Cape Verde",
+    "player_props": {
+      "Spain": {
+        "anytime_goalscorer": {
+          "Lamine Yamal": 0.4474,
+          "Álvaro Morata": 0.358
+        },
+        "over_under_shots_on_target_1.5": {
+          "Lamine Yamal": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Álvaro Morata": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Lamine Yamal": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Álvaro Morata": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Cape Verde": {
+        "anytime_goalscorer": {
+          "Ryan Mendes": 0.1454,
+          "Garry Rodrigues": 0.1454
+        },
+        "over_under_shots_on_target_1.5": {
+          "Ryan Mendes": {
+            "over": 0.4751,
+            "under": 0.5249
+          },
+          "Garry Rodrigues": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Ryan Mendes": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Garry Rodrigues": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Saudi Arabia - Uruguay",
+    "player_props": {
+      "Saudi Arabia": {
+        "anytime_goalscorer": {
+          "Salem Al-Dawsari": 0.2553,
+          "Saleh Al-Shehri": 0.1348
+        },
+        "over_under_shots_on_target_1.5": {
+          "Salem Al-Dawsari": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Saleh Al-Shehri": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Salem Al-Dawsari": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Saleh Al-Shehri": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Uruguay": {
+        "anytime_goalscorer": {
+          "Darwin Núñez": 0.3723,
+          "Federico Valverde": 0.3723
+        },
+        "over_under_shots_on_target_1.5": {
+          "Darwin Núñez": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Federico Valverde": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Darwin Núñez": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Federico Valverde": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
         }
       }
     }
@@ -62,59 +914,113 @@
   {
     "match": "France - Senegal",
     "player_props": {
-      "anytime_goalscorer": {
-        "Kylian Mbappé": 0.4753
-      },
-      "over_under_shots_on_target_1.5": {
-        "Kylian Mbappé": {
-          "over": 0.6454,
-          "under": 0.3546
+      "France": {
+        "anytime_goalscorer": {
+          "Kylian Mbappé": 0.3664,
+          "Antoine Griezmann": 0.2639
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kylian Mbappé": {
+            "over": 0.6454,
+            "under": 0.3546
+          },
+          "Antoine Griezmann": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kylian Mbappé": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Antoine Griezmann": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Kylian Mbappé": {
-          "over": 0.3297,
-          "under": 0.6703
+      "Senegal": {
+        "anytime_goalscorer": {
+          "Sadio Mané": 0.3185,
+          "Ismaïla Sarr": 0.2082
+        },
+        "over_under_shots_on_target_1.5": {
+          "Sadio Mané": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ismaïla Sarr": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Sadio Mané": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Ismaïla Sarr": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
         }
       }
     }
   },
   {
-    "match": "France - Norway",
+    "match": "Norway - Iraq",
     "player_props": {
-      "anytime_goalscorer": {
-        "Kylian Mbappé": 0.4753
-      },
-      "over_under_shots_on_target_1.5": {
-        "Kylian Mbappé": {
-          "over": 0.6454,
-          "under": 0.3546
+      "Norway": {
+        "anytime_goalscorer": {
+          "Erling Haaland": 0.2931,
+          "Martin Ødegaard": 0.2931
+        },
+        "over_under_shots_on_target_1.5": {
+          "Erling Haaland": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Martin Ødegaard": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Erling Haaland": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Martin Ødegaard": {
+            "over": 0.0,
+            "under": 1.0
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Kylian Mbappé": {
-          "over": 0.3297,
-          "under": 0.6703
-        }
-      }
-    }
-  },
-  {
-    "match": "France - Iraq",
-    "player_props": {
-      "anytime_goalscorer": {
-        "Kylian Mbappé": 0.4753
-      },
-      "over_under_shots_on_target_1.5": {
-        "Kylian Mbappé": {
-          "over": 0.6454,
-          "under": 0.3546
-        }
-      },
-      "over_under_assists_0.5": {
-        "Kylian Mbappé": {
-          "over": 0.3297,
-          "under": 0.6703
+      "Iraq": {
+        "anytime_goalscorer": {
+          "Aymen Hussein": 0.1734,
+          "Ali Jasim": 0.2885
+        },
+        "over_under_shots_on_target_1.5": {
+          "Aymen Hussein": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ali Jasim": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Aymen Hussein": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Ali Jasim": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
         }
       }
     }
@@ -122,28 +1028,1367 @@
   {
     "match": "Argentina - Algeria",
     "player_props": {
-      "anytime_goalscorer": {
-        "Lionel Messi": 0.4753,
-        "Ángel Correa": 0.3904
-      },
-      "over_under_shots_on_target_1.5": {
-        "Lionel Messi": {
-          "over": 0.7689,
-          "under": 0.2311
+      "Argentina": {
+        "anytime_goalscorer": {
+          "Lionel Messi": 0.3978,
+          "Julián Álvarez": 0.3004
         },
-        "Ángel Correa": {
-          "over": 0.0175,
-          "under": 0.9825
+        "over_under_shots_on_target_1.5": {
+          "Lionel Messi": {
+            "over": 0.7689,
+            "under": 0.2311
+          },
+          "Julián Álvarez": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Lionel Messi": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Julián Álvarez": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Lionel Messi": {
-          "over": 0.4512,
-          "under": 0.5488
+      "Algeria": {
+        "anytime_goalscorer": {
+          "Riyad Mahrez": 0.2578,
+          "Islam Slimani": 0.1377
         },
-        "Ángel Correa": {
-          "over": 0.0,
-          "under": 1.0
+        "over_under_shots_on_target_1.5": {
+          "Riyad Mahrez": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Islam Slimani": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Riyad Mahrez": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Islam Slimani": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Austria - Jordan",
+    "player_props": {
+      "Austria": {
+        "anytime_goalscorer": {
+          "Marcel Sabitzer": 0.3076,
+          "Christoph Baumgartner": 0.3076
+        },
+        "over_under_shots_on_target_1.5": {
+          "Marcel Sabitzer": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Christoph Baumgartner": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Marcel Sabitzer": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Christoph Baumgartner": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Jordan": {
+        "anytime_goalscorer": {
+          "Musa Al-Taamari": 0.3138,
+          "Yazan Al-Naimat": 0.3138
+        },
+        "over_under_shots_on_target_1.5": {
+          "Musa Al-Taamari": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Yazan Al-Naimat": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Musa Al-Taamari": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Yazan Al-Naimat": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Portugal - Uzbekistan",
+    "player_props": {
+      "Portugal": {
+        "anytime_goalscorer": {
+          "Cristiano Ronaldo": 0.3904,
+          "Bruno Fernandes": 0.3904
+        },
+        "over_under_shots_on_target_1.5": {
+          "Cristiano Ronaldo": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Bruno Fernandes": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Cristiano Ronaldo": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Bruno Fernandes": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Uzbekistan": {
+        "anytime_goalscorer": {
+          "Eldor Shomurodov": 0.1723,
+          "Jaloliddin Masharipov": 0.2876
+        },
+        "over_under_shots_on_target_1.5": {
+          "Eldor Shomurodov": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Jaloliddin Masharipov": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Eldor Shomurodov": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Jaloliddin Masharipov": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Colombia - DR Congo",
+    "player_props": {
+      "Colombia": {
+        "anytime_goalscorer": {
+          "Luis Díaz": 0.4007,
+          "James Rodríguez": 0.4007
+        },
+        "over_under_shots_on_target_1.5": {
+          "Luis Díaz": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "James Rodríguez": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Luis Díaz": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "James Rodríguez": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "DR Congo": {
+        "anytime_goalscorer": {
+          "Yoane Wissa": 0.2582,
+          "Chancel Mbemba": 0.1381
+        },
+        "over_under_shots_on_target_1.5": {
+          "Yoane Wissa": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Chancel Mbemba": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Yoane Wissa": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Chancel Mbemba": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "England - Croatia",
+    "player_props": {
+      "England": {
+        "anytime_goalscorer": {
+          "Harry Kane": 0.3608,
+          "Jude Bellingham": 0.3608
+        },
+        "over_under_shots_on_target_1.5": {
+          "Harry Kane": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Jude Bellingham": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Harry Kane": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Jude Bellingham": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Croatia": {
+        "anytime_goalscorer": {
+          "Luka Modrić": 0.204,
+          "Andrej Kramarić": 0.3149
+        },
+        "over_under_shots_on_target_1.5": {
+          "Luka Modrić": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Andrej Kramarić": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Luka Modrić": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Andrej Kramarić": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Ghana - Panama",
+    "player_props": {
+      "Ghana": {
+        "anytime_goalscorer": {
+          "Mohammed Kudus": 0.344,
+          "Inaki Williams": 0.344
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mohammed Kudus": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Inaki Williams": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mohammed Kudus": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Inaki Williams": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Panama": {
+        "anytime_goalscorer": {
+          "Adalberto Carrasquilla": 0.2611,
+          "José Fajardo": 0.2611
+        },
+        "over_under_shots_on_target_1.5": {
+          "Adalberto Carrasquilla": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "José Fajardo": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Adalberto Carrasquilla": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "José Fajardo": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Mexico - South Korea",
+    "player_props": {
+      "Mexico": {
+        "anytime_goalscorer": {
+          "Santiago Giménez": 0.3542,
+          "Edson Álvarez": 0.2497
+        },
+        "over_under_shots_on_target_1.5": {
+          "Santiago Giménez": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Edson Álvarez": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Santiago Giménez": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Edson Álvarez": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "South Korea": {
+        "anytime_goalscorer": {
+          "Son Heung-min": 0.2177,
+          "Lee Kang-in": 0.3267
+        },
+        "over_under_shots_on_target_1.5": {
+          "Son Heung-min": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Lee Kang-in": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Son Heung-min": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Lee Kang-in": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "South Africa - Czechia",
+    "player_props": {
+      "South Africa": {
+        "anytime_goalscorer": {
+          "Percy Tau": 0.2095,
+          "Lyle Foster": 0.2095
+        },
+        "over_under_shots_on_target_1.5": {
+          "Percy Tau": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Lyle Foster": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Percy Tau": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Lyle Foster": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Czechia": {
+        "anytime_goalscorer": {
+          "Patrik Schick": 0.259,
+          "Tomáš Souček": 0.259
+        },
+        "over_under_shots_on_target_1.5": {
+          "Patrik Schick": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Tomáš Souček": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Patrik Schick": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Tomáš Souček": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Canada - Qatar",
+    "player_props": {
+      "Canada": {
+        "anytime_goalscorer": {
+          "Alphonso Davies": 0.3216,
+          "Jonathan David": 0.4161
+        },
+        "over_under_shots_on_target_1.5": {
+          "Alphonso Davies": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Jonathan David": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Alphonso Davies": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Jonathan David": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Qatar": {
+        "anytime_goalscorer": {
+          "Akram Afif": 0.1809,
+          "Almoez Ali": 0.295
+        },
+        "over_under_shots_on_target_1.5": {
+          "Akram Afif": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Almoez Ali": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Akram Afif": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Almoez Ali": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Switzerland - Bosnia and Herzegovina",
+    "player_props": {
+      "Switzerland": {
+        "anytime_goalscorer": {
+          "Granit Xhaka": 0.413,
+          "Breel Embolo": 0.318
+        },
+        "over_under_shots_on_target_1.5": {
+          "Granit Xhaka": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Breel Embolo": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Granit Xhaka": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Breel Embolo": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Bosnia and Herzegovina": {
+        "anytime_goalscorer": {
+          "Edin Džeko": 0.301,
+          "Miralem Pjanić": 0.1878
+        },
+        "over_under_shots_on_target_1.5": {
+          "Edin Džeko": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Miralem Pjanić": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Edin Džeko": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Miralem Pjanić": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Brazil - Haiti",
+    "player_props": {
+      "Brazil": {
+        "anytime_goalscorer": {
+          "Vinícius Júnior": 0.4186,
+          "Rodrygo": 0.4996
+        },
+        "over_under_shots_on_target_1.5": {
+          "Vinícius Júnior": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Rodrygo": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Vinícius Júnior": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Rodrygo": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Haiti": {
+        "anytime_goalscorer": {
+          "Frantzdy Pierrot": 0.1563,
+          "Duckens Nazon": 0.2738
+        },
+        "over_under_shots_on_target_1.5": {
+          "Frantzdy Pierrot": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Duckens Nazon": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Frantzdy Pierrot": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Duckens Nazon": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Morocco - Scotland",
+    "player_props": {
+      "Morocco": {
+        "anytime_goalscorer": {
+          "Hakim Ziyech": 0.2513,
+          "Achraf Hakimi": 0.3556
+        },
+        "over_under_shots_on_target_1.5": {
+          "Hakim Ziyech": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Achraf Hakimi": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Hakim Ziyech": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Achraf Hakimi": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Scotland": {
+        "anytime_goalscorer": {
+          "Scott McTominay": 0.2889,
+          "Andrew Robertson": 0.2889
+        },
+        "over_under_shots_on_target_1.5": {
+          "Scott McTominay": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Andrew Robertson": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Scott McTominay": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Andrew Robertson": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "United States - Australia",
+    "player_props": {
+      "United States": {
+        "anytime_goalscorer": {
+          "Christian Pulisic": 0.2295,
+          "Folarin Balogun": 0.3368
+        },
+        "over_under_shots_on_target_1.5": {
+          "Christian Pulisic": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Folarin Balogun": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Christian Pulisic": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Folarin Balogun": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Australia": {
+        "anytime_goalscorer": {
+          "Mitchell Duke": 0.2506,
+          "Harry Souttar": 0.355
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mitchell Duke": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Harry Souttar": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mitchell Duke": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Harry Souttar": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Paraguay - Türkiye",
+    "player_props": {
+      "Paraguay": {
+        "anytime_goalscorer": {
+          "Miguel Almirón": 0.2452,
+          "Julio Enciso": 0.2452
+        },
+        "over_under_shots_on_target_1.5": {
+          "Miguel Almirón": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Julio Enciso": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Miguel Almirón": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Julio Enciso": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Türkiye": {
+        "anytime_goalscorer": {
+          "Hakan Çalhanoğlu": 0.3287,
+          "Arda Güler": 0.3287
+        },
+        "over_under_shots_on_target_1.5": {
+          "Hakan Çalhanoğlu": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Arda Güler": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Hakan Çalhanoğlu": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Arda Güler": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Germany - Ivory Coast",
+    "player_props": {
+      "Germany": {
+        "anytime_goalscorer": {
+          "Jamal Musiala": 0.3893,
+          "Leroy Sané": 0.3893
+        },
+        "over_under_shots_on_target_1.5": {
+          "Jamal Musiala": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Leroy Sané": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Jamal Musiala": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Leroy Sané": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Ivory Coast": {
+        "anytime_goalscorer": {
+          "Sébastien Haller": 0.3174,
+          "Nicolas Pépé": 0.3174
+        },
+        "over_under_shots_on_target_1.5": {
+          "Sébastien Haller": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Nicolas Pépé": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Sébastien Haller": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Nicolas Pépé": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Curaçao - Ecuador",
+    "player_props": {
+      "Curaçao": {
+        "anytime_goalscorer": {
+          "Leandro Bacuna": 0.2366,
+          "Jürgen Locadia": 0.1131
+        },
+        "over_under_shots_on_target_1.5": {
+          "Leandro Bacuna": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Jürgen Locadia": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Leandro Bacuna": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Jürgen Locadia": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Ecuador": {
+        "anytime_goalscorer": {
+          "Enner Valencia": 0.3406,
+          "Moisés Caicedo": 0.4324
+        },
+        "over_under_shots_on_target_1.5": {
+          "Enner Valencia": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Moisés Caicedo": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Enner Valencia": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Moisés Caicedo": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Netherlands - Tunisia",
+    "player_props": {
+      "Netherlands": {
+        "anytime_goalscorer": {
+          "Cody Gakpo": 0.2873,
+          "Xavi Simons": 0.3866
+        },
+        "over_under_shots_on_target_1.5": {
+          "Cody Gakpo": {
+            "over": 0.4751,
+            "under": 0.5249
+          },
+          "Xavi Simons": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Cody Gakpo": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Xavi Simons": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Tunisia": {
+        "anytime_goalscorer": {
+          "Youssef Msakni": 0.1863,
+          "Ellyes Skhiri": 0.2997
+        },
+        "over_under_shots_on_target_1.5": {
+          "Youssef Msakni": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ellyes Skhiri": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Youssef Msakni": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Ellyes Skhiri": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Japan - Ukraine",
+    "player_props": {
+      "Japan": {
+        "anytime_goalscorer": {
+          "Kaoru Mitoma": 0.2847,
+          "Takefusa Kubo": 0.3843
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kaoru Mitoma": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Takefusa Kubo": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kaoru Mitoma": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Takefusa Kubo": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Ukraine": {
+        "anytime_goalscorer": {
+          "Artem Dovbyk": 0.195,
+          "Mykhailo Mudryk": 0.195
+        },
+        "over_under_shots_on_target_1.5": {
+          "Artem Dovbyk": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Mykhailo Mudryk": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Artem Dovbyk": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Mykhailo Mudryk": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Belgium - Iran",
+    "player_props": {
+      "Belgium": {
+        "anytime_goalscorer": {
+          "Kevin De Bruyne": 0.2749,
+          "Romelu Lukaku": 0.3759
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kevin De Bruyne": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Romelu Lukaku": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kevin De Bruyne": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Romelu Lukaku": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Iran": {
+        "anytime_goalscorer": {
+          "Mehdi Taremi": 0.3342,
+          "Sardar Azmoun": 0.2264
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mehdi Taremi": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Sardar Azmoun": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mehdi Taremi": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Sardar Azmoun": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Egypt - New Zealand",
+    "player_props": {
+      "Egypt": {
+        "anytime_goalscorer": {
+          "Mohamed Salah": 0.3576,
+          "Trezeguet": 0.2536
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mohamed Salah": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Trezeguet": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mohamed Salah": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Trezeguet": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "New Zealand": {
+        "anytime_goalscorer": {
+          "Chris Wood": 0.2953,
+          "Liberato Cacace": 0.1813
+        },
+        "over_under_shots_on_target_1.5": {
+          "Chris Wood": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Liberato Cacace": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Chris Wood": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Liberato Cacace": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Spain - Saudi Arabia",
+    "player_props": {
+      "Spain": {
+        "anytime_goalscorer": {
+          "Lamine Yamal": 0.4293,
+          "Álvaro Morata": 0.3369
+        },
+        "over_under_shots_on_target_1.5": {
+          "Lamine Yamal": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Álvaro Morata": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Lamine Yamal": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Álvaro Morata": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Saudi Arabia": {
+        "anytime_goalscorer": {
+          "Salem Al-Dawsari": 0.2706,
+          "Saleh Al-Shehri": 0.1526
+        },
+        "over_under_shots_on_target_1.5": {
+          "Salem Al-Dawsari": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Saleh Al-Shehri": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Salem Al-Dawsari": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Saleh Al-Shehri": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Cape Verde - Uruguay",
+    "player_props": {
+      "Cape Verde": {
+        "anytime_goalscorer": {
+          "Ryan Mendes": 0.1282,
+          "Garry Rodrigues": 0.1282
+        },
+        "over_under_shots_on_target_1.5": {
+          "Ryan Mendes": {
+            "over": 0.4751,
+            "under": 0.5249
+          },
+          "Garry Rodrigues": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Ryan Mendes": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Garry Rodrigues": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Uruguay": {
+        "anytime_goalscorer": {
+          "Darwin Núñez": 0.3882,
+          "Federico Valverde": 0.3882
+        },
+        "over_under_shots_on_target_1.5": {
+          "Darwin Núñez": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Federico Valverde": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Darwin Núñez": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Federico Valverde": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "France - Norway",
+    "player_props": {
+      "France": {
+        "anytime_goalscorer": {
+          "Kylian Mbappé": 0.3784,
+          "Antoine Griezmann": 0.2778
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kylian Mbappé": {
+            "over": 0.6454,
+            "under": 0.3546
+          },
+          "Antoine Griezmann": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kylian Mbappé": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Antoine Griezmann": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Norway": {
+        "anytime_goalscorer": {
+          "Erling Haaland": 0.2373,
+          "Martin Ødegaard": 0.2373
+        },
+        "over_under_shots_on_target_1.5": {
+          "Erling Haaland": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Martin Ødegaard": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Erling Haaland": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Martin Ødegaard": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Senegal - Iraq",
+    "player_props": {
+      "Senegal": {
+        "anytime_goalscorer": {
+          "Sadio Mané": 0.3627,
+          "Ismaïla Sarr": 0.2596
+        },
+        "over_under_shots_on_target_1.5": {
+          "Sadio Mané": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ismaïla Sarr": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Sadio Mané": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Ismaïla Sarr": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Iraq": {
+        "anytime_goalscorer": {
+          "Aymen Hussein": 0.1633,
+          "Ali Jasim": 0.2799
+        },
+        "over_under_shots_on_target_1.5": {
+          "Aymen Hussein": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ali Jasim": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Aymen Hussein": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Ali Jasim": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
         }
       }
     }
@@ -151,28 +2396,1367 @@
   {
     "match": "Argentina - Austria",
     "player_props": {
-      "anytime_goalscorer": {
-        "Lionel Messi": 0.4753,
-        "Ángel Correa": 0.3904
-      },
-      "over_under_shots_on_target_1.5": {
-        "Lionel Messi": {
-          "over": 0.7689,
-          "under": 0.2311
+      "Argentina": {
+        "anytime_goalscorer": {
+          "Lionel Messi": 0.387,
+          "Julián Álvarez": 0.2878
         },
-        "Ángel Correa": {
-          "over": 0.0175,
-          "under": 0.9825
+        "over_under_shots_on_target_1.5": {
+          "Lionel Messi": {
+            "over": 0.7689,
+            "under": 0.2311
+          },
+          "Julián Álvarez": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Lionel Messi": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Julián Álvarez": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Lionel Messi": {
-          "over": 0.4512,
-          "under": 0.5488
+      "Austria": {
+        "anytime_goalscorer": {
+          "Marcel Sabitzer": 0.1372,
+          "Christoph Baumgartner": 0.1372
         },
-        "Ángel Correa": {
-          "over": 0.0,
-          "under": 1.0
+        "over_under_shots_on_target_1.5": {
+          "Marcel Sabitzer": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Christoph Baumgartner": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Marcel Sabitzer": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Christoph Baumgartner": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Algeria - Jordan",
+    "player_props": {
+      "Algeria": {
+        "anytime_goalscorer": {
+          "Riyad Mahrez": 0.4048,
+          "Islam Slimani": 0.3084
+        },
+        "over_under_shots_on_target_1.5": {
+          "Riyad Mahrez": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Islam Slimani": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Riyad Mahrez": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Islam Slimani": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Jordan": {
+        "anytime_goalscorer": {
+          "Musa Al-Taamari": 0.3224,
+          "Yazan Al-Naimat": 0.3224
+        },
+        "over_under_shots_on_target_1.5": {
+          "Musa Al-Taamari": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Yazan Al-Naimat": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Musa Al-Taamari": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Yazan Al-Naimat": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Portugal - Colombia",
+    "player_props": {
+      "Portugal": {
+        "anytime_goalscorer": {
+          "Cristiano Ronaldo": 0.3365,
+          "Bruno Fernandes": 0.3365
+        },
+        "over_under_shots_on_target_1.5": {
+          "Cristiano Ronaldo": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Bruno Fernandes": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Cristiano Ronaldo": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Bruno Fernandes": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Colombia": {
+        "anytime_goalscorer": {
+          "Luis Díaz": 0.3709,
+          "James Rodríguez": 0.3709
+        },
+        "over_under_shots_on_target_1.5": {
+          "Luis Díaz": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "James Rodríguez": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Luis Díaz": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "James Rodríguez": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Uzbekistan - DR Congo",
+    "player_props": {
+      "Uzbekistan": {
+        "anytime_goalscorer": {
+          "Eldor Shomurodov": 0.1981,
+          "Jaloliddin Masharipov": 0.3098
+        },
+        "over_under_shots_on_target_1.5": {
+          "Eldor Shomurodov": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Jaloliddin Masharipov": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Eldor Shomurodov": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Jaloliddin Masharipov": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "DR Congo": {
+        "anytime_goalscorer": {
+          "Yoane Wissa": 0.297,
+          "Chancel Mbemba": 0.1832
+        },
+        "over_under_shots_on_target_1.5": {
+          "Yoane Wissa": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Chancel Mbemba": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Yoane Wissa": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Chancel Mbemba": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "England - Ghana",
+    "player_props": {
+      "England": {
+        "anytime_goalscorer": {
+          "Harry Kane": 0.4156,
+          "Jude Bellingham": 0.4156
+        },
+        "over_under_shots_on_target_1.5": {
+          "Harry Kane": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Jude Bellingham": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Harry Kane": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Jude Bellingham": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Ghana": {
+        "anytime_goalscorer": {
+          "Mohammed Kudus": 0.2674,
+          "Inaki Williams": 0.2674
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mohammed Kudus": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Inaki Williams": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mohammed Kudus": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Inaki Williams": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Croatia - Panama",
+    "player_props": {
+      "Croatia": {
+        "anytime_goalscorer": {
+          "Luka Modrić": 0.3123,
+          "Andrej Kramarić": 0.4081
+        },
+        "over_under_shots_on_target_1.5": {
+          "Luka Modrić": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Andrej Kramarić": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Luka Modrić": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Andrej Kramarić": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Panama": {
+        "anytime_goalscorer": {
+          "Adalberto Carrasquilla": 0.2059,
+          "José Fajardo": 0.2059
+        },
+        "over_under_shots_on_target_1.5": {
+          "Adalberto Carrasquilla": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "José Fajardo": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Adalberto Carrasquilla": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "José Fajardo": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Mexico - Czechia",
+    "player_props": {
+      "Mexico": {
+        "anytime_goalscorer": {
+          "Santiago Giménez": 0.3755,
+          "Edson Álvarez": 0.2744
+        },
+        "over_under_shots_on_target_1.5": {
+          "Santiago Giménez": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Edson Álvarez": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Santiago Giménez": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Edson Álvarez": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Czechia": {
+        "anytime_goalscorer": {
+          "Patrik Schick": 0.2098,
+          "Tomáš Souček": 0.2098
+        },
+        "over_under_shots_on_target_1.5": {
+          "Patrik Schick": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Tomáš Souček": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Patrik Schick": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Tomáš Souček": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "South Africa - South Korea",
+    "player_props": {
+      "South Africa": {
+        "anytime_goalscorer": {
+          "Percy Tau": 0.189,
+          "Lyle Foster": 0.189
+        },
+        "over_under_shots_on_target_1.5": {
+          "Percy Tau": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Lyle Foster": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Percy Tau": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Lyle Foster": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "South Korea": {
+        "anytime_goalscorer": {
+          "Son Heung-min": 0.2681,
+          "Lee Kang-in": 0.3701
+        },
+        "over_under_shots_on_target_1.5": {
+          "Son Heung-min": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Lee Kang-in": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Son Heung-min": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Lee Kang-in": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Canada - Bosnia and Herzegovina",
+    "player_props": {
+      "Canada": {
+        "anytime_goalscorer": {
+          "Alphonso Davies": 0.276,
+          "Jonathan David": 0.3769
+        },
+        "over_under_shots_on_target_1.5": {
+          "Alphonso Davies": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Jonathan David": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Alphonso Davies": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Jonathan David": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Bosnia and Herzegovina": {
+        "anytime_goalscorer": {
+          "Edin Džeko": 0.2915,
+          "Miralem Pjanić": 0.1769
+        },
+        "over_under_shots_on_target_1.5": {
+          "Edin Džeko": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Miralem Pjanić": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Edin Džeko": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Miralem Pjanić": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Switzerland - Qatar",
+    "player_props": {
+      "Switzerland": {
+        "anytime_goalscorer": {
+          "Granit Xhaka": 0.4557,
+          "Breel Embolo": 0.3676
+        },
+        "over_under_shots_on_target_1.5": {
+          "Granit Xhaka": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Breel Embolo": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Granit Xhaka": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Breel Embolo": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Qatar": {
+        "anytime_goalscorer": {
+          "Akram Afif": 0.1921,
+          "Almoez Ali": 0.3046
+        },
+        "over_under_shots_on_target_1.5": {
+          "Akram Afif": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Almoez Ali": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Akram Afif": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Almoez Ali": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Brazil - Scotland",
+    "player_props": {
+      "Brazil": {
+        "anytime_goalscorer": {
+          "Vinícius Júnior": 0.3458,
+          "Rodrygo": 0.4369
+        },
+        "over_under_shots_on_target_1.5": {
+          "Vinícius Júnior": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Rodrygo": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Vinícius Júnior": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Rodrygo": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Scotland": {
+        "anytime_goalscorer": {
+          "Scott McTominay": 0.2901,
+          "Andrew Robertson": 0.2901
+        },
+        "over_under_shots_on_target_1.5": {
+          "Scott McTominay": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Andrew Robertson": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Scott McTominay": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Andrew Robertson": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Morocco - Haiti",
+    "player_props": {
+      "Morocco": {
+        "anytime_goalscorer": {
+          "Hakim Ziyech": 0.3116,
+          "Achraf Hakimi": 0.4075
+        },
+        "over_under_shots_on_target_1.5": {
+          "Hakim Ziyech": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Achraf Hakimi": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Hakim Ziyech": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Achraf Hakimi": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Haiti": {
+        "anytime_goalscorer": {
+          "Frantzdy Pierrot": 0.1551,
+          "Duckens Nazon": 0.2728
+        },
+        "over_under_shots_on_target_1.5": {
+          "Frantzdy Pierrot": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Duckens Nazon": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Frantzdy Pierrot": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Duckens Nazon": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "United States - Türkiye",
+    "player_props": {
+      "United States": {
+        "anytime_goalscorer": {
+          "Christian Pulisic": 0.2605,
+          "Folarin Balogun": 0.3635
+        },
+        "over_under_shots_on_target_1.5": {
+          "Christian Pulisic": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Folarin Balogun": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Christian Pulisic": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Folarin Balogun": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Türkiye": {
+        "anytime_goalscorer": {
+          "Hakan Çalhanoğlu": 0.3761,
+          "Arda Güler": 0.3761
+        },
+        "over_under_shots_on_target_1.5": {
+          "Hakan Çalhanoğlu": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Arda Güler": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Hakan Çalhanoğlu": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Arda Güler": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Paraguay - Australia",
+    "player_props": {
+      "Paraguay": {
+        "anytime_goalscorer": {
+          "Miguel Almirón": 0.2155,
+          "Julio Enciso": 0.2155
+        },
+        "over_under_shots_on_target_1.5": {
+          "Miguel Almirón": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Julio Enciso": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Miguel Almirón": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Julio Enciso": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Australia": {
+        "anytime_goalscorer": {
+          "Mitchell Duke": 0.199,
+          "Harry Souttar": 0.3106
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mitchell Duke": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Harry Souttar": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mitchell Duke": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Harry Souttar": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Germany - Ecuador",
+    "player_props": {
+      "Germany": {
+        "anytime_goalscorer": {
+          "Jamal Musiala": 0.3225,
+          "Leroy Sané": 0.3225
+        },
+        "over_under_shots_on_target_1.5": {
+          "Jamal Musiala": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Leroy Sané": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Jamal Musiala": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Leroy Sané": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Ecuador": {
+        "anytime_goalscorer": {
+          "Enner Valencia": 0.2301,
+          "Moisés Caicedo": 0.3374
+        },
+        "over_under_shots_on_target_1.5": {
+          "Enner Valencia": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Moisés Caicedo": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Enner Valencia": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Moisés Caicedo": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Curaçao - Ivory Coast",
+    "player_props": {
+      "Curaçao": {
+        "anytime_goalscorer": {
+          "Leandro Bacuna": 0.2813,
+          "Jürgen Locadia": 0.165
+        },
+        "over_under_shots_on_target_1.5": {
+          "Leandro Bacuna": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Jürgen Locadia": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Leandro Bacuna": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Jürgen Locadia": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Ivory Coast": {
+        "anytime_goalscorer": {
+          "Sébastien Haller": 0.4065,
+          "Nicolas Pépé": 0.4065
+        },
+        "over_under_shots_on_target_1.5": {
+          "Sébastien Haller": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Nicolas Pépé": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Sébastien Haller": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Nicolas Pépé": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Netherlands - Ukraine",
+    "player_props": {
+      "Netherlands": {
+        "anytime_goalscorer": {
+          "Cody Gakpo": 0.3101,
+          "Xavi Simons": 0.4062
+        },
+        "over_under_shots_on_target_1.5": {
+          "Cody Gakpo": {
+            "over": 0.4751,
+            "under": 0.5249
+          },
+          "Xavi Simons": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Cody Gakpo": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Xavi Simons": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Ukraine": {
+        "anytime_goalscorer": {
+          "Artem Dovbyk": 0.2118,
+          "Mykhailo Mudryk": 0.2118
+        },
+        "over_under_shots_on_target_1.5": {
+          "Artem Dovbyk": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Mykhailo Mudryk": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Artem Dovbyk": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Mykhailo Mudryk": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Japan - Tunisia",
+    "player_props": {
+      "Japan": {
+        "anytime_goalscorer": {
+          "Kaoru Mitoma": 0.2631,
+          "Takefusa Kubo": 0.3658
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kaoru Mitoma": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Takefusa Kubo": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kaoru Mitoma": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Takefusa Kubo": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Tunisia": {
+        "anytime_goalscorer": {
+          "Youssef Msakni": 0.1709,
+          "Ellyes Skhiri": 0.2864
+        },
+        "over_under_shots_on_target_1.5": {
+          "Youssef Msakni": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ellyes Skhiri": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Youssef Msakni": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Ellyes Skhiri": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Belgium - New Zealand",
+    "player_props": {
+      "Belgium": {
+        "anytime_goalscorer": {
+          "Kevin De Bruyne": 0.3315,
+          "Romelu Lukaku": 0.4246
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kevin De Bruyne": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Romelu Lukaku": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kevin De Bruyne": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Romelu Lukaku": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "New Zealand": {
+        "anytime_goalscorer": {
+          "Chris Wood": 0.2871,
+          "Liberato Cacace": 0.1718
+        },
+        "over_under_shots_on_target_1.5": {
+          "Chris Wood": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Liberato Cacace": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Chris Wood": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Liberato Cacace": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Egypt - Iran",
+    "player_props": {
+      "Egypt": {
+        "anytime_goalscorer": {
+          "Mohamed Salah": 0.317,
+          "Trezeguet": 0.2065
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mohamed Salah": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Trezeguet": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mohamed Salah": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Trezeguet": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Iran": {
+        "anytime_goalscorer": {
+          "Mehdi Taremi": 0.3441,
+          "Sardar Azmoun": 0.2379
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mehdi Taremi": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Sardar Azmoun": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mehdi Taremi": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Sardar Azmoun": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Spain - Uruguay",
+    "player_props": {
+      "Spain": {
+        "anytime_goalscorer": {
+          "Lamine Yamal": 0.3412,
+          "Álvaro Morata": 0.2346
+        },
+        "over_under_shots_on_target_1.5": {
+          "Lamine Yamal": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Álvaro Morata": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Lamine Yamal": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Álvaro Morata": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Uruguay": {
+        "anytime_goalscorer": {
+          "Darwin Núñez": 0.3156,
+          "Federico Valverde": 0.3156
+        },
+        "over_under_shots_on_target_1.5": {
+          "Darwin Núñez": {
+            "over": 0.1912,
+            "under": 0.8088
+          },
+          "Federico Valverde": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Darwin Núñez": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Federico Valverde": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Cape Verde - Saudi Arabia",
+    "player_props": {
+      "Cape Verde": {
+        "anytime_goalscorer": {
+          "Ryan Mendes": 0.1982,
+          "Garry Rodrigues": 0.1982
+        },
+        "over_under_shots_on_target_1.5": {
+          "Ryan Mendes": {
+            "over": 0.4751,
+            "under": 0.5249
+          },
+          "Garry Rodrigues": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Ryan Mendes": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Garry Rodrigues": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Saudi Arabia": {
+        "anytime_goalscorer": {
+          "Salem Al-Dawsari": 0.3308,
+          "Saleh Al-Shehri": 0.2225
+        },
+        "over_under_shots_on_target_1.5": {
+          "Salem Al-Dawsari": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Saleh Al-Shehri": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Salem Al-Dawsari": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Saleh Al-Shehri": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "France - Iraq",
+    "player_props": {
+      "France": {
+        "anytime_goalscorer": {
+          "Kylian Mbappé": 0.4035,
+          "Antoine Griezmann": 0.3069
+        },
+        "over_under_shots_on_target_1.5": {
+          "Kylian Mbappé": {
+            "over": 0.6454,
+            "under": 0.3546
+          },
+          "Antoine Griezmann": {
+            "over": 0.0616,
+            "under": 0.9384
+          }
+        },
+        "over_under_assists_0.5": {
+          "Kylian Mbappé": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Antoine Griezmann": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      },
+      "Iraq": {
+        "anytime_goalscorer": {
+          "Aymen Hussein": 0.1528,
+          "Ali Jasim": 0.2708
+        },
+        "over_under_shots_on_target_1.5": {
+          "Aymen Hussein": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ali Jasim": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Aymen Hussein": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Ali Jasim": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Senegal - Norway",
+    "player_props": {
+      "Senegal": {
+        "anytime_goalscorer": {
+          "Sadio Mané": 0.3403,
+          "Ismaïla Sarr": 0.2335
+        },
+        "over_under_shots_on_target_1.5": {
+          "Sadio Mané": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Ismaïla Sarr": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Sadio Mané": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Ismaïla Sarr": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Norway": {
+        "anytime_goalscorer": {
+          "Erling Haaland": 0.2514,
+          "Martin Ødegaard": 0.2514
+        },
+        "over_under_shots_on_target_1.5": {
+          "Erling Haaland": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Martin Ødegaard": {
+            "over": 0.4751,
+            "under": 0.5249
+          }
+        },
+        "over_under_assists_0.5": {
+          "Erling Haaland": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Martin Ødegaard": {
+            "over": 0.0,
+            "under": 1.0
+          }
         }
       }
     }
@@ -180,28 +3764,341 @@
   {
     "match": "Argentina - Jordan",
     "player_props": {
-      "anytime_goalscorer": {
-        "Lionel Messi": 0.4753,
-        "Ángel Correa": 0.3904
-      },
-      "over_under_shots_on_target_1.5": {
-        "Lionel Messi": {
-          "over": 0.7689,
-          "under": 0.2311
+      "Argentina": {
+        "anytime_goalscorer": {
+          "Lionel Messi": 0.4638,
+          "Julián Álvarez": 0.377
         },
-        "Ángel Correa": {
-          "over": 0.0175,
-          "under": 0.9825
+        "over_under_shots_on_target_1.5": {
+          "Lionel Messi": {
+            "over": 0.7689,
+            "under": 0.2311
+          },
+          "Julián Álvarez": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Lionel Messi": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Julián Álvarez": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
         }
       },
-      "over_under_assists_0.5": {
-        "Lionel Messi": {
-          "over": 0.4512,
-          "under": 0.5488
+      "Jordan": {
+        "anytime_goalscorer": {
+          "Musa Al-Taamari": 0.2411,
+          "Yazan Al-Naimat": 0.2411
         },
-        "Ángel Correa": {
-          "over": 0.0,
-          "under": 1.0
+        "over_under_shots_on_target_1.5": {
+          "Musa Al-Taamari": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Yazan Al-Naimat": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Musa Al-Taamari": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Yazan Al-Naimat": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Algeria - Austria",
+    "player_props": {
+      "Algeria": {
+        "anytime_goalscorer": {
+          "Riyad Mahrez": 0.3376,
+          "Islam Slimani": 0.2304
+        },
+        "over_under_shots_on_target_1.5": {
+          "Riyad Mahrez": {
+            "over": 0.4082,
+            "under": 0.5918
+          },
+          "Islam Slimani": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Riyad Mahrez": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Islam Slimani": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Austria": {
+        "anytime_goalscorer": {
+          "Marcel Sabitzer": 0.2406,
+          "Christoph Baumgartner": 0.2406
+        },
+        "over_under_shots_on_target_1.5": {
+          "Marcel Sabitzer": {
+            "over": 0.5372,
+            "under": 0.4628
+          },
+          "Christoph Baumgartner": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Marcel Sabitzer": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Christoph Baumgartner": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Portugal - DR Congo",
+    "player_props": {
+      "Portugal": {
+        "anytime_goalscorer": {
+          "Cristiano Ronaldo": 0.3862,
+          "Bruno Fernandes": 0.3862
+        },
+        "over_under_shots_on_target_1.5": {
+          "Cristiano Ronaldo": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "Bruno Fernandes": {
+            "over": 0.2642,
+            "under": 0.7358
+          }
+        },
+        "over_under_assists_0.5": {
+          "Cristiano Ronaldo": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Bruno Fernandes": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "DR Congo": {
+        "anytime_goalscorer": {
+          "Yoane Wissa": 0.2732,
+          "Chancel Mbemba": 0.1556
+        },
+        "over_under_shots_on_target_1.5": {
+          "Yoane Wissa": {
+            "over": 0.0175,
+            "under": 0.9825
+          },
+          "Chancel Mbemba": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Yoane Wissa": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Chancel Mbemba": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Uzbekistan - Colombia",
+    "player_props": {
+      "Uzbekistan": {
+        "anytime_goalscorer": {
+          "Eldor Shomurodov": 0.1536,
+          "Jaloliddin Masharipov": 0.2715
+        },
+        "over_under_shots_on_target_1.5": {
+          "Eldor Shomurodov": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Jaloliddin Masharipov": {
+            "over": 0.4082,
+            "under": 0.5918
+          }
+        },
+        "over_under_assists_0.5": {
+          "Eldor Shomurodov": {
+            "over": 0.3297,
+            "under": 0.6703
+          },
+          "Jaloliddin Masharipov": {
+            "over": 0.1813,
+            "under": 0.8187
+          }
+        }
+      },
+      "Colombia": {
+        "anytime_goalscorer": {
+          "Luis Díaz": 0.405,
+          "James Rodríguez": 0.405
+        },
+        "over_under_shots_on_target_1.5": {
+          "Luis Díaz": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "James Rodríguez": {
+            "over": 0.1219,
+            "under": 0.8781
+          }
+        },
+        "over_under_assists_0.5": {
+          "Luis Díaz": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "James Rodríguez": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "England - Panama",
+    "player_props": {
+      "England": {
+        "anytime_goalscorer": {
+          "Harry Kane": 0.4257,
+          "Jude Bellingham": 0.4257
+        },
+        "over_under_shots_on_target_1.5": {
+          "Harry Kane": {
+            "over": 0.2642,
+            "under": 0.7358
+          },
+          "Jude Bellingham": {
+            "over": 0.3374,
+            "under": 0.6626
+          }
+        },
+        "over_under_assists_0.5": {
+          "Harry Kane": {
+            "over": 0.4512,
+            "under": 0.5488
+          },
+          "Jude Bellingham": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      },
+      "Panama": {
+        "anytime_goalscorer": {
+          "Adalberto Carrasquilla": 0.1735,
+          "José Fajardo": 0.1735
+        },
+        "over_under_shots_on_target_1.5": {
+          "Adalberto Carrasquilla": {
+            "over": 0.1219,
+            "under": 0.8781
+          },
+          "José Fajardo": {
+            "over": 0.1912,
+            "under": 0.8088
+          }
+        },
+        "over_under_assists_0.5": {
+          "Adalberto Carrasquilla": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "José Fajardo": {
+            "over": 0.4512,
+            "under": 0.5488
+          }
+        }
+      }
+    }
+  },
+  {
+    "match": "Croatia - Ghana",
+    "player_props": {
+      "Croatia": {
+        "anytime_goalscorer": {
+          "Luka Modrić": 0.301,
+          "Andrej Kramarić": 0.3983
+        },
+        "over_under_shots_on_target_1.5": {
+          "Luka Modrić": {
+            "over": 0.0616,
+            "under": 0.9384
+          },
+          "Andrej Kramarić": {
+            "over": 0.5372,
+            "under": 0.4628
+          }
+        },
+        "over_under_assists_0.5": {
+          "Luka Modrić": {
+            "over": 0.0,
+            "under": 1.0
+          },
+          "Andrej Kramarić": {
+            "over": 0.0,
+            "under": 1.0
+          }
+        }
+      },
+      "Ghana": {
+        "anytime_goalscorer": {
+          "Mohammed Kudus": 0.2926,
+          "Inaki Williams": 0.2926
+        },
+        "over_under_shots_on_target_1.5": {
+          "Mohammed Kudus": {
+            "over": 0.3374,
+            "under": 0.6626
+          },
+          "Inaki Williams": {
+            "over": 0.0175,
+            "under": 0.9825
+          }
+        },
+        "over_under_assists_0.5": {
+          "Mohammed Kudus": {
+            "over": 0.1813,
+            "under": 0.8187
+          },
+          "Inaki Williams": {
+            "over": 0.3297,
+            "under": 0.6703
+          }
         }
       }
     }

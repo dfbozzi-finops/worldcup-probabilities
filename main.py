@@ -109,10 +109,35 @@ def run_pipeline(settings: dict, console: Console) -> int:
         predict_fn=lambda a, b: dc.predict_match(a, b, neutral=True),
         n_simulations=n_sims,
     )
-    p_stat = stat_sim.simulate()
+    p_stat, group_adv = stat_sim.simulate()
     top_stat = sorted(p_stat.items(), key=lambda kv: kv[1], reverse=True)[:3]
     console.print(f"  ✓ {n_sims:,} simulations complete — "
                   f"top 3: {', '.join(f'{t} ({p*100:.1f}%)' for t, p in top_stat)}")
+                  
+    # Export group stage analysis
+    with open("data/processed/group_stage_analysis.json", "w", encoding="utf-8") as f:
+        json.dump(group_adv, f, indent=2, ensure_ascii=False)
+    console.print("  ✓ Group stage advancement probabilities exported to data/processed/group_stage_analysis.json")
+    
+    # Export H2H Matrix for Knockout Bracket Tab
+    h2h_matrix = {}
+    from src.simulator import GROUPS
+    all_teams = [t for group in GROUPS.values() for t in group]
+    for ta in all_teams:
+        h2h_matrix[ta] = {}
+        for tb in all_teams:
+            if ta == tb:
+                h2h_matrix[ta][tb] = {"home": 0.0, "draw": 0.0, "away": 0.0}
+            else:
+                h, d, a = dc.predict_match(ta, tb, neutral=True)
+                h2h_matrix[ta][tb] = {
+                    "home": round(h, 4),
+                    "draw": round(d, 4),
+                    "away": round(a, 4)
+                }
+    with open("data/processed/h2h_matrix.json", "w", encoding="utf-8") as f:
+        json.dump(h2h_matrix, f, indent=2, ensure_ascii=False)
+    console.print("  ✓ H2H Knockout matrix exported to data/processed/h2h_matrix.json")
 
     # ── Step 2b: Match-by-Match Export ──────────────────────────────
     console.print(f"\n[bold cyan]Step 2b/6:[/] Generating Match-by-Match JSON …  [dim]{_timestamp()}[/]")
@@ -124,8 +149,7 @@ def run_pipeline(settings: dict, console: Console) -> int:
     # ── Step 2c: Advanced Props ──────────────────────────────────────
     console.print(f"\n[bold cyan]Step 2c/6:[/] Generating Advanced Props (Stochastic Engine) …  [dim]{_timestamp()}[/]")
     from src.props_model import calculate_team_props, calculate_anytime_goalscorer, calculate_player_ou
-    from src.fbref_scraper import get_fbref_world_cup_stats
-    import json
+    from src.fbref_scraper import get_fbref_world_cup_stats, TEAM_TO_PLAYERS
     import math
     
     player_stats_df = get_fbref_world_cup_stats()
@@ -133,12 +157,6 @@ def run_pipeline(settings: dict, console: Console) -> int:
     with open("data/processed/match_by_match.json", "r", encoding="utf-8") as f:
         matches_data = json.load(f)
         
-    team_to_players = {
-        "Argentina": ["Lionel Messi", "Ángel Correa"],
-        "France": ["Kylian Mbappé"],
-        "Brazil": ["Vinícius Júnior"]
-    }
-    
     props_output = []
     
     for match in matches_data:
@@ -147,25 +165,29 @@ def run_pipeline(settings: dict, console: Console) -> int:
         
         match_props = {
             "match": f"{h} - {a}",
-            "player_props": {
-                "anytime_goalscorer": {},
-                "over_under_shots_on_target_1.5": {},
-                "over_under_assists_0.5": {}
-            }
+            "player_props": {}
         }
         
         has_props = False
         
         for t in [h, a]:
-            if t in team_to_players:
+            if t in TEAM_TO_PLAYERS:
                 has_props = True
+                
+                # Initialize team sub-dictionary
+                match_props["player_props"][t] = {
+                    "anytime_goalscorer": {},
+                    "over_under_shots_on_target_1.5": {},
+                    "over_under_assists_0.5": {}
+                }
+                
                 att_t, def_t = dc._get_params(t)
                 opp_t = a if t == h else h
                 att_opp, def_opp = dc._get_params(opp_t)
                 
                 team_xg = min(math.exp((att_t + def_opp) / 2.0), 10.0)
                 
-                for player in team_to_players[t]:
+                for player in TEAM_TO_PLAYERS[t]:
                     p_match = player_stats_df[player_stats_df['Player'].str.contains(player.split()[-1], na=False, case=False)]
                     if not p_match.empty:
                         ast = int(p_match.iloc[0].get('Ast', 0))
@@ -175,9 +197,9 @@ def run_pipeline(settings: dict, console: Console) -> int:
                         
                         p_key = f"{player}"
                         
-                        match_props["player_props"]["anytime_goalscorer"][p_key] = calculate_anytime_goalscorer(team_xg, player_open_play_share=0.3, is_penalty_taker=is_pk_taker)
-                        match_props["player_props"]["over_under_shots_on_target_1.5"][p_key] = calculate_player_ou(sot / 5.0, 1.5)
-                        match_props["player_props"]["over_under_assists_0.5"][p_key] = calculate_player_ou(ast / 5.0, 0.5)
+                        match_props["player_props"][t]["anytime_goalscorer"][p_key] = calculate_anytime_goalscorer(team_xg, player_open_play_share=0.3, is_penalty_taker=is_pk_taker)
+                        match_props["player_props"][t]["over_under_shots_on_target_1.5"][p_key] = calculate_player_ou(sot / 5.0, 1.5)
+                        match_props["player_props"][t]["over_under_assists_0.5"][p_key] = calculate_player_ou(ast / 5.0, 0.5)
 
         if has_props:
             props_output.append(match_props)
@@ -241,7 +263,7 @@ def run_pipeline(settings: dict, console: Console) -> int:
         predict_fn=ml_predict_lookup,
         n_simulations=n_sims,
     )
-    p_ml = ml_sim.simulate()
+    p_ml, _ = ml_sim.simulate()
     top_ml = sorted(p_ml.items(), key=lambda kv: kv[1], reverse=True)[:3]
     console.print(f"  ✓ {n_sims:,} simulations complete — "
                   f"top 3: {', '.join(f'{t} ({p*100:.1f}%)' for t, p in top_ml)}")

@@ -307,8 +307,8 @@ class TournamentSimulator:
     # Full tournament simulation
     # ------------------------------------------------------------------
 
-    def _simulate_once(self) -> str:
-        """Run one full tournament and return the champion."""
+    def _simulate_once(self) -> tuple[str, dict[str, str]]:
+        """Run one full tournament and return the champion and team advancement status."""
 
         # ---- Group stage ------------------------------------------------
         group_results: dict[str, tuple[str, str, dict]] = {}
@@ -316,9 +316,9 @@ class TournamentSimulator:
         third_place_candidates: list[tuple[str, str, dict[str, int]]] = []
         # (group_letter, team_name, record_dict)
 
+        team_status: dict[str, str] = {}
         for letter, teams in GROUPS.items():
             first, second, records = self._simulate_group(teams)
-            group_results[letter] = (first, second, records)
 
             # The third-place team is the one ranked 3rd
             ranked = sorted(
@@ -330,10 +330,18 @@ class TournamentSimulator:
                 ),
                 reverse=True,
             )
+            
+            group_results[letter] = (ranked[0], ranked[1], records)
+            
             third_team = ranked[2]
             third_place_candidates.append(
                 (letter, third_team, records[third_team])
             )
+            
+            # Record base standings
+            ordinals = ["1st", "2nd", "3rd", "4th"]
+            for i, t in enumerate(ranked):
+                team_status[t] = ordinals[i]
 
         # ---- Determine best 8 third-place teams ------------------------
         third_place_candidates.sort(
@@ -347,6 +355,13 @@ class TournamentSimulator:
         third_team_by_group: dict[str, str] = {
             g: t for g, t, _ in qualifying_thirds
         }
+        
+        # Update team_status for 3rd place teams
+        for letter, team, _ in third_place_candidates:
+            if team in third_team_by_group.values():
+                team_status[team] = "3rd_adv"
+            else:
+                team_status[team] = "3rd_elim"
 
         # Allocate to R32 slots
         slot_to_third_group = _allocate_third_place_teams(
@@ -426,27 +441,39 @@ class TournamentSimulator:
             sf_winners[sa], sf_winners[sb]
         )
 
-        return champion
+        return champion, team_status
 
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
 
-    def simulate(self) -> dict[str, float]:
+    def simulate(self) -> tuple[dict[str, float], dict[str, dict[str, float]]]:
         """
         Run the full Monte Carlo simulation.
 
         Returns
         -------
-        dict[str, float]
+        champion_probs : dict[str, float]
             ``{team_name: win_probability}`` for every team that won at
             least one simulation. Sorted descending by probability.
+        group_advancement_probs : dict[str, dict[str, float]]
+            ``{team_name: {"1st": %, "2nd": %, "3rd_adv": %, "3rd_elim": %, "4th": %}}``
         """
         wins: dict[str, int] = defaultdict(int)
+        
+        # Track group outcomes for each team
+        group_outcomes: dict[str, dict[str, int]] = {
+            t: {"1st": 0, "2nd": 0, "3rd_adv": 0, "3rd_elim": 0, "4th": 0}
+            for group in GROUPS.values() for t in group
+        }
 
         for i in range(1, self.n_simulations + 1):
-            champion = self._simulate_once()
+            champion, team_status = self._simulate_once()
             wins[champion] += 1
+            
+            # Record group outcomes
+            for t, status in team_status.items():
+                group_outcomes[t][status] += 1
 
             if i % 1000 == 0:
                 print(
@@ -461,5 +488,11 @@ class TournamentSimulator:
 
         # Sort descending
         probs = dict(sorted(probs.items(), key=lambda kv: -kv[1]))
+        
+        group_advancement_probs: dict[str, dict[str, float]] = {}
+        for t, outcomes in group_outcomes.items():
+            group_advancement_probs[t] = {
+                k: v / self.n_simulations for k, v in outcomes.items()
+            }
 
-        return probs
+        return probs, group_advancement_probs

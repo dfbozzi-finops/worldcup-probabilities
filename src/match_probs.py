@@ -49,107 +49,126 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
         except KeyError:
             continue
             
-    # Simulated starting date for group stages
-    current_sim_time = datetime(2026, 6, 11, 11, 0)
-    
+    # Pre-calculate matchdays to interleave schedule
+    matchdays = []
     for group_name, teams in groups_dict.items():
-        for home, away in combinations(teams, 2):
-            # Advance simulated time by 4 hours per match
-            current_sim_time += timedelta(hours=4)
-            sim_date_iso = current_sim_time.isoformat() + "Z"
-            
-            # Get the probability matrix from Dixon-Coles
-            mat = dc_model.predict_score_probs(home, away, neutral=True, max_goals=10)
-            
-            # 1X2 Probabilities
-            p_home = 0.0
-            p_draw = 0.0
-            p_away = 0.0
-            
-            # Goals Probabilities
-            p_over_1_5 = 0.0
-            p_over_2_5 = 0.0
-            p_btts = 0.0
-            
-            for i in range(mat.shape[0]):
-                for j in range(mat.shape[1]):
-                    prob = mat[i, j]
-                    
-                    # 1X2
-                    if i > j:
-                        p_home += prob
-                    elif i == j:
-                        p_draw += prob
-                    else:
-                        p_away += prob
-                        
-                    # Over/Under
-                    total_goals = i + j
-                    if total_goals > 1.5:
-                        p_over_1_5 += prob
-                    if total_goals > 2.5:
-                        p_over_2_5 += prob
-                        
-                    # BTTS
-                    if i > 0 and j > 0:
-                        p_btts += prob
-                        
-            # Determine Live State
-            status = "Not Started"
-            home_goals = None
-            away_goals = None
-            fixture_id = None
-            
-            f_key = f"{home} vs {away}"
-            if f_key in fixture_map:
-                f = fixture_map[f_key]
-                fixture_id = f['fixture']['id']
-                status_short = f['fixture']['status']['short']
+        if len(teams) >= 4:
+            # Matchday 1
+            matchdays.append((1, group_name, teams[0], teams[1]))
+            matchdays.append((1, group_name, teams[2], teams[3]))
+            # Matchday 2
+            matchdays.append((2, group_name, teams[0], teams[2]))
+            matchdays.append((2, group_name, teams[1], teams[3]))
+            # Matchday 3
+            matchdays.append((3, group_name, teams[0], teams[3]))
+            matchdays.append((3, group_name, teams[1], teams[2]))
+        else:
+            for home, away in combinations(teams, 2):
+                matchdays.append((1, group_name, home, away))
                 
-                if status_short in ['FT', 'AET', 'PEN']:
-                    status = "Match Finished"
-                    home_goals = f['goals']['home']
-                    away_goals = f['goals']['away']
-                elif status_short in ['1H', 'HT', '2H', 'ET', 'BT', 'P', 'LIVE']:
-                    status = "In Play"
-                    home_goals = f['goals']['home']
-                    away_goals = f['goals']['away']
+    # Sort by matchday, then group
+    matchdays.sort(key=lambda x: (x[0], x[1]))
 
-            match_data = {
-                "group": group_name,
-                "home_team": home,
-                "away_team": away,
-                "date": sim_date_iso,
-                "status": status,
-                "home_goals": home_goals,
-                "away_goals": away_goals,
-                "fixture_id": fixture_id,
-                "1X2": {
-                    "home": round(p_home, 4),
-                    "draw": round(p_draw, 4),
-                    "away": round(p_away, 4)
-                },
-                "over_under_1_5": {
-                    "over": round(p_over_1_5, 4),
-                    "under": round(1.0 - p_over_1_5, 4)
-                },
-                "over_under_2_5": {
-                    "over": round(p_over_2_5, 4),
-                    "under": round(1.0 - p_over_2_5, 4)
-                },
-                "btts": {
-                    "yes": round(p_btts, 4),
-                    "no": round(1.0 - p_btts, 4)
-                }
+    from datetime import timezone
+    current_sim_time = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
+    
+    for md, group_name, home, away in matchdays:
+        # Advance simulated time by 3 hours per match
+        current_sim_time += timedelta(hours=3)
+        sim_date_iso = current_sim_time.isoformat() + "Z"
+            
+        # Get the probability matrix from Dixon-Coles
+        mat = dc_model.predict_score_probs(home, away, neutral=True, max_goals=10)
+        
+        # 1X2 Probabilities
+        p_home = 0.0
+        p_draw = 0.0
+        p_away = 0.0
+        
+        # Goals Probabilities
+        p_over_1_5 = 0.0
+        p_over_2_5 = 0.0
+        p_btts = 0.0
+        
+        for i in range(mat.shape[0]):
+            for j in range(mat.shape[1]):
+                prob = mat[i, j]
+                
+                # 1X2
+                if i > j:
+                    p_home += prob
+                elif i == j:
+                    p_draw += prob
+                else:
+                    p_away += prob
+                    
+                # Over/Under
+                total_goals = i + j
+                if total_goals > 1.5:
+                    p_over_1_5 += prob
+                if total_goals > 2.5:
+                    p_over_2_5 += prob
+                    
+                # BTTS
+                if i > 0 and j > 0:
+                    p_btts += prob
+                    
+        # Determine Live State
+        status = "Not Started"
+        home_goals = None
+        away_goals = None
+        fixture_id = None
+        
+        f_key = f"{home} vs {away}"
+        if f_key in fixture_map:
+            f = fixture_map[f_key]
+            fixture_id = f['fixture']['id']
+            status_short = f['fixture']['status']['short']
+            
+            if status_short in ['FT', 'AET', 'PEN']:
+                status = "Match Finished"
+                home_goals = f['goals']['home']
+                away_goals = f['goals']['away']
+            elif status_short in ['1H', 'HT', '2H', 'ET', 'BT', 'P', 'LIVE']:
+                status = "In Play"
+                home_goals = f['goals']['home']
+                away_goals = f['goals']['away']
+
+        match_data = {
+            "group": group_name,
+            "home_team": home,
+            "away_team": away,
+            "date": sim_date_iso,
+            "status": status,
+            "home_goals": home_goals,
+            "away_goals": away_goals,
+            "fixture_id": fixture_id,
+            "1X2": {
+                "home": round(p_home, 4),
+                "draw": round(p_draw, 4),
+                "away": round(p_away, 4)
+            },
+            "over_under_1_5": {
+                "over": round(p_over_1_5, 4),
+                "under": round(1.0 - p_over_1_5, 4)
+            },
+            "over_under_2_5": {
+                "over": round(p_over_2_5, 4),
+                "under": round(1.0 - p_over_2_5, 4)
+            },
+            "btts": {
+                "yes": round(p_btts, 4),
+                "no": round(1.0 - p_btts, 4)
             }
-            
-            match_data = inject_mock_live_state(match_data)
-            matches.append(match_data)
-            
+        }
+        
+        match_data = inject_mock_live_state(match_data)
+        matches.append(match_data)
+        
     # Export to JSON
     out_dir = Path(output_path).parent
     out_dir.mkdir(parents=True, exist_ok=True)
-    
+
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(matches, f, indent=2)
         

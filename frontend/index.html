@@ -69,8 +69,18 @@
         </div>
     </div>
 
-    <!-- Main Grid -->
-    <main class="flex-1 flex flex-col gap-6">
+    <!-- Navigation Tabs -->
+    <nav class="flex space-x-6 mb-4 px-2">
+        <button id="tab-dashboard" class="pb-2 font-bold text-accent border-b-2 border-accent transition-colors">GLOBAL DASHBOARD</button>
+        <button id="tab-country" class="pb-2 font-bold text-neutral border-b-2 border-transparent hover:text-accent hover:border-accent transition-colors">COUNTRY PROFILES</button>
+        <button id="tab-groups" class="pb-2 font-bold text-neutral border-b-2 border-transparent hover:text-accent hover:border-accent transition-colors">GROUP STAGE ANALYSIS</button>
+        <button id="tab-knockout" class="pb-2 font-bold text-neutral border-b-2 border-transparent hover:text-accent hover:border-accent transition-colors">KNOCKOUT BRACKET</button>
+    </nav>
+
+    <!-- Main Views -->
+    <main class="flex-1 flex flex-col gap-6 relative">
+        <!-- GLOBAL DASHBOARD VIEW -->
+        <div id="view-dashboard" class="flex-1 flex flex-col gap-6">
         <div class="grid grid-cols-12 gap-6">
             <!-- Left Column: Highlights & Opportunities -->
             <div class="col-span-12 lg:col-span-5 flex flex-col gap-6">
@@ -129,7 +139,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="text-xs text-neutral text-right mt-2 font-mono">Source: API-Football (Real-time Live Scores)</div>
+                <div class="text-xs text-neutral text-right mt-2 font-mono">Source: Polymarket (Consensus Odds) & Custom Stochastic Engine</div>
             </div>
             </div>
         </div>
@@ -183,11 +193,138 @@
                         </tr>
                     </thead>
                     <tbody id="upcoming-matches-tbody">
-                        <!-- Populated by JS -->
                     </tbody>
                 </table>
             </div>
+            <div class="text-xs text-neutral text-right mt-2 font-mono">Source: Polymarket (Consensus Odds) & Custom Stochastic Engine</div>
         </div>
+        </div>
+
+        <!-- COUNTRY PROFILES VIEW -->
+        <div id="view-country" class="hidden flex-1 flex flex-col gap-6">
+            <!-- Selector & Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Dropdown -->
+                <div class="terminal-panel flex flex-col">
+                    <div class="panel-header"><span>SELECT NATION</span></div>
+                    <div class="p-6 flex-1 flex items-center justify-center">
+                        <select id="country-select" class="w-full text-lg cursor-pointer bg-slate-100 dark:bg-slate-800 border-none p-3 rounded font-bold text-primary">
+                            <option value="">Loading Countries...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Stats Overview -->
+                <div class="terminal-panel md:col-span-3 flex flex-col">
+                    <div class="panel-header"><span>COUNTRY OVERVIEW</span></div>
+                    <div id="country-overview" class="p-6 grid grid-cols-3 gap-6 items-center text-center flex-1">
+                        <div class="text-neutral italic">Select a country to view detailed analytics.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1 min-h-[300px]">
+                <!-- Fixtures Table -->
+                <div class="terminal-panel flex-1 flex flex-col">
+                    <div class="panel-header"><span>COUNTRY FIXTURES</span></div>
+                    <div class="flex-1 overflow-auto">
+                        <table class="w-full text-center tabular-nums">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Date (LOCAL)</th>
+                                    <th class="text-left">Matchup</th>
+                                    <th>Status/Score</th>
+                                    <th>1X2 Pre-Match</th>
+                                </tr>
+                            </thead>
+                            <tbody id="country-fixtures-tbody">
+                                <tr><td colspan="4" class="text-neutral py-4">No data</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Player Props Table -->
+                <div class="terminal-panel flex-1 flex flex-col">
+                    <div class="panel-header"><span>STAR PLAYER PROPS</span></div>
+                    <div class="flex-1 overflow-auto">
+                        <table class="w-full text-center tabular-nums">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Player</th>
+                                    <th>Anytime Goal</th>
+                                    <th>O1.5 SoT</th>
+                                    <th>O0.5 Assists</th>
+                                </tr>
+                            </thead>
+                            <tbody id="country-props-tbody">
+                                <tr><td colspan="4" class="text-neutral py-4">No data</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GROUP STAGE ANALYSIS VIEW -->
+        <div id="group-analysis-view" class="view-pane hidden space-y-6">
+            <div class="bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 rounded-lg shadow-sm">
+                <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800">
+                    <h2 class="font-bold text-[15px] text-primary">GROUP STAGE ADVANCEMENT PROBABILITIES</h2>
+                </div>
+                <div class="p-6">
+                    <div id="group-analysis-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <div class="text-neutral italic">Loading group data...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KNOCKOUT BRACKET VIEW -->
+        <div id="knockout-bracket-view" class="view-pane hidden space-y-6">
+            <div class="bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 rounded-lg shadow-sm">
+                <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center">
+                    <h2 class="font-bold text-[15px] text-primary">INTERACTIVE KNOCKOUT BRACKET SIMULATOR</h2>
+                    <button id="reset-bracket-btn" class="text-xs px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">Reset</button>
+                </div>
+                <div class="p-6 overflow-x-auto">
+                    <div id="knockout-bracket-container" class="min-w-[800px] flex justify-between items-stretch gap-4 relative">
+                        <!-- Bracket columns will be generated via JS -->
+                        <div class="text-neutral italic">Loading interactive bracket...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- GROUP STAGE ANALYSIS VIEW -->
+    <div id="view-groups" class="hidden flex flex-col gap-6">
+        <div class="bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 rounded-lg shadow-sm">
+            <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800">
+                <h2 class="font-bold text-[15px] text-primary">GROUP STAGE ADVANCEMENT PROBABILITIES</h2>
+            </div>
+            <div class="p-6">
+                <div id="group-analysis-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="text-neutral italic">Loading group data...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KNOCKOUT BRACKET VIEW -->
+    <div id="view-knockout" class="hidden flex flex-col gap-6">
+        <div class="bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 rounded-lg shadow-sm">
+            <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center">
+                <h2 class="font-bold text-[15px] text-primary">INTERACTIVE KNOCKOUT BRACKET SIMULATOR</h2>
+                <button id="reset-bracket-btn" class="text-xs px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">Reset</button>
+            </div>
+            <div class="p-6 overflow-x-auto">
+                <div id="knockout-bracket-container" class="min-w-[800px] relative">
+                    <!-- Bracket columns will be generated via JS -->
+                    <div class="text-neutral italic">Loading interactive bracket...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     </main>
 
     <!-- Methodology Section -->
@@ -204,6 +341,6 @@
         </div>
     </div>
     
-    <script src="./app.js"></script>
+    <script src="./app.js?v=2"></script>
 </body>
 </html>
