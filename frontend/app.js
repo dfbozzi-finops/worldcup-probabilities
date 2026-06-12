@@ -27,9 +27,11 @@ themeBtn.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
+        document.documentElement.classList.add('dark');
         themeBtn.textContent = '☀ Light Mode';
     } else {
         document.body.classList.remove('dark-mode');
+        document.documentElement.classList.remove('dark');
         themeBtn.textContent = '☾ Dark Mode';
     }
     // Update chart colors if chart exists

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arbitrage Model DFBSex</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -275,7 +280,7 @@
                 <h2 class="font-bold text-[15px] text-primary">GROUP STAGE ADVANCEMENT PROBABILITIES</h2>
             </div>
             <div class="p-6">
-                <div id="group-analysis-container" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                <div id="group-analysis-container" class="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     <div class="text-neutral italic">Loading group data...</div>
                 </div>
             </div>
