@@ -297,7 +297,8 @@ function renderMatches() {
     matches.forEach(match => {
         const isLive = match.status !== "Not Started";
         const dateStr = formatShortDate(match.date);
-        
+        const matchup = `${match.home_team} - ${match.away_team}`;
+
         if (isLive) {
             // Actual results
             const hg = match.home_goals || 0;
