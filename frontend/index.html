@@ -53,18 +53,18 @@
             <label class="text-[11px] font-bold text-neutral uppercase tracking-wider mb-1.5">World Cup Group</label>
             <select id="group-filter" class="w-48 text-sm cursor-pointer">
                 <option value="All">All Groups</option>
-                <option value="Group A">Group A</option>
-                <option value="Group B">Group B</option>
-                <option value="Group C">Group C</option>
-                <option value="Group D">Group D</option>
-                <option value="Group E">Group E</option>
-                <option value="Group F">Group F</option>
-                <option value="Group G">Group G</option>
-                <option value="Group H">Group H</option>
-                <option value="Group I">Group I</option>
-                <option value="Group J">Group J</option>
-                <option value="Group K">Group K</option>
-                <option value="Group L">Group L</option>
+                <option value="A">Group A</option>
+                <option value="B">Group B</option>
+                <option value="C">Group C</option>
+                <option value="D">Group D</option>
+                <option value="E">Group E</option>
+                <option value="F">Group F</option>
+                <option value="G">Group G</option>
+                <option value="H">Group H</option>
+                <option value="I">Group I</option>
+                <option value="J">Group J</option>
+                <option value="K">Group K</option>
+                <option value="L">Group L</option>
             </select>
         </div>
     </div>
@@ -107,7 +107,7 @@
         <div class="col-span-12 lg:col-span-7 flex flex-col min-h-0 gap-6">
             
             <!-- Live/Completed Matches -->
-            <div class="terminal-panel h-1/2 flex flex-col">
+            <div class="terminal-panel h-1/3 flex flex-col">
                 <div class="panel-header">
                     <span>LIVE / COMPLETED FIXTURES</span>
                 </div>
@@ -132,7 +132,7 @@
             </div>
 
             <!-- Upcoming Matches -->
-            <div class="terminal-panel h-1/2 flex flex-col">
+            <div class="terminal-panel h-1/3 flex flex-col">
                 <div class="panel-header">
                     <span>UPCOMING FIXTURE PREDICTIONS</span>
                 </div>
@@ -155,8 +155,44 @@
                 </div>
             </div>
 
+            <!-- Betting Recommendations -->
+            <div class="terminal-panel h-1/3 flex flex-col">
+                <div class="panel-header">
+                    <span>UPCOMING FIXTURE RECOMMENDATIONS</span>
+                </div>
+                <div class="flex-1 overflow-auto">
+                    <table class="w-full text-center tabular-nums">
+                        <thead>
+                            <tr>
+                                <th class="text-left">Date (UTC)</th>
+                                <th class="text-left">Matchup</th>
+                                <th class="text-left">Recommended Play</th>
+                                <th>Model Prob</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recommendations-tbody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </main>
+
+    <!-- Methodology Section -->
+    <div class="terminal-panel mt-6">
+        <div class="panel-header">
+            <span>METHODOLOGY & ARCHITECTURE</span>
+        </div>
+        <div class="p-4 text-sm text-neutral space-y-4 font-sans leading-relaxed">
+            <p><strong>1. Dixon-Coles Bivariate Poisson Model:</strong> The core engine utilizes a time-decayed bivariate Poisson regression model to calculate team attacking and defensive strengths. This allows us to simulate exact goal expectancies for any matchup.</p>
+            <p><strong>2. MCMC Simulation (PyMC):</strong> We use Markov Chain Monte Carlo to simulate the entire tournament trajectory 10,000 times, providing robust probability distributions for complex futures (e.g., "To Reach Semi-Finals").</p>
+            <p><strong>3. Player Props (Stochastic Engine):</strong> Player-level metrics are scraped from FBref and passed through fractional allocation and Poisson/Negative Binomial distributions to generate actionable 'Over/Under' probabilities for Shots on Target and Assists.</p>
+            <p><strong>4. Expected Value (EV):</strong> Our edge is calculated as <code class="bg-slate-200 dark:bg-slate-800 px-1 py-0.5 rounded text-accent font-mono text-xs">EV = (True Probability × Implied Market Odds) - 1</code>. Only positive EV opportunities are recommended for execution.</p>
+            <p><strong>5. Kelly Criterion:</strong> Capital allocation is dynamically sized using the fractional Kelly Criterion to maximize long-term bankroll growth while strictly minimizing ruin risk.</p>
+        </div>
+    </div>
     
     <script src="./app.js"></script>
 </body>

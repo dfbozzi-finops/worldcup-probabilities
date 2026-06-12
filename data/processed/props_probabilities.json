@@ -1,32 +1,209 @@
-{
-  "match": "Argentina vs France",
-  "team_props": {
-    "Argentina": {
-      "over_under_corners_4.5": {
-        "over": 0.6609,
-        "under": 0.3391
+[
+  {
+    "match": "Brazil - Morocco",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Vinícius Júnior": 0.3904
       },
-      "over_under_cards_1.5": {
-        "over": 0.5391,
-        "under": 0.4609
-      }
-    },
-    "France": {
-      "over_under_corners_4.5": {
-        "over": 0.5245,
-        "under": 0.4755
+      "over_under_shots_on_target_1.5": {
+        "Vinícius Júnior": {
+          "over": 0.2642,
+          "under": 0.7358
+        }
       },
-      "over_under_cards_1.5": {
-        "over": 0.4074,
-        "under": 0.5926
+      "over_under_assists_0.5": {
+        "Vinícius Júnior": {
+          "over": 0.3297,
+          "under": 0.6703
+        }
       }
     }
   },
-  "player_props": {
-    "anytime_goalscorer": {
-      "Lionel Messi (ARG)": 0.4007,
-      "\u00c1ngel Correa (ARG)": 0.0982,
-      "Kylian Mbapp\u00e9 (FRA)": 0.3237
+  {
+    "match": "Brazil - Haiti",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Vinícius Júnior": 0.3904
+      },
+      "over_under_shots_on_target_1.5": {
+        "Vinícius Júnior": {
+          "over": 0.2642,
+          "under": 0.7358
+        }
+      },
+      "over_under_assists_0.5": {
+        "Vinícius Júnior": {
+          "over": 0.3297,
+          "under": 0.6703
+        }
+      }
+    }
+  },
+  {
+    "match": "Brazil - Scotland",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Vinícius Júnior": 0.3904
+      },
+      "over_under_shots_on_target_1.5": {
+        "Vinícius Júnior": {
+          "over": 0.2642,
+          "under": 0.7358
+        }
+      },
+      "over_under_assists_0.5": {
+        "Vinícius Júnior": {
+          "over": 0.3297,
+          "under": 0.6703
+        }
+      }
+    }
+  },
+  {
+    "match": "France - Senegal",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Kylian Mbappé": 0.4753
+      },
+      "over_under_shots_on_target_1.5": {
+        "Kylian Mbappé": {
+          "over": 0.6454,
+          "under": 0.3546
+        }
+      },
+      "over_under_assists_0.5": {
+        "Kylian Mbappé": {
+          "over": 0.3297,
+          "under": 0.6703
+        }
+      }
+    }
+  },
+  {
+    "match": "France - Norway",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Kylian Mbappé": 0.4753
+      },
+      "over_under_shots_on_target_1.5": {
+        "Kylian Mbappé": {
+          "over": 0.6454,
+          "under": 0.3546
+        }
+      },
+      "over_under_assists_0.5": {
+        "Kylian Mbappé": {
+          "over": 0.3297,
+          "under": 0.6703
+        }
+      }
+    }
+  },
+  {
+    "match": "France - Iraq",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Kylian Mbappé": 0.4753
+      },
+      "over_under_shots_on_target_1.5": {
+        "Kylian Mbappé": {
+          "over": 0.6454,
+          "under": 0.3546
+        }
+      },
+      "over_under_assists_0.5": {
+        "Kylian Mbappé": {
+          "over": 0.3297,
+          "under": 0.6703
+        }
+      }
+    }
+  },
+  {
+    "match": "Argentina - Algeria",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Lionel Messi": 0.4753,
+        "Ángel Correa": 0.3904
+      },
+      "over_under_shots_on_target_1.5": {
+        "Lionel Messi": {
+          "over": 0.7689,
+          "under": 0.2311
+        },
+        "Ángel Correa": {
+          "over": 0.0175,
+          "under": 0.9825
+        }
+      },
+      "over_under_assists_0.5": {
+        "Lionel Messi": {
+          "over": 0.4512,
+          "under": 0.5488
+        },
+        "Ángel Correa": {
+          "over": 0.0,
+          "under": 1.0
+        }
+      }
+    }
+  },
+  {
+    "match": "Argentina - Austria",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Lionel Messi": 0.4753,
+        "Ángel Correa": 0.3904
+      },
+      "over_under_shots_on_target_1.5": {
+        "Lionel Messi": {
+          "over": 0.7689,
+          "under": 0.2311
+        },
+        "Ángel Correa": {
+          "over": 0.0175,
+          "under": 0.9825
+        }
+      },
+      "over_under_assists_0.5": {
+        "Lionel Messi": {
+          "over": 0.4512,
+          "under": 0.5488
+        },
+        "Ángel Correa": {
+          "over": 0.0,
+          "under": 1.0
+        }
+      }
+    }
+  },
+  {
+    "match": "Argentina - Jordan",
+    "player_props": {
+      "anytime_goalscorer": {
+        "Lionel Messi": 0.4753,
+        "Ángel Correa": 0.3904
+      },
+      "over_under_shots_on_target_1.5": {
+        "Lionel Messi": {
+          "over": 0.7689,
+          "under": 0.2311
+        },
+        "Ángel Correa": {
+          "over": 0.0175,
+          "under": 0.9825
+        }
+      },
+      "over_under_assists_0.5": {
+        "Lionel Messi": {
+          "over": 0.4512,
+          "under": 0.5488
+        },
+        "Ángel Correa": {
+          "over": 0.0,
+          "under": 1.0
+        }
+      }
     }
   }
-}
+]

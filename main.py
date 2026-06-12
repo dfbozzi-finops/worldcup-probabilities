@@ -123,51 +123,67 @@ def run_pipeline(settings: dict, console: Console) -> int:
 
     # ── Step 2c: Advanced Props ──────────────────────────────────────
     console.print(f"\n[bold cyan]Step 2c/6:[/] Generating Advanced Props (Stochastic Engine) …  [dim]{_timestamp()}[/]")
-    from src.props_model import calculate_team_props, calculate_anytime_goalscorer
+    from src.props_model import calculate_team_props, calculate_anytime_goalscorer, calculate_player_ou
+    from src.fbref_scraper import get_fbref_world_cup_stats
     import json
     import math
     
-    # Calculate for a sample marquee match: Argentina vs France
-    home_team = "Argentina"
-    away_team = "France"
+    player_stats_df = get_fbref_world_cup_stats()
     
-    # Extract lambda and mu from Dixon-Coles
-    att_h, def_h = dc._get_params(home_team)
-    att_a, def_a = dc._get_params(away_team)
-    ha = 0.0 # Neutral ground
-    variance_factor = 2.0
-    lambda_val = min(math.exp((att_h + def_a + ha) / variance_factor), 15.0)
-    mu_val = min(math.exp((att_a + def_h) / variance_factor), 15.0)
-    
-    # Baseline historical averages
-    arg_corners_avg = 6.0
-    arg_cards_avg = 2.0
-    fra_corners_avg = 5.0
-    fra_cards_avg = 1.5
-    
-    props_output = {
-        "match": f"{home_team} vs {away_team}",
-        "team_props": {
-            home_team: {
-                "over_under_corners_4.5": calculate_team_props(arg_corners_avg, line=4.5),
-                "over_under_cards_1.5": calculate_team_props(arg_cards_avg, line=1.5)
-            },
-            away_team: {
-                "over_under_corners_4.5": calculate_team_props(fra_corners_avg, line=4.5),
-                "over_under_cards_1.5": calculate_team_props(fra_cards_avg, line=1.5)
-            }
-        },
-        "player_props": {
-            "anytime_goalscorer": {
-                "Lionel Messi (ARG)": calculate_anytime_goalscorer(lambda_val, player_open_play_share=0.35, is_penalty_taker=True),
-                "Ángel Correa (ARG)": calculate_anytime_goalscorer(lambda_val, player_open_play_share=0.10, is_penalty_taker=False),
-                "Kylian Mbappé (FRA)": calculate_anytime_goalscorer(mu_val, player_open_play_share=0.40, is_penalty_taker=True)
-            }
-        }
+    with open("data/processed/match_by_match.json", "r", encoding="utf-8") as f:
+        matches_data = json.load(f)
+        
+    team_to_players = {
+        "Argentina": ["Lionel Messi", "Ángel Correa"],
+        "France": ["Kylian Mbappé"],
+        "Brazil": ["Vinícius Júnior"]
     }
     
+    props_output = []
+    
+    for match in matches_data:
+        h = match["home_team"]
+        a = match["away_team"]
+        
+        match_props = {
+            "match": f"{h} - {a}",
+            "player_props": {
+                "anytime_goalscorer": {},
+                "over_under_shots_on_target_1.5": {},
+                "over_under_assists_0.5": {}
+            }
+        }
+        
+        has_props = False
+        
+        for t in [h, a]:
+            if t in team_to_players:
+                has_props = True
+                att_t, def_t = dc._get_params(t)
+                opp_t = a if t == h else h
+                att_opp, def_opp = dc._get_params(opp_t)
+                
+                team_xg = min(math.exp((att_t + def_opp) / 2.0), 10.0)
+                
+                for player in team_to_players[t]:
+                    p_match = player_stats_df[player_stats_df['Player'].str.contains(player.split()[-1], na=False, case=False)]
+                    if not p_match.empty:
+                        ast = int(p_match.iloc[0].get('Ast', 0))
+                        sot = int(p_match.iloc[0].get('SoT', 0))
+                        pk = int(p_match.iloc[0].get('PK', 0))
+                        is_pk_taker = (pk > 0)
+                        
+                        p_key = f"{player}"
+                        
+                        match_props["player_props"]["anytime_goalscorer"][p_key] = calculate_anytime_goalscorer(team_xg, player_open_play_share=0.3, is_penalty_taker=is_pk_taker)
+                        match_props["player_props"]["over_under_shots_on_target_1.5"][p_key] = calculate_player_ou(sot / 5.0, 1.5)
+                        match_props["player_props"]["over_under_assists_0.5"][p_key] = calculate_player_ou(ast / 5.0, 0.5)
+
+        if has_props:
+            props_output.append(match_props)
+    
     with open("data/processed/props_probabilities.json", "w", encoding="utf-8") as f:
-        json.dump(props_output, f, indent=2)
+        json.dump(props_output, f, indent=2, ensure_ascii=False)
         
     console.print("  ✓ Advanced props exported to data/processed/props_probabilities.json")
 

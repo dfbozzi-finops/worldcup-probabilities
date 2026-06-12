@@ -55,3 +55,20 @@ def calculate_anytime_goalscorer(
     # P(Goals >= 1)
     p_anytime = 1.0 - p_zero
     return round(p_anytime, 4)
+
+def calculate_player_ou(historical_avg: float, line: float) -> dict:
+    """
+    Calculate Over/Under probabilities for player discrete events (Shots on Target, Assists).
+    Uses standard Poisson distribution since player props have lower overdispersion than team corners.
+    """
+    if historical_avg <= 0:
+        return {"over": 0.0, "under": 1.0}
+        
+    k = math.floor(line)
+    prob_under = poisson.cdf(k, historical_avg)
+    prob_over = 1.0 - prob_under
+    
+    return {
+        "over": round(prob_over, 4),
+        "under": round(prob_under, 4)
+    }
