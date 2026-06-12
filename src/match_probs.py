@@ -75,7 +75,7 @@ def generate_match_by_match_json(dc_model, groups_dict: dict[str, list[str]], ou
     for md, group_name, home, away in matchdays:
         # Advance simulated time by 3 hours per match
         current_sim_time += timedelta(hours=3)
-        sim_date_iso = current_sim_time.isoformat() + "Z"
+        sim_date_iso = current_sim_time.isoformat().replace('+00:00', 'Z')
             
         # Get the probability matrix from Dixon-Coles
         mat = dc_model.predict_score_probs(home, away, neutral=True, max_goals=10)
