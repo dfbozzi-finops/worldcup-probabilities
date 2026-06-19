@@ -9,21 +9,21 @@
     "away_goals": 1,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4679,
-      "draw": 0.3097,
-      "away": 0.2223
+      "home": 0.4676,
+      "draw": 0.3098,
+      "away": 0.2226
     },
     "over_under_1_5": {
-      "over": 0.5874,
-      "under": 0.4126
+      "over": 0.587,
+      "under": 0.413
     },
     "over_under_2_5": {
-      "over": 0.3122,
-      "under": 0.6878
+      "over": 0.3118,
+      "under": 0.6882
     },
     "btts": {
-      "yes": 0.3738,
-      "no": 0.6262
+      "yes": 0.3735,
+      "no": 0.6265
     }
   },
   {
@@ -37,8 +37,8 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3871,
-      "draw": 0.2983,
-      "away": 0.3146
+      "draw": 0.2982,
+      "away": 0.3147
     },
     "over_under_1_5": {
       "over": 0.6559,
@@ -49,8 +49,8 @@
       "under": 0.6165
     },
     "btts": {
-      "yes": 0.4534,
-      "no": 0.5466
+      "yes": 0.4533,
+      "no": 0.5467
     }
   },
   {
@@ -68,16 +68,16 @@
       "away": 0.3677
     },
     "over_under_1_5": {
-      "over": 0.6389,
-      "under": 0.3611
+      "over": 0.6387,
+      "under": 0.3613
     },
     "over_under_2_5": {
-      "over": 0.3648,
-      "under": 0.6352
+      "over": 0.3647,
+      "under": 0.6353
     },
     "btts": {
-      "yes": 0.4391,
-      "no": 0.5609
+      "yes": 0.4389,
+      "no": 0.5611
     }
   },
   {
@@ -90,21 +90,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3074,
-      "draw": 0.2933,
+      "home": 0.3076,
+      "draw": 0.2932,
       "away": 0.3992
     },
     "over_under_1_5": {
-      "over": 0.6691,
-      "under": 0.3309
+      "over": 0.6693,
+      "under": 0.3307
     },
     "over_under_2_5": {
-      "over": 0.3984,
-      "under": 0.6016
+      "over": 0.3986,
+      "under": 0.6014
     },
     "btts": {
-      "yes": 0.4645,
-      "no": 0.5355
+      "yes": 0.4647,
+      "no": 0.5353
     }
   },
   {
@@ -117,21 +117,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4134,
-      "draw": 0.3186,
-      "away": 0.268
+      "home": 0.4133,
+      "draw": 0.3185,
+      "away": 0.2681
     },
     "over_under_1_5": {
-      "over": 0.5858,
-      "under": 0.4142
+      "over": 0.5857,
+      "under": 0.4143
     },
     "over_under_2_5": {
-      "over": 0.3104,
-      "under": 0.6896
+      "over": 0.3103,
+      "under": 0.6897
     },
     "btts": {
-      "yes": 0.3861,
-      "no": 0.6139
+      "yes": 0.386,
+      "no": 0.614
     }
   },
   {
@@ -144,17 +144,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.2632,
-      "draw": 0.2896,
-      "away": 0.4471
+      "home": 0.2633,
+      "draw": 0.2895,
+      "away": 0.4472
     },
     "over_under_1_5": {
-      "over": 0.665,
-      "under": 0.335
+      "over": 0.6651,
+      "under": 0.3349
     },
     "over_under_2_5": {
-      "over": 0.3939,
-      "under": 0.6061
+      "over": 0.394,
+      "under": 0.606
     },
     "btts": {
       "yes": 0.4523,
@@ -171,21 +171,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3228,
-      "draw": 0.3118,
-      "away": 0.3655
+      "home": 0.3226,
+      "draw": 0.3117,
+      "away": 0.3657
     },
     "over_under_1_5": {
-      "over": 0.6175,
-      "under": 0.3825
+      "over": 0.6173,
+      "under": 0.3827
     },
     "over_under_2_5": {
-      "over": 0.3422,
-      "under": 0.6578
+      "over": 0.3421,
+      "under": 0.6579
     },
     "btts": {
-      "yes": 0.42,
-      "no": 0.58
+      "yes": 0.4199,
+      "no": 0.5801
     }
   },
   {
@@ -198,8 +198,8 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3668,
-      "draw": 0.303,
+      "home": 0.3669,
+      "draw": 0.3029,
       "away": 0.3302
     },
     "over_under_1_5": {
@@ -207,8 +207,8 @@
       "under": 0.356
     },
     "over_under_2_5": {
-      "over": 0.3703,
-      "under": 0.6297
+      "over": 0.3704,
+      "under": 0.6296
     },
     "btts": {
       "yes": 0.4438,
@@ -226,7 +226,7 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.6744,
-      "draw": 0.2033,
+      "draw": 0.2032,
       "away": 0.1223
     },
     "over_under_1_5": {
@@ -234,12 +234,12 @@
       "under": 0.2266
     },
     "over_under_2_5": {
-      "over": 0.532,
-      "under": 0.468
+      "over": 0.5321,
+      "under": 0.4679
     },
     "btts": {
-      "yes": 0.4637,
-      "no": 0.5363
+      "yes": 0.4638,
+      "no": 0.5362
     }
   },
   {
@@ -253,8 +253,8 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.2449,
-      "draw": 0.3459,
-      "away": 0.4091
+      "draw": 0.3458,
+      "away": 0.4093
     },
     "over_under_1_5": {
       "over": 0.5073,
@@ -279,8 +279,8 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3594,
-      "draw": 0.3008,
+      "home": 0.3595,
+      "draw": 0.3007,
       "away": 0.3398
     },
     "over_under_1_5": {
@@ -292,8 +292,8 @@
       "under": 0.6219
     },
     "btts": {
-      "yes": 0.4505,
-      "no": 0.5495
+      "yes": 0.4504,
+      "no": 0.5496
     }
   },
   {
@@ -306,21 +306,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3171,
-      "draw": 0.3109,
+      "home": 0.3172,
+      "draw": 0.3108,
       "away": 0.372
     },
     "over_under_1_5": {
-      "over": 0.6192,
-      "under": 0.3808
+      "over": 0.6193,
+      "under": 0.3807
     },
     "over_under_2_5": {
-      "over": 0.3439,
-      "under": 0.6561
+      "over": 0.3441,
+      "under": 0.6559
     },
     "btts": {
-      "yes": 0.4211,
-      "no": 0.5789
+      "yes": 0.4212,
+      "no": 0.5788
     }
   },
   {
@@ -333,8 +333,8 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4365,
-      "draw": 0.3062,
+      "home": 0.4366,
+      "draw": 0.306,
       "away": 0.2573
     },
     "over_under_1_5": {
@@ -361,20 +361,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.4594,
-      "draw": 0.2934,
-      "away": 0.2472
+      "draw": 0.2933,
+      "away": 0.2473
     },
     "over_under_1_5": {
-      "over": 0.6464,
-      "under": 0.3536
+      "over": 0.6463,
+      "under": 0.3537
     },
     "over_under_2_5": {
-      "over": 0.3732,
-      "under": 0.6268
+      "over": 0.3731,
+      "under": 0.6269
     },
     "btts": {
-      "yes": 0.4313,
-      "no": 0.5687
+      "yes": 0.4311,
+      "no": 0.5689
     }
   },
   {
@@ -387,9 +387,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5901,
-      "draw": 0.2584,
-      "away": 0.1516
+      "home": 0.59,
+      "draw": 0.2583,
+      "away": 0.1517
     },
     "over_under_1_5": {
       "over": 0.6607,
@@ -400,8 +400,8 @@
       "under": 0.6103
     },
     "btts": {
-      "yes": 0.3904,
-      "no": 0.6096
+      "yes": 0.3905,
+      "no": 0.6095
     }
   },
   {
@@ -414,17 +414,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.1979,
-      "draw": 0.3173,
-      "away": 0.4848
+      "home": 0.1981,
+      "draw": 0.3172,
+      "away": 0.4847
     },
     "over_under_1_5": {
-      "over": 0.552,
-      "under": 0.448
+      "over": 0.5521,
+      "under": 0.4479
     },
     "over_under_2_5": {
-      "over": 0.2788,
-      "under": 0.7212
+      "over": 0.2789,
+      "under": 0.7211
     },
     "btts": {
       "yes": 0.3362,
@@ -441,17 +441,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4235,
-      "draw": 0.3002,
-      "away": 0.2763
+      "home": 0.4236,
+      "draw": 0.3001,
+      "away": 0.2764
     },
     "over_under_1_5": {
       "over": 0.6401,
       "under": 0.3599
     },
     "over_under_2_5": {
-      "over": 0.3662,
-      "under": 0.6338
+      "over": 0.3663,
+      "under": 0.6337
     },
     "btts": {
       "yes": 0.4335,
@@ -468,17 +468,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5033,
-      "draw": 0.2858,
-      "away": 0.2109
+      "home": 0.5032,
+      "draw": 0.2857,
+      "away": 0.211
     },
     "over_under_1_5": {
       "over": 0.6441,
       "under": 0.3559
     },
     "over_under_2_5": {
-      "over": 0.3708,
-      "under": 0.6292
+      "over": 0.3709,
+      "under": 0.6291
     },
     "btts": {
       "yes": 0.415,
@@ -496,20 +496,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.5268,
-      "draw": 0.2941,
-      "away": 0.1791
+      "draw": 0.294,
+      "away": 0.1792
     },
     "over_under_1_5": {
-      "over": 0.5954,
-      "under": 0.4046
+      "over": 0.5952,
+      "under": 0.4048
     },
     "over_under_2_5": {
-      "over": 0.3203,
-      "under": 0.6797
+      "over": 0.3202,
+      "under": 0.6798
     },
     "btts": {
-      "yes": 0.3585,
-      "no": 0.6415
+      "yes": 0.3584,
+      "no": 0.6416
     }
   },
   {
@@ -522,17 +522,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4858,
-      "draw": 0.2791,
-      "away": 0.2351
+      "home": 0.486,
+      "draw": 0.2789,
+      "away": 0.235
     },
     "over_under_1_5": {
-      "over": 0.6799,
-      "under": 0.3201
+      "over": 0.68,
+      "under": 0.32
     },
     "over_under_2_5": {
-      "over": 0.4111,
-      "under": 0.5889
+      "over": 0.4112,
+      "under": 0.5888
     },
     "btts": {
       "yes": 0.4565,
@@ -549,17 +549,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4889,
-      "draw": 0.2932,
-      "away": 0.2179
+      "home": 0.4888,
+      "draw": 0.2931,
+      "away": 0.218
     },
     "over_under_1_5": {
       "over": 0.6289,
       "under": 0.3711
     },
     "over_under_2_5": {
-      "over": 0.3544,
-      "under": 0.6456
+      "over": 0.3545,
+      "under": 0.6455
     },
     "btts": {
       "yes": 0.4055,
@@ -576,9 +576,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5299,
-      "draw": 0.2922,
-      "away": 0.1779
+      "home": 0.5298,
+      "draw": 0.2921,
+      "away": 0.178
     },
     "over_under_1_5": {
       "over": 0.5991,
@@ -603,21 +603,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4249,
-      "draw": 0.2992,
-      "away": 0.2758
+      "home": 0.425,
+      "draw": 0.2991,
+      "away": 0.2759
     },
     "over_under_1_5": {
-      "over": 0.6426,
-      "under": 0.3574
+      "over": 0.6427,
+      "under": 0.3573
     },
     "over_under_2_5": {
-      "over": 0.3689,
-      "under": 0.6311
+      "over": 0.369,
+      "under": 0.631
     },
     "btts": {
-      "yes": 0.4355,
-      "no": 0.5645
+      "yes": 0.4356,
+      "no": 0.5644
     }
   },
   {
@@ -630,21 +630,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3277,
-      "draw": 0.304,
-      "away": 0.3684
+      "home": 0.3278,
+      "draw": 0.3039,
+      "away": 0.3683
     },
     "over_under_1_5": {
-      "over": 0.6409,
-      "under": 0.3591
+      "over": 0.6406,
+      "under": 0.3594
     },
     "over_under_2_5": {
-      "over": 0.3669,
-      "under": 0.6331
+      "over": 0.3668,
+      "under": 0.6332
     },
     "btts": {
-      "yes": 0.4408,
-      "no": 0.5592
+      "yes": 0.4406,
+      "no": 0.5594
     }
   },
   {
@@ -657,21 +657,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3815,
-      "draw": 0.3143,
-      "away": 0.3042
+      "home": 0.3813,
+      "draw": 0.3144,
+      "away": 0.3043
     },
     "over_under_1_5": {
-      "over": 0.6074,
-      "under": 0.3926
+      "over": 0.6068,
+      "under": 0.3932
     },
     "over_under_2_5": {
-      "over": 0.3318,
-      "under": 0.6682
+      "over": 0.3313,
+      "under": 0.6687
     },
     "btts": {
-      "yes": 0.4098,
-      "no": 0.5902
+      "yes": 0.4093,
+      "no": 0.5907
     }
   },
   {
@@ -684,21 +684,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.2895,
-      "draw": 0.3074,
+      "home": 0.2897,
+      "draw": 0.3072,
       "away": 0.4031
     },
     "over_under_1_5": {
-      "over": 0.6237,
-      "under": 0.3763
+      "over": 0.6238,
+      "under": 0.3762
     },
     "over_under_2_5": {
-      "over": 0.3487,
-      "under": 0.6513
+      "over": 0.3489,
+      "under": 0.6511
     },
     "btts": {
-      "yes": 0.4218,
-      "no": 0.5782
+      "yes": 0.4219,
+      "no": 0.5781
     }
   },
   {
@@ -711,21 +711,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5324,
+      "home": 0.5322,
       "draw": 0.2708,
-      "away": 0.1968
+      "away": 0.197
     },
     "over_under_1_5": {
-      "over": 0.6744,
-      "under": 0.3256
+      "over": 0.6741,
+      "under": 0.3259
     },
     "over_under_2_5": {
-      "over": 0.4049,
-      "under": 0.5951
+      "over": 0.4047,
+      "under": 0.5953
     },
     "btts": {
-      "yes": 0.4336,
-      "no": 0.5664
+      "yes": 0.4335,
+      "no": 0.5665
     }
   },
   {
@@ -739,20 +739,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.5076,
-      "draw": 0.2762,
-      "away": 0.2162
+      "draw": 0.2761,
+      "away": 0.2163
     },
     "over_under_1_5": {
-      "over": 0.6749,
-      "under": 0.3251
+      "over": 0.6751,
+      "under": 0.3249
     },
     "over_under_2_5": {
-      "over": 0.4054,
-      "under": 0.5946
+      "over": 0.4056,
+      "under": 0.5944
     },
     "btts": {
-      "yes": 0.4441,
-      "no": 0.5559
+      "yes": 0.4442,
+      "no": 0.5558
     }
   },
   {
@@ -765,21 +765,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.6503,
+      "home": 0.6502,
       "draw": 0.2201,
-      "away": 0.1296
+      "away": 0.1297
     },
     "over_under_1_5": {
-      "over": 0.737,
-      "under": 0.263
+      "over": 0.7368,
+      "under": 0.2632
     },
     "over_under_2_5": {
-      "over": 0.4825,
-      "under": 0.5175
+      "over": 0.4823,
+      "under": 0.5177
     },
     "btts": {
-      "yes": 0.4363,
-      "no": 0.5637
+      "yes": 0.4362,
+      "no": 0.5638
     }
   },
   {
@@ -792,21 +792,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4283,
-      "draw": 0.3227,
+      "home": 0.4284,
+      "draw": 0.3225,
       "away": 0.2491
     },
     "over_under_1_5": {
-      "over": 0.5675,
-      "under": 0.4325
+      "over": 0.5677,
+      "under": 0.4323
     },
     "over_under_2_5": {
-      "over": 0.2929,
-      "under": 0.7071
+      "over": 0.2931,
+      "under": 0.7069
     },
     "btts": {
-      "yes": 0.3669,
-      "no": 0.6331
+      "yes": 0.367,
+      "no": 0.633
     }
   },
   {
@@ -819,21 +819,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.319,
+      "home": 0.3189,
       "draw": 0.3078,
-      "away": 0.3732
+      "away": 0.3734
     },
     "over_under_1_5": {
-      "over": 0.6285,
-      "under": 0.3715
+      "over": 0.6283,
+      "under": 0.3717
     },
     "over_under_2_5": {
-      "over": 0.3537,
-      "under": 0.6463
+      "over": 0.3535,
+      "under": 0.6465
     },
     "btts": {
-      "yes": 0.4293,
-      "no": 0.5707
+      "yes": 0.4292,
+      "no": 0.5708
     }
   },
   {
@@ -846,21 +846,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3592,
-      "draw": 0.3067,
+      "home": 0.3593,
+      "draw": 0.3066,
       "away": 0.3341
     },
     "over_under_1_5": {
-      "over": 0.6331,
-      "under": 0.3669
+      "over": 0.6332,
+      "under": 0.3668
     },
     "over_under_2_5": {
-      "over": 0.3586,
-      "under": 0.6414
+      "over": 0.3587,
+      "under": 0.6413
     },
     "btts": {
-      "yes": 0.4342,
-      "no": 0.5658
+      "yes": 0.4343,
+      "no": 0.5657
     }
   },
   {
@@ -873,17 +873,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4455,
-      "draw": 0.2923,
-      "away": 0.2622
+      "home": 0.4456,
+      "draw": 0.2921,
+      "away": 0.2623
     },
     "over_under_1_5": {
       "over": 0.657,
       "under": 0.343
     },
     "over_under_2_5": {
-      "over": 0.3848,
-      "under": 0.6152
+      "over": 0.3849,
+      "under": 0.6151
     },
     "btts": {
       "yes": 0.4449,
@@ -901,16 +901,16 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.127,
-      "draw": 0.2567,
-      "away": 0.6164
+      "draw": 0.2565,
+      "away": 0.6165
     },
     "over_under_1_5": {
-      "over": 0.6319,
-      "under": 0.3681
+      "over": 0.632,
+      "under": 0.368
     },
     "over_under_2_5": {
-      "over": 0.3585,
-      "under": 0.6415
+      "over": 0.3586,
+      "under": 0.6414
     },
     "btts": {
       "yes": 0.3442,
@@ -927,9 +927,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4863,
-      "draw": 0.2868,
-      "away": 0.2269
+      "home": 0.4864,
+      "draw": 0.2867,
+      "away": 0.227
     },
     "over_under_1_5": {
       "over": 0.6529,
@@ -954,21 +954,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4438,
-      "draw": 0.2978,
+      "home": 0.4439,
+      "draw": 0.2976,
       "away": 0.2585
     },
     "over_under_1_5": {
-      "over": 0.6396,
-      "under": 0.3604
+      "over": 0.6397,
+      "under": 0.3603
     },
     "over_under_2_5": {
-      "over": 0.3657,
-      "under": 0.6343
+      "over": 0.3658,
+      "under": 0.6342
     },
     "btts": {
-      "yes": 0.4287,
-      "no": 0.5713
+      "yes": 0.4288,
+      "no": 0.5712
     }
   },
   {
@@ -981,21 +981,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4213,
-      "draw": 0.292,
+      "home": 0.4214,
+      "draw": 0.2919,
       "away": 0.2867
     },
     "over_under_1_5": {
-      "over": 0.6674,
-      "under": 0.3326
+      "over": 0.6673,
+      "under": 0.3327
     },
     "over_under_2_5": {
-      "over": 0.3965,
-      "under": 0.6035
+      "over": 0.3964,
+      "under": 0.6036
     },
     "btts": {
-      "yes": 0.4597,
-      "no": 0.5403
+      "yes": 0.4596,
+      "no": 0.5404
     }
   },
   {
@@ -1008,9 +1008,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4155,
-      "draw": 0.3183,
-      "away": 0.2662
+      "home": 0.4156,
+      "draw": 0.3182,
+      "away": 0.2663
     },
     "over_under_1_5": {
       "over": 0.5859,
@@ -1035,9 +1035,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.562,
+      "home": 0.5618,
       "draw": 0.2684,
-      "away": 0.1695
+      "away": 0.1698
     },
     "over_under_1_5": {
       "over": 0.654,
@@ -1048,8 +1048,8 @@
       "under": 0.6179
     },
     "btts": {
-      "yes": 0.3989,
-      "no": 0.6011
+      "yes": 0.399,
+      "no": 0.601
     }
   },
   {
@@ -1062,17 +1062,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.1795,
-      "draw": 0.3095,
-      "away": 0.511
+      "home": 0.1796,
+      "draw": 0.3094,
+      "away": 0.5111
     },
     "over_under_1_5": {
       "over": 0.5569,
       "under": 0.4431
     },
     "over_under_2_5": {
-      "over": 0.2834,
-      "under": 0.7166
+      "over": 0.2835,
+      "under": 0.7165
     },
     "btts": {
       "yes": 0.33,
@@ -1090,16 +1090,16 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.4006,
-      "draw": 0.2881,
-      "away": 0.3113
+      "draw": 0.288,
+      "away": 0.3114
     },
     "over_under_1_5": {
       "over": 0.6856,
       "under": 0.3144
     },
     "over_under_2_5": {
-      "over": 0.4175,
-      "under": 0.5825
+      "over": 0.4176,
+      "under": 0.5824
     },
     "btts": {
       "yes": 0.4802,
@@ -1116,13 +1116,13 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4545,
+      "home": 0.4543,
       "draw": 0.3122,
-      "away": 0.2333
+      "away": 0.2335
     },
     "over_under_1_5": {
-      "over": 0.5873,
-      "under": 0.4127
+      "over": 0.5872,
+      "under": 0.4128
     },
     "over_under_2_5": {
       "over": 0.312,
@@ -1143,13 +1143,13 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5116,
-      "draw": 0.3029,
-      "away": 0.1855
+      "home": 0.5115,
+      "draw": 0.3028,
+      "away": 0.1856
     },
     "over_under_1_5": {
-      "over": 0.5784,
-      "under": 0.4216
+      "over": 0.5783,
+      "under": 0.4217
     },
     "over_under_2_5": {
       "over": 0.3037,
@@ -1170,9 +1170,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4786,
-      "draw": 0.2771,
-      "away": 0.2443
+      "home": 0.4788,
+      "draw": 0.277,
+      "away": 0.2442
     },
     "over_under_1_5": {
       "over": 0.6912,
@@ -1183,8 +1183,8 @@
       "under": 0.5756
     },
     "btts": {
-      "yes": 0.4701,
-      "no": 0.5299
+      "yes": 0.47,
+      "no": 0.53
     }
   },
   {
@@ -1198,20 +1198,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3095,
-      "draw": 0.297,
+      "draw": 0.2969,
       "away": 0.3936
     },
     "over_under_1_5": {
-      "over": 0.6589,
-      "under": 0.3411
+      "over": 0.6588,
+      "under": 0.3412
     },
     "over_under_2_5": {
       "over": 0.3868,
       "under": 0.6132
     },
     "btts": {
-      "yes": 0.4555,
-      "no": 0.5445
+      "yes": 0.4554,
+      "no": 0.5446
     }
   },
   {
@@ -1224,17 +1224,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3376,
-      "draw": 0.3469,
-      "away": 0.3154
+      "home": 0.3378,
+      "draw": 0.3468,
+      "away": 0.3155
     },
     "over_under_1_5": {
       "over": 0.5199,
       "under": 0.4801
     },
     "over_under_2_5": {
-      "over": 0.2499,
-      "under": 0.7501
+      "over": 0.25,
+      "under": 0.75
     },
     "btts": {
       "yes": 0.3391,
@@ -1252,16 +1252,16 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.5506,
-      "draw": 0.2758,
-      "away": 0.1736
+      "draw": 0.2757,
+      "away": 0.1737
     },
     "over_under_1_5": {
-      "over": 0.6382,
-      "under": 0.3618
+      "over": 0.6383,
+      "under": 0.3617
     },
     "over_under_2_5": {
-      "over": 0.3647,
-      "under": 0.6353
+      "over": 0.3648,
+      "under": 0.6352
     },
     "btts": {
       "yes": 0.3888,
@@ -1283,16 +1283,16 @@
       "away": 0.2496
     },
     "over_under_1_5": {
-      "over": 0.6849,
-      "under": 0.3151
+      "over": 0.6847,
+      "under": 0.3153
     },
     "over_under_2_5": {
-      "over": 0.4169,
-      "under": 0.5831
+      "over": 0.4167,
+      "under": 0.5833
     },
     "btts": {
-      "yes": 0.4661,
-      "no": 0.5339
+      "yes": 0.4659,
+      "no": 0.5341
     }
   },
   {
@@ -1305,21 +1305,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4236,
+      "home": 0.4234,
       "draw": 0.302,
-      "away": 0.2744
+      "away": 0.2746
     },
     "over_under_1_5": {
-      "over": 0.6341,
-      "under": 0.3659
+      "over": 0.6338,
+      "under": 0.3662
     },
     "over_under_2_5": {
-      "over": 0.3597,
-      "under": 0.6403
+      "over": 0.3595,
+      "under": 0.6405
     },
     "btts": {
-      "yes": 0.4278,
-      "no": 0.5722
+      "yes": 0.4276,
+      "no": 0.5724
     }
   },
   {
@@ -1332,21 +1332,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.2561,
-      "draw": 0.3097,
-      "away": 0.4342
+      "home": 0.2563,
+      "draw": 0.3096,
+      "away": 0.4341
     },
     "over_under_1_5": {
-      "over": 0.6054,
-      "under": 0.3946
+      "over": 0.6052,
+      "under": 0.3948
     },
     "over_under_2_5": {
-      "over": 0.33,
-      "under": 0.67
+      "over": 0.3298,
+      "under": 0.6702
     },
     "btts": {
-      "yes": 0.3993,
-      "no": 0.6007
+      "yes": 0.3992,
+      "no": 0.6008
     }
   },
   {
@@ -1360,8 +1360,8 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.4689,
-      "draw": 0.3008,
-      "away": 0.2303
+      "draw": 0.3007,
+      "away": 0.2304
     },
     "over_under_1_5": {
       "over": 0.6161,
@@ -1386,9 +1386,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5741,
+      "home": 0.5739,
       "draw": 0.2449,
-      "away": 0.181
+      "away": 0.1812
     },
     "over_under_1_5": {
       "over": 0.7325,
@@ -1414,20 +1414,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.539,
-      "draw": 0.2687,
-      "away": 0.1923
+      "draw": 0.2686,
+      "away": 0.1924
     },
     "over_under_1_5": {
       "over": 0.6761,
       "under": 0.3239
     },
     "over_under_2_5": {
-      "over": 0.4069,
-      "under": 0.5931
+      "over": 0.407,
+      "under": 0.593
     },
     "btts": {
-      "yes": 0.4325,
-      "no": 0.5675
+      "yes": 0.4326,
+      "no": 0.5674
     }
   },
   {
@@ -1440,21 +1440,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5315,
-      "draw": 0.2859,
+      "home": 0.5316,
+      "draw": 0.2858,
       "away": 0.1827
     },
     "over_under_1_5": {
-      "over": 0.6202,
-      "under": 0.3798
+      "over": 0.6201,
+      "under": 0.3799
     },
     "over_under_2_5": {
-      "over": 0.3456,
-      "under": 0.6544
+      "over": 0.3455,
+      "under": 0.6545
     },
     "btts": {
-      "yes": 0.3801,
-      "no": 0.6199
+      "yes": 0.38,
+      "no": 0.62
     }
   },
   {
@@ -1468,16 +1468,16 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3464,
-      "draw": 0.2876,
-      "away": 0.366
+      "draw": 0.2875,
+      "away": 0.3661
     },
     "over_under_1_5": {
       "over": 0.6918,
       "under": 0.3082
     },
     "over_under_2_5": {
-      "over": 0.4248,
-      "under": 0.5752
+      "over": 0.4249,
+      "under": 0.5751
     },
     "btts": {
       "yes": 0.4886,
@@ -1494,21 +1494,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3302,
-      "draw": 0.3292,
-      "away": 0.3405
+      "home": 0.3303,
+      "draw": 0.3291,
+      "away": 0.3406
     },
     "over_under_1_5": {
-      "over": 0.5681,
-      "under": 0.4319
+      "over": 0.568,
+      "under": 0.432
     },
     "over_under_2_5": {
       "over": 0.2933,
       "under": 0.7067
     },
     "btts": {
-      "yes": 0.3784,
-      "no": 0.6216
+      "yes": 0.3783,
+      "no": 0.6217
     }
   },
   {
@@ -1522,20 +1522,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3357,
-      "draw": 0.3188,
-      "away": 0.3455
+      "draw": 0.3187,
+      "away": 0.3456
     },
     "over_under_1_5": {
-      "over": 0.5978,
-      "under": 0.4022
+      "over": 0.5979,
+      "under": 0.4021
     },
     "over_under_2_5": {
-      "over": 0.3222,
-      "under": 0.6778
+      "over": 0.3223,
+      "under": 0.6777
     },
     "btts": {
-      "yes": 0.4035,
-      "no": 0.5965
+      "yes": 0.4036,
+      "no": 0.5964
     }
   },
   {
@@ -1548,13 +1548,13 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.1863,
-      "draw": 0.2774,
-      "away": 0.5362
+      "home": 0.1864,
+      "draw": 0.2773,
+      "away": 0.5363
     },
     "over_under_1_5": {
-      "over": 0.6464,
-      "under": 0.3536
+      "over": 0.6463,
+      "under": 0.3537
     },
     "over_under_2_5": {
       "over": 0.3735,
@@ -1575,21 +1575,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.4673,
-      "draw": 0.2798,
-      "away": 0.2528
+      "home": 0.4675,
+      "draw": 0.2797,
+      "away": 0.2529
     },
     "over_under_1_5": {
-      "over": 0.6882,
-      "under": 0.3118
+      "over": 0.6884,
+      "under": 0.3116
     },
     "over_under_2_5": {
-      "over": 0.4207,
-      "under": 0.5793
+      "over": 0.421,
+      "under": 0.579
     },
     "btts": {
-      "yes": 0.4701,
-      "no": 0.5299
+      "yes": 0.4703,
+      "no": 0.5297
     }
   },
   {
@@ -1603,20 +1603,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.4615,
-      "draw": 0.3061,
-      "away": 0.2324
+      "draw": 0.306,
+      "away": 0.2325
     },
     "over_under_1_5": {
-      "over": 0.6031,
-      "under": 0.3969
+      "over": 0.603,
+      "under": 0.397
     },
     "over_under_2_5": {
-      "over": 0.3278,
-      "under": 0.6722
+      "over": 0.3277,
+      "under": 0.6723
     },
     "btts": {
-      "yes": 0.3901,
-      "no": 0.6099
+      "yes": 0.39,
+      "no": 0.61
     }
   },
   {
@@ -1629,8 +1629,8 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5349,
-      "draw": 0.2705,
+      "home": 0.535,
+      "draw": 0.2704,
       "away": 0.1946
     },
     "over_under_1_5": {
@@ -1656,21 +1656,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.3145,
-      "draw": 0.3184,
-      "away": 0.3671
+      "home": 0.3146,
+      "draw": 0.3183,
+      "away": 0.3672
     },
     "over_under_1_5": {
-      "over": 0.5975,
-      "under": 0.4025
+      "over": 0.5974,
+      "under": 0.4026
     },
     "over_under_2_5": {
-      "over": 0.3219,
-      "under": 0.6781
+      "over": 0.3218,
+      "under": 0.6782
     },
     "btts": {
-      "yes": 0.4024,
-      "no": 0.5976
+      "yes": 0.4023,
+      "no": 0.5977
     }
   },
   {
@@ -1684,20 +1684,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3805,
-      "draw": 0.3211,
-      "away": 0.2984
+      "draw": 0.321,
+      "away": 0.2986
     },
     "over_under_1_5": {
-      "over": 0.5872,
-      "under": 0.4128
+      "over": 0.5873,
+      "under": 0.4127
     },
     "over_under_2_5": {
-      "over": 0.3117,
-      "under": 0.6883
+      "over": 0.3119,
+      "under": 0.6881
     },
     "btts": {
-      "yes": 0.3922,
-      "no": 0.6078
+      "yes": 0.3923,
+      "no": 0.6077
     }
   },
   {
@@ -1711,16 +1711,16 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3083,
-      "draw": 0.3329,
-      "away": 0.3587
+      "draw": 0.3328,
+      "away": 0.3589
     },
     "over_under_1_5": {
       "over": 0.5564,
       "under": 0.4436
     },
     "over_under_2_5": {
-      "over": 0.2824,
-      "under": 0.7176
+      "over": 0.2825,
+      "under": 0.7175
     },
     "btts": {
       "yes": 0.3679,
@@ -1737,9 +1737,9 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5434,
+      "home": 0.5433,
       "draw": 0.2772,
-      "away": 0.1794
+      "away": 0.1796
     },
     "over_under_1_5": {
       "over": 0.6402,
@@ -1750,8 +1750,8 @@
       "under": 0.6331
     },
     "btts": {
-      "yes": 0.3942,
-      "no": 0.6058
+      "yes": 0.3943,
+      "no": 0.6057
     }
   },
   {
@@ -1765,8 +1765,8 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.3182,
-      "draw": 0.2996,
-      "away": 0.3822
+      "draw": 0.2995,
+      "away": 0.3823
     },
     "over_under_1_5": {
       "over": 0.6526,
@@ -1777,8 +1777,8 @@
       "under": 0.6202
     },
     "btts": {
-      "yes": 0.4507,
-      "no": 0.5493
+      "yes": 0.4506,
+      "no": 0.5494
     }
   },
   {
@@ -1792,20 +1792,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.6567,
-      "draw": 0.2317,
-      "away": 0.1116
+      "draw": 0.2316,
+      "away": 0.1117
     },
     "over_under_1_5": {
-      "over": 0.6746,
-      "under": 0.3254
+      "over": 0.6745,
+      "under": 0.3255
     },
     "over_under_2_5": {
-      "over": 0.4061,
-      "under": 0.5939
+      "over": 0.406,
+      "under": 0.594
     },
     "btts": {
-      "yes": 0.3601,
-      "no": 0.6399
+      "yes": 0.36,
+      "no": 0.64
     }
   },
   {
@@ -1819,20 +1819,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.337,
-      "draw": 0.3063,
-      "away": 0.3568
+      "draw": 0.3061,
+      "away": 0.3569
     },
     "over_under_1_5": {
       "over": 0.6347,
       "under": 0.3653
     },
     "over_under_2_5": {
-      "over": 0.3603,
-      "under": 0.6397
+      "over": 0.3604,
+      "under": 0.6396
     },
     "btts": {
-      "yes": 0.4357,
-      "no": 0.5643
+      "yes": 0.4358,
+      "no": 0.5642
     }
   },
   {
@@ -1846,20 +1846,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.491,
-      "draw": 0.3019,
-      "away": 0.2071
+      "draw": 0.3018,
+      "away": 0.2072
     },
     "over_under_1_5": {
       "over": 0.5979,
       "under": 0.4021
     },
     "over_under_2_5": {
-      "over": 0.3226,
-      "under": 0.6774
+      "over": 0.3227,
+      "under": 0.6773
     },
     "btts": {
-      "yes": 0.3755,
-      "no": 0.6245
+      "yes": 0.3756,
+      "no": 0.6244
     }
   },
   {
@@ -1872,17 +1872,17 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.187,
+      "home": 0.1871,
       "draw": 0.2839,
-      "away": 0.5291
+      "away": 0.529
     },
     "over_under_1_5": {
-      "over": 0.6293,
-      "under": 0.3707
+      "over": 0.6292,
+      "under": 0.3708
     },
     "over_under_2_5": {
-      "over": 0.3551,
-      "under": 0.6449
+      "over": 0.355,
+      "under": 0.645
     },
     "btts": {
       "yes": 0.39,
@@ -1899,21 +1899,21 @@
     "away_goals": null,
     "fixture_id": null,
     "1X2": {
-      "home": 0.5444,
+      "home": 0.5443,
       "draw": 0.2678,
-      "away": 0.1878
+      "away": 0.1879
     },
     "over_under_1_5": {
-      "over": 0.6745,
-      "under": 0.3255
+      "over": 0.6742,
+      "under": 0.3258
     },
     "over_under_2_5": {
-      "over": 0.4051,
-      "under": 0.5949
+      "over": 0.4048,
+      "under": 0.5952
     },
     "btts": {
-      "yes": 0.4284,
-      "no": 0.5716
+      "yes": 0.4282,
+      "no": 0.5718
     }
   },
   {
@@ -1927,20 +1927,20 @@
     "fixture_id": null,
     "1X2": {
       "home": 0.4799,
-      "draw": 0.2898,
-      "away": 0.2302
+      "draw": 0.2897,
+      "away": 0.2304
     },
     "over_under_1_5": {
-      "over": 0.6464,
-      "under": 0.3536
+      "over": 0.6465,
+      "under": 0.3535
     },
     "over_under_2_5": {
-      "over": 0.3732,
-      "under": 0.6268
+      "over": 0.3734,
+      "under": 0.6266
     },
     "btts": {
-      "yes": 0.4253,
-      "no": 0.5747
+      "yes": 0.4254,
+      "no": 0.5746
     }
   }
 ]
