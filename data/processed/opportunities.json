@@ -1,299 +1,298 @@
 {
-  "timestamp": "2026-06-23T04:01:18.990801+00:00",
+  "timestamp": "2026-06-23T09:53:48.365246+00:00",
   "all_probabilities": {
     "Algeria": {
-      "p_consensus": 0.010504,
-      "p_stat": 0.0144,
+      "p_consensus": 0.010053,
+      "p_stat": 0.0135,
       "p_ml": 0.0066,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Argentina": {
-      "p_consensus": 0.069724,
-      "p_stat": 0.109,
+      "p_consensus": 0.071071,
+      "p_stat": 0.1117,
       "p_ml": 0.0304,
-      "p_market": 0.134682
+      "p_market": 0.140671
     },
     "Australia": {
-      "p_consensus": 0.011504,
-      "p_stat": 0.0181,
+      "p_consensus": 0.011453,
+      "p_stat": 0.018,
       "p_ml": 0.0049,
-      "p_market": 0.002467
+      "p_market": 0.002468
     },
     "Austria": {
-      "p_consensus": 0.013255,
-      "p_stat": 0.0185,
+      "p_consensus": 0.012554,
+      "p_stat": 0.0171,
       "p_ml": 0.008,
-      "p_market": 0.002467
+      "p_market": 0.002468
     },
     "Belgium": {
-      "p_consensus": 0.02781,
-      "p_stat": 0.0335,
+      "p_consensus": 0.028809,
+      "p_stat": 0.0355,
       "p_ml": 0.0221,
-      "p_market": 0.011347
+      "p_market": 0.01234
     },
     "Bosnia and Herzegovina": {
-      "p_consensus": 0.002051,
-      "p_stat": 0.0035,
+      "p_consensus": 0.002101,
+      "p_stat": 0.0036,
       "p_ml": 0.0006,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Brazil": {
-      "p_consensus": 0.047767,
-      "p_stat": 0.0719,
+      "p_consensus": 0.048715,
+      "p_stat": 0.0738,
       "p_ml": 0.0236,
-      "p_market": 0.049827
+      "p_market": 0.049852
     },
     "Canada": {
-      "p_consensus": 0.013705,
-      "p_stat": 0.0192,
+      "p_consensus": 0.013504,
+      "p_stat": 0.0188,
       "p_ml": 0.0082,
-      "p_market": 0.003453
+      "p_market": 0.003455
     },
     "Cape Verde": {
-      "p_consensus": 0.001801,
-      "p_stat": 0.0027,
+      "p_consensus": 0.0016,
+      "p_stat": 0.0023,
       "p_ml": 0.0009,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Colombia": {
-      "p_consensus": 0.039464,
-      "p_stat": 0.0608,
+      "p_consensus": 0.037411,
+      "p_stat": 0.0567,
       "p_ml": 0.0181,
-      "p_market": 0.015294
+      "p_market": 0.014314
     },
     "Croatia": {
-      "p_consensus": 0.017656,
-      "p_stat": 0.0184,
+      "p_consensus": 0.017855,
+      "p_stat": 0.0188,
       "p_ml": 0.0169,
-      "p_market": 0.00444
+      "p_market": 0.004442
     },
     "Czechia": {
-      "p_consensus": 0.005952,
-      "p_stat": 0.0091,
+      "p_consensus": 0.006202,
+      "p_stat": 0.0096,
       "p_ml": 0.0028,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "DR Congo": {
-      "p_consensus": 0.004502,
-      "p_stat": 0.005,
+      "p_consensus": 0.004801,
+      "p_stat": 0.0056,
       "p_ml": 0.004,
-      "p_market": 0.00148
+      "p_market": 0.001481
     },
     "Ecuador": {
-      "p_consensus": 0.023808,
-      "p_stat": 0.0369,
+      "p_consensus": 0.023907,
+      "p_stat": 0.0371,
       "p_ml": 0.0107,
-      "p_market": 0.00148
+      "p_market": 0.001481
     },
     "Egypt": {
-      "p_consensus": 0.013505,
-      "p_stat": 0.0121,
+      "p_consensus": 0.012404,
+      "p_stat": 0.0099,
       "p_ml": 0.0149,
-      "p_market": 0.002467
+      "p_market": 0.002468
     },
     "England": {
-      "p_consensus": 0.043715,
-      "p_stat": 0.0452,
+      "p_consensus": 0.042563,
+      "p_stat": 0.0429,
       "p_ml": 0.0422,
-      "p_market": 0.121855
+      "p_market": 0.121915
     },
     "France": {
-      "p_consensus": 0.043465,
-      "p_stat": 0.042,
+      "p_consensus": 0.042213,
+      "p_stat": 0.0395,
       "p_ml": 0.0449,
-      "p_market": 0.194869
+      "p_market": 0.194965
     },
     "Germany": {
-      "p_consensus": 0.037413,
-      "p_stat": 0.0424,
+      "p_consensus": 0.036761,
+      "p_stat": 0.0411,
       "p_ml": 0.0324,
-      "p_market": 0.055747
+      "p_market": 0.055775
     },
     "Ghana": {
-      "p_consensus": 0.002051,
-      "p_stat": 0.003,
+      "p_consensus": 0.001701,
+      "p_stat": 0.0023,
       "p_ml": 0.0011,
-      "p_market": 0.00148
+      "p_market": 0.001481
     },
     "Haiti": {
-      "p_consensus": 0.0011,
-      "p_stat": 0.0018,
+      "p_consensus": 0.0015,
+      "p_stat": 0.0026,
       "p_ml": 0.0004,
       "p_market": 0.0
     },
     "Iran": {
-      "p_consensus": 0.016906,
-      "p_stat": 0.0121,
+      "p_consensus": 0.016405,
+      "p_stat": 0.0111,
       "p_ml": 0.0217,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Iraq": {
-      "p_consensus": 0.002851,
-      "p_stat": 0.0027,
+      "p_consensus": 0.003051,
+      "p_stat": 0.0031,
       "p_ml": 0.003,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Ivory Coast": {
-      "p_consensus": 0.012004,
-      "p_stat": 0.0125,
+      "p_consensus": 0.011103,
+      "p_stat": 0.0107,
       "p_ml": 0.0115,
-      "p_market": 0.003453
+      "p_market": 0.003455
     },
     "Japan": {
-      "p_consensus": 0.025709,
-      "p_stat": 0.0281,
+      "p_consensus": 0.024507,
+      "p_stat": 0.0257,
       "p_ml": 0.0233,
-      "p_market": 0.018254
+      "p_market": 0.018263
     },
     "Jordan": {
-      "p_consensus": 0.001651,
-      "p_stat": 0.0022,
+      "p_consensus": 0.002101,
+      "p_stat": 0.0031,
       "p_ml": 0.0011,
-      "p_market": 0.000493
+      "p_market": 0.0
     },
     "Mexico": {
-      "p_consensus": 0.02886,
-      "p_stat": 0.0266,
+      "p_consensus": 0.027608,
+      "p_stat": 0.0241,
       "p_ml": 0.0311,
-      "p_market": 0.012333
+      "p_market": 0.01234
     },
     "Morocco": {
-      "p_consensus": 0.035763,
-      "p_stat": 0.0294,
+      "p_consensus": 0.038011,
+      "p_stat": 0.0339,
       "p_ml": 0.0421,
-      "p_market": 0.020227
+      "p_market": 0.018263
     },
     "Netherlands": {
-      "p_consensus": 0.041665,
-      "p_stat": 0.0332,
+      "p_consensus": 0.040712,
+      "p_stat": 0.0313,
       "p_ml": 0.0501,
-      "p_market": 0.052787
+      "p_market": 0.04689
     },
     "New Zealand": {
-      "p_consensus": 0.001601,
-      "p_stat": 0.0026,
+      "p_consensus": 0.00155,
+      "p_stat": 0.0025,
       "p_ml": 0.0006,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Norway": {
-      "p_consensus": 0.016756,
-      "p_stat": 0.0232,
+      "p_consensus": 0.017755,
+      "p_stat": 0.0252,
       "p_ml": 0.0103,
-      "p_market": 0.026147
+      "p_market": 0.028134
     },
     "Panama": {
-      "p_consensus": 0.006302,
-      "p_stat": 0.0036,
+      "p_consensus": 0.006602,
+      "p_stat": 0.0042,
       "p_ml": 0.009,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Paraguay": {
-      "p_consensus": 0.011554,
-      "p_stat": 0.0169,
+      "p_consensus": 0.011603,
+      "p_stat": 0.017,
       "p_ml": 0.0062,
-      "p_market": 0.00148
+      "p_market": 0.001481
     },
     "Portugal": {
-      "p_consensus": 0.046266,
-      "p_stat": 0.0371,
+      "p_consensus": 0.046614,
+      "p_stat": 0.0378,
       "p_ml": 0.0554,
-      "p_market": 0.066601
+      "p_market": 0.066634
     },
     "Qatar": {
-      "p_consensus": 0.002851,
-      "p_stat": 0.0008,
+      "p_consensus": 0.003051,
+      "p_stat": 0.0012,
       "p_ml": 0.0049,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Saudi Arabia": {
-      "p_consensus": 0.003851,
-      "p_stat": 0.0043,
+      "p_consensus": 0.003601,
+      "p_stat": 0.0038,
       "p_ml": 0.0034,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "Scotland": {
-      "p_consensus": 0.008853,
-      "p_stat": 0.0076,
+      "p_consensus": 0.008653,
+      "p_stat": 0.0072,
       "p_ml": 0.0101,
-      "p_market": 0.00148
+      "p_market": 0.001481
     },
     "Senegal": {
-      "p_consensus": 0.02926,
-      "p_stat": 0.0164,
+      "p_consensus": 0.028509,
+      "p_stat": 0.0149,
       "p_ml": 0.0421,
-      "p_market": 0.002467
+      "p_market": 0.002468
     },
     "South Africa": {
-      "p_consensus": 0.006052,
-      "p_stat": 0.0038,
+      "p_consensus": 0.005652,
+      "p_stat": 0.003,
       "p_ml": 0.0083,
-      "p_market": 0.000493
+      "p_market": 0.000494
     },
     "South Korea": {
-      "p_consensus": 0.02921,
-      "p_stat": 0.0162,
+      "p_consensus": 0.028859,
+      "p_stat": 0.0155,
       "p_ml": 0.0422,
-      "p_market": 0.002467
+      "p_market": 0.002468
     },
     "Spain": {
-      "p_consensus": 0.074026,
-      "p_stat": 0.0542,
+      "p_consensus": 0.073722,
+      "p_stat": 0.0536,
       "p_ml": 0.0938,
-      "p_market": 0.136655
+      "p_market": 0.136723
     },
     "Switzerland": {
-      "p_consensus": 0.034512,
-      "p_stat": 0.0277,
+      "p_consensus": 0.035711,
+      "p_stat": 0.0301,
       "p_ml": 0.0413,
-      "p_market": 0.006413
+      "p_market": 0.006417
     },
     "Tunisia": {
-      "p_consensus": 0.007753,
-      "p_stat": 0.0042,
+      "p_consensus": 0.009203,
+      "p_stat": 0.0071,
       "p_ml": 0.0113,
       "p_market": 0.0
     },
     "Türkiye": {
-      "p_consensus": 0.02716,
-      "p_stat": 0.0123,
+      "p_consensus": 0.028609,
+      "p_stat": 0.0152,
       "p_ml": 0.042,
       "p_market": 0.0
     },
     "Ukraine": {
-      "p_consensus": 0.013705,
-      "p_stat": 0.0056,
+      "p_consensus": 0.015205,
+      "p_stat": 0.0086,
       "p_ml": 0.0218,
       "p_market": 0.0
     },
     "United States": {
-      "p_consensus": 0.035212,
-      "p_stat": 0.0126,
+      "p_consensus": 0.035461,
+      "p_stat": 0.0131,
       "p_ml": 0.0578,
-      "p_market": 0.035027
+      "p_market": 0.035044
     },
     "Uruguay": {
-      "p_consensus": 0.039364,
-      "p_stat": 0.0299,
+      "p_consensus": 0.040212,
+      "p_stat": 0.0316,
       "p_ml": 0.0488,
-      "p_market": 0.00148
+      "p_market": 0.001481
     },
     "Uzbekistan": {
-      "p_consensus": 0.009553,
-      "p_stat": 0.006,
+      "p_consensus": 0.008753,
+      "p_stat": 0.0044,
       "p_ml": 0.0131,
-      "p_market": 0.000493
+      "p_market": 0.000494
     }
   },
   "tracked_markets": [
     {
       "team": "Spain",
-      "p_consensus": 0.074026,
-      "p_market": 0.136655,
-      "odds": 7.32,
-      "ev_percent": -45.83,
+      "p_consensus": 0.073722,
+      "p_market": 0.136723,
+      "odds": 7.31,
+      "ev_percent": -46.08,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -45.07,
         -43.57,
         -46.23,
         -45.88,
@@ -302,18 +301,18 @@
         -45.2,
         -45.32,
         -45.84,
-        -45.83
+        -45.83,
+        -46.08
       ]
     },
     {
       "team": "Argentina",
-      "p_consensus": 0.069724,
-      "p_market": 0.134682,
-      "odds": 7.42,
-      "ev_percent": -48.23,
+      "p_consensus": 0.071071,
+      "p_market": 0.140671,
+      "odds": 7.11,
+      "ev_percent": -49.48,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -34.88,
         -37.04,
         -36.57,
         -38.01,
@@ -322,18 +321,18 @@
         -47.36,
         -49.33,
         -46.62,
-        -48.23
+        -48.23,
+        -49.48
       ]
     },
     {
       "team": "Brazil",
-      "p_consensus": 0.047767,
-      "p_market": 0.049827,
-      "odds": 20.07,
-      "ev_percent": -4.14,
+      "p_consensus": 0.048715,
+      "p_market": 0.049852,
+      "odds": 20.06,
+      "ev_percent": -2.28,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -20.49,
         -15.32,
         -12.02,
         -13.22,
@@ -342,18 +341,18 @@
         -6.87,
         -4.1,
         -11.81,
-        -4.14
+        -4.14,
+        -2.28
       ]
     },
     {
       "team": "Portugal",
-      "p_consensus": 0.046266,
-      "p_market": 0.066601,
+      "p_consensus": 0.046614,
+      "p_market": 0.066634,
       "odds": 15.01,
-      "ev_percent": -30.53,
+      "ev_percent": -30.04,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -28.08,
         -30.97,
         -29.12,
         -26.96,
@@ -362,18 +361,18 @@
         -30.16,
         -29.96,
         -29.07,
-        -30.53
+        -30.53,
+        -30.04
       ]
     },
     {
       "team": "England",
-      "p_consensus": 0.043715,
-      "p_market": 0.121855,
-      "odds": 8.21,
-      "ev_percent": -64.13,
+      "p_consensus": 0.042563,
+      "p_market": 0.121915,
+      "odds": 8.2,
+      "ev_percent": -65.09,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -65.05,
         -64.87,
         -66.19,
         -64.92,
@@ -382,18 +381,18 @@
         -63.66,
         -64.33,
         -63.23,
-        -64.13
+        -64.13,
+        -65.09
       ]
     },
     {
       "team": "France",
-      "p_consensus": 0.043465,
-      "p_market": 0.194869,
+      "p_consensus": 0.042213,
+      "p_market": 0.194965,
       "odds": 5.13,
-      "ev_percent": -77.7,
+      "ev_percent": -78.35,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -76.98,
         -77.23,
         -77.36,
         -76.85,
@@ -402,18 +401,18 @@
         -79.49,
         -79.41,
         -79.23,
-        -77.7
+        -77.7,
+        -78.35
       ]
     },
     {
       "team": "Netherlands",
-      "p_consensus": 0.041665,
-      "p_market": 0.052787,
-      "odds": 18.94,
-      "ev_percent": -21.07,
+      "p_consensus": 0.040712,
+      "p_market": 0.04689,
+      "odds": 21.33,
+      "ev_percent": -13.18,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -29.88,
         -26.54,
         -28.18,
         -25.92,
@@ -422,38 +421,18 @@
         -30.46,
         -28.5,
         -29.68,
-        -21.07
-      ]
-    },
-    {
-      "team": "Colombia",
-      "p_consensus": 0.039464,
-      "p_market": 0.015294,
-      "odds": 65.39,
-      "ev_percent": 158.04,
-      "kelly_fraction": 2.45,
-      "ev_history": [
-        158.9,
-        158.12,
-        172.37,
-        166.65,
-        170.42,
-        153.64,
-        167.0,
-        151.08,
-        144.94,
-        158.04
+        -21.07,
+        -13.18
       ]
     },
     {
       "team": "Uruguay",
-      "p_consensus": 0.039364,
-      "p_market": 0.00148,
-      "odds": 675.67,
-      "ev_percent": 2559.68,
-      "kelly_fraction": 3.79,
+      "p_consensus": 0.040212,
+      "p_market": 0.001481,
+      "odds": 675.33,
+      "ev_percent": 2615.65,
+      "kelly_fraction": 3.88,
       "ev_history": [
-        625.56,
         653.73,
         622.75,
         637.34,
@@ -462,38 +441,18 @@
         2814.68,
         2962.83,
         2942.72,
-        2559.68
-      ]
-    },
-    {
-      "team": "Germany",
-      "p_consensus": 0.037413,
-      "p_market": 0.055747,
-      "odds": 17.94,
-      "ev_percent": -32.89,
-      "kelly_fraction": 0.0,
-      "ev_history": [
-        -32.1,
-        -33.66,
-        -30.33,
-        -30.88,
-        -31.07,
-        -25.24,
-        -23.61,
-        -26.49,
-        -27.95,
-        -32.89
+        2559.68,
+        2615.65
       ]
     },
     {
       "team": "Morocco",
-      "p_consensus": 0.035763,
-      "p_market": 0.020227,
-      "odds": 49.44,
-      "ev_percent": 76.81,
-      "kelly_fraction": 1.59,
+      "p_consensus": 0.038011,
+      "p_market": 0.018263,
+      "odds": 54.76,
+      "ev_percent": 108.14,
+      "kelly_fraction": 2.01,
       "ev_history": [
-        76.22,
         66.3,
         70.91,
         75.24,
@@ -502,38 +461,58 @@
         92.42,
         96.35,
         94.13,
-        76.81
+        76.81,
+        108.14
       ]
     },
     {
-      "team": "United States",
-      "p_consensus": 0.035212,
-      "p_market": 0.035027,
-      "odds": 28.55,
-      "ev_percent": 0.53,
-      "kelly_fraction": 0.02,
+      "team": "Colombia",
+      "p_consensus": 0.037411,
+      "p_market": 0.014314,
+      "odds": 69.86,
+      "ev_percent": 161.36,
+      "kelly_fraction": 2.34,
       "ev_history": [
-        -11.04,
-        -11.39,
-        -10.47,
-        -10.19,
-        -8.02,
-        -2.12,
-        3.16,
-        4.43,
-        2.22,
-        0.53
+        158.12,
+        172.37,
+        166.65,
+        170.42,
+        153.64,
+        167.0,
+        151.08,
+        144.94,
+        158.04,
+        161.36
+      ]
+    },
+    {
+      "team": "Germany",
+      "p_consensus": 0.036761,
+      "p_market": 0.055775,
+      "odds": 17.93,
+      "ev_percent": -34.09,
+      "kelly_fraction": 0.0,
+      "ev_history": [
+        -33.66,
+        -30.33,
+        -30.88,
+        -31.07,
+        -25.24,
+        -23.61,
+        -26.49,
+        -27.95,
+        -32.89,
+        -34.09
       ]
     },
     {
       "team": "Switzerland",
-      "p_consensus": 0.034512,
-      "p_market": 0.006413,
-      "odds": 155.92,
-      "ev_percent": 438.12,
-      "kelly_fraction": 2.83,
+      "p_consensus": 0.035711,
+      "p_market": 0.006417,
+      "odds": 155.85,
+      "ev_percent": 456.54,
+      "kelly_fraction": 2.95,
       "ev_history": [
-        332.66,
         358.43,
         350.86,
         324.26,
@@ -542,38 +521,38 @@
         424.11,
         432.47,
         448.91,
-        438.12
+        438.12,
+        456.54
       ]
     },
     {
-      "team": "Senegal",
-      "p_consensus": 0.02926,
-      "p_market": 0.002467,
-      "odds": 405.4,
-      "ev_percent": 1086.21,
-      "kelly_fraction": 2.69,
+      "team": "United States",
+      "p_consensus": 0.035461,
+      "p_market": 0.035044,
+      "odds": 28.54,
+      "ev_percent": 1.19,
+      "kelly_fraction": 0.04,
       "ev_history": [
-        496.53,
-        499.79,
-        468.81,
-        464.61,
-        480.11,
-        455.57,
-        453.47,
-        450.04,
-        466.47,
-        1086.21
+        -11.39,
+        -10.47,
+        -10.19,
+        -8.02,
+        -2.12,
+        3.16,
+        4.43,
+        2.22,
+        0.53,
+        1.19
       ]
     },
     {
       "team": "South Korea",
-      "p_consensus": 0.02921,
-      "p_market": 0.002467,
-      "odds": 405.4,
-      "ev_percent": 1084.18,
-      "kelly_fraction": 2.68,
+      "p_consensus": 0.028859,
+      "p_market": 0.002468,
+      "odds": 405.2,
+      "ev_percent": 1069.35,
+      "kelly_fraction": 2.65,
       "ev_history": [
-        677.25,
         678.8,
         680.27,
         988.92,
@@ -582,38 +561,18 @@
         911.29,
         943.96,
         883.97,
-        1084.18
-      ]
-    },
-    {
-      "team": "Mexico",
-      "p_consensus": 0.02886,
-      "p_market": 0.012333,
-      "odds": 81.08,
-      "ev_percent": 134.0,
-      "kelly_fraction": 1.67,
-      "ev_history": [
-        162.88,
-        138.62,
-        136.71,
-        139.11,
-        148.76,
-        159.71,
-        165.18,
-        164.99,
-        156.16,
-        134.0
+        1084.18,
+        1069.35
       ]
     },
     {
       "team": "Belgium",
-      "p_consensus": 0.02781,
-      "p_market": 0.011347,
-      "odds": 88.13,
-      "ev_percent": 145.09,
+      "p_consensus": 0.028809,
+      "p_market": 0.01234,
+      "odds": 81.04,
+      "ev_percent": 133.47,
       "kelly_fraction": 1.67,
       "ev_history": [
-        78.49,
         95.84,
         80.19,
         138.94,
@@ -622,12 +581,13 @@
         167.05,
         177.37,
         147.05,
-        145.09
+        145.09,
+        133.47
       ]
     },
     {
       "team": "Türkiye",
-      "p_consensus": 0.02716,
+      "p_consensus": 0.028609,
       "p_market": 0.0,
       "odds": 0.0,
       "ev_percent": 0.0,
@@ -646,14 +606,53 @@
       ]
     },
     {
-      "team": "Japan",
-      "p_consensus": 0.025709,
-      "p_market": 0.018254,
-      "odds": 54.78,
-      "ev_percent": 40.84,
-      "kelly_fraction": 0.76,
+      "team": "Senegal",
+      "p_consensus": 0.028509,
+      "p_market": 0.002468,
+      "odds": 405.2,
+      "ev_percent": 1055.17,
+      "kelly_fraction": 2.61,
       "ev_history": [
-        23.42,
+        499.79,
+        468.81,
+        464.61,
+        480.11,
+        455.57,
+        453.47,
+        450.04,
+        466.47,
+        1086.21,
+        1055.17
+      ]
+    },
+    {
+      "team": "Mexico",
+      "p_consensus": 0.027608,
+      "p_market": 0.01234,
+      "odds": 81.04,
+      "ev_percent": 123.74,
+      "kelly_fraction": 1.55,
+      "ev_history": [
+        138.62,
+        136.71,
+        139.11,
+        148.76,
+        159.71,
+        165.18,
+        164.99,
+        156.16,
+        134.0,
+        123.74
+      ]
+    },
+    {
+      "team": "Japan",
+      "p_consensus": 0.024507,
+      "p_market": 0.018263,
+      "odds": 54.76,
+      "ev_percent": 34.19,
+      "kelly_fraction": 0.64,
+      "ev_history": [
         8.3,
         31.31,
         8.56,
@@ -662,18 +661,18 @@
         -2.63,
         13.76,
         18.01,
-        40.84
+        40.84,
+        34.19
       ]
     },
     {
       "team": "Ecuador",
-      "p_consensus": 0.023808,
-      "p_market": 0.00148,
-      "odds": 675.67,
-      "ev_percent": 1508.65,
-      "kelly_fraction": 2.24,
+      "p_consensus": 0.023907,
+      "p_market": 0.001481,
+      "odds": 675.33,
+      "ev_percent": 1514.53,
+      "kelly_fraction": 2.25,
       "ev_history": [
-        1559.31,
         1744.73,
         1576.09,
         1503.75,
@@ -682,18 +681,18 @@
         1411.82,
         1410.9,
         1417.97,
-        1508.65
+        1508.65,
+        1514.53
       ]
     },
     {
       "team": "Croatia",
-      "p_consensus": 0.017656,
-      "p_market": 0.00444,
-      "odds": 225.22,
-      "ev_percent": 297.66,
-      "kelly_fraction": 1.33,
+      "p_consensus": 0.017855,
+      "p_market": 0.004442,
+      "odds": 225.11,
+      "ev_percent": 301.94,
+      "kelly_fraction": 1.35,
       "ev_history": [
-        277.74,
         282.96,
         346.27,
         319.95,
@@ -702,38 +701,18 @@
         308.6,
         229.09,
         229.9,
-        297.66
-      ]
-    },
-    {
-      "team": "Iran",
-      "p_consensus": 0.016906,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 3326.83,
-      "kelly_fraction": 1.64,
-      "ev_history": [
-        3818.59,
-        3627.32,
-        3637.65,
-        3587.62,
-        3694.23,
-        3492.53,
-        3710.2,
-        3643.08,
-        3701.71,
-        3326.83
+        297.66,
+        301.94
       ]
     },
     {
       "team": "Norway",
-      "p_consensus": 0.016756,
-      "p_market": 0.026147,
-      "odds": 38.25,
-      "ev_percent": -35.92,
+      "p_consensus": 0.017755,
+      "p_market": 0.028134,
+      "odds": 35.54,
+      "ev_percent": -36.89,
       "kelly_fraction": 0.0,
       "ev_history": [
-        -28.21,
         -26.04,
         -30.46,
         -26.1,
@@ -742,18 +721,58 @@
         -2.04,
         -20.24,
         -20.91,
-        -35.92
+        -35.92,
+        -36.89
+      ]
+    },
+    {
+      "team": "Iran",
+      "p_consensus": 0.016405,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 3223.64,
+      "kelly_fraction": 1.59,
+      "ev_history": [
+        3627.32,
+        3637.65,
+        3587.62,
+        3694.23,
+        3492.53,
+        3710.2,
+        3643.08,
+        3701.71,
+        3326.83,
+        3223.64
+      ]
+    },
+    {
+      "team": "Ukraine",
+      "p_consensus": 0.015205,
+      "p_market": 0.0,
+      "odds": 0.0,
+      "ev_percent": 0.0,
+      "kelly_fraction": 0.0,
+      "ev_history": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
       ]
     },
     {
       "team": "Canada",
-      "p_consensus": 0.013705,
-      "p_market": 0.003453,
-      "odds": 289.57,
-      "ev_percent": 296.85,
-      "kelly_fraction": 1.03,
+      "p_consensus": 0.013504,
+      "p_market": 0.003455,
+      "odds": 289.43,
+      "ev_percent": 290.85,
+      "kelly_fraction": 1.01,
       "ev_history": [
-        401.03,
         342.5,
         379.37,
         356.76,
@@ -762,58 +781,18 @@
         330.49,
         336.57,
         353.07,
-        296.85
-      ]
-    },
-    {
-      "team": "Ukraine",
-      "p_consensus": 0.013705,
-      "p_market": 0.0,
-      "odds": 0.0,
-      "ev_percent": 0.0,
-      "kelly_fraction": 0.0,
-      "ev_history": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ]
-    },
-    {
-      "team": "Egypt",
-      "p_consensus": 0.013505,
-      "p_market": 0.002467,
-      "odds": 405.4,
-      "ev_percent": 447.48,
-      "kelly_fraction": 1.11,
-      "ev_history": [
-        375.17,
-        366.69,
-        350.17,
-        341.29,
-        352.47,
-        299.39,
-        300.43,
-        308.15,
-        308.63,
-        447.48
+        296.85,
+        290.85
       ]
     },
     {
       "team": "Austria",
-      "p_consensus": 0.013255,
-      "p_market": 0.002467,
-      "odds": 405.4,
-      "ev_percent": 437.34,
-      "kelly_fraction": 1.08,
+      "p_consensus": 0.012554,
+      "p_market": 0.002468,
+      "odds": 405.2,
+      "ev_percent": 408.68,
+      "kelly_fraction": 1.01,
       "ev_history": [
-        265.85,
         283.5,
         308.57,
         307.14,
@@ -822,38 +801,38 @@
         298.39,
         294.09,
         414.35,
-        437.34
+        437.34,
+        408.68
       ]
     },
     {
-      "team": "Ivory Coast",
-      "p_consensus": 0.012004,
-      "p_market": 0.003453,
-      "odds": 289.57,
-      "ev_percent": 247.61,
-      "kelly_fraction": 0.86,
+      "team": "Egypt",
+      "p_consensus": 0.012404,
+      "p_market": 0.002468,
+      "odds": 405.2,
+      "ev_percent": 402.6,
+      "kelly_fraction": 1.0,
       "ev_history": [
-        110.37,
-        100.87,
-        114.01,
-        154.24,
-        137.84,
-        146.42,
-        164.46,
-        154.1,
-        197.69,
-        247.61
+        366.69,
+        350.17,
+        341.29,
+        352.47,
+        299.39,
+        300.43,
+        308.15,
+        308.63,
+        447.48,
+        402.6
       ]
     },
     {
       "team": "Paraguay",
-      "p_consensus": 0.011554,
-      "p_market": 0.00148,
-      "odds": 675.67,
-      "ev_percent": 680.67,
+      "p_consensus": 0.011603,
+      "p_market": 0.001481,
+      "odds": 675.33,
+      "ev_percent": 683.62,
       "kelly_fraction": 1.01,
       "ev_history": [
-        674.8,
         712.23,
         712.23,
         730.82,
@@ -862,18 +841,18 @@
         720.6,
         737.49,
         679.32,
-        680.67
+        680.67,
+        683.62
       ]
     },
     {
       "team": "Australia",
-      "p_consensus": 0.011504,
-      "p_market": 0.002467,
-      "odds": 405.4,
-      "ev_percent": 366.37,
-      "kelly_fraction": 0.91,
+      "p_consensus": 0.011453,
+      "p_market": 0.002468,
+      "odds": 405.2,
+      "ev_percent": 364.09,
+      "kelly_fraction": 0.9,
       "ev_history": [
-        412.19,
         310.94,
         360.49,
         412.79,
@@ -882,18 +861,38 @@
         418.92,
         398.39,
         424.51,
-        366.37
+        366.37,
+        364.09
+      ]
+    },
+    {
+      "team": "Ivory Coast",
+      "p_consensus": 0.011103,
+      "p_market": 0.003455,
+      "odds": 289.43,
+      "ev_percent": 221.36,
+      "kelly_fraction": 0.77,
+      "ev_history": [
+        100.87,
+        114.01,
+        154.24,
+        137.84,
+        146.42,
+        164.46,
+        154.1,
+        197.69,
+        247.61,
+        221.36
       ]
     },
     {
       "team": "Algeria",
-      "p_consensus": 0.010504,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 2029.1,
-      "kelly_fraction": 1.0,
+      "p_consensus": 0.010053,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 1936.74,
+      "kelly_fraction": 0.96,
       "ev_history": [
-        2286.12,
         2316.05,
         2439.95,
         2269.88,
@@ -902,52 +901,13 @@
         1932.79,
         1786.92,
         2126.13,
-        2029.1
-      ]
-    },
-    {
-      "team": "Uzbekistan",
-      "p_consensus": 0.009553,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 1836.46,
-      "kelly_fraction": 0.91,
-      "ev_history": [
-        1607.31,
-        1510.7,
-        1613.95,
-        1483.33,
-        1563.78,
-        1776.55,
-        1738.7,
-        1868.96,
-        1729.7,
-        1836.46
-      ]
-    },
-    {
-      "team": "Scotland",
-      "p_consensus": 0.008853,
-      "p_market": 0.00148,
-      "odds": 675.67,
-      "ev_percent": 498.17,
-      "kelly_fraction": 0.74,
-      "ev_history": [
-        544.53,
-        567.68,
-        505.73,
-        536.74,
-        505.32,
-        518.83,
-        546.95,
-        607.6,
-        570.89,
-        498.17
+        2029.1,
+        1936.74
       ]
     },
     {
       "team": "Tunisia",
-      "p_consensus": 0.007753,
+      "p_consensus": 0.009203,
       "p_market": 0.0,
       "odds": 0.0,
       "ev_percent": 0.0,
@@ -966,14 +926,53 @@
       ]
     },
     {
-      "team": "Panama",
-      "p_consensus": 0.006302,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 1177.46,
-      "kelly_fraction": 0.58,
+      "team": "Uzbekistan",
+      "p_consensus": 0.008753,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 1673.28,
+      "kelly_fraction": 0.83,
       "ev_history": [
-        938.79,
+        1510.7,
+        1613.95,
+        1483.33,
+        1563.78,
+        1776.55,
+        1738.7,
+        1868.96,
+        1729.7,
+        1836.46,
+        1673.28
+      ]
+    },
+    {
+      "team": "Scotland",
+      "p_consensus": 0.008653,
+      "p_market": 0.001481,
+      "odds": 675.33,
+      "ev_percent": 484.34,
+      "kelly_fraction": 0.72,
+      "ev_history": [
+        567.68,
+        505.73,
+        536.74,
+        505.32,
+        518.83,
+        546.95,
+        607.6,
+        570.89,
+        498.17,
+        484.34
+      ]
+    },
+    {
+      "team": "Panama",
+      "p_consensus": 0.006602,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 1237.56,
+      "kelly_fraction": 0.61,
+      "ev_history": [
         1108.02,
         870.55,
         1023.65,
@@ -982,38 +981,18 @@
         941.93,
         1017.79,
         1109.63,
-        1177.46
-      ]
-    },
-    {
-      "team": "South Africa",
-      "p_consensus": 0.006052,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 1126.76,
-      "kelly_fraction": 0.56,
-      "ev_history": [
-        928.5,
-        922.17,
-        953.15,
-        1013.44,
-        985.51,
-        1134.3,
-        993.01,
-        997.28,
-        1089.3,
-        1126.76
+        1177.46,
+        1237.56
       ]
     },
     {
       "team": "Czechia",
-      "p_consensus": 0.005952,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 1106.49,
-      "kelly_fraction": 0.55,
+      "p_consensus": 0.006202,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 1156.5,
+      "kelly_fraction": 0.57,
       "ev_history": [
-        1144.48,
         1169.97,
         1097.7,
         1187.09,
@@ -1022,18 +1001,38 @@
         1044.08,
         1007.54,
         896.17,
-        1106.49
+        1106.49,
+        1156.5
+      ]
+    },
+    {
+      "team": "South Africa",
+      "p_consensus": 0.005652,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 1045.03,
+      "kelly_fraction": 0.52,
+      "ev_history": [
+        922.17,
+        953.15,
+        1013.44,
+        985.51,
+        1134.3,
+        993.01,
+        997.28,
+        1089.3,
+        1126.76,
+        1045.03
       ]
     },
     {
       "team": "DR Congo",
-      "p_consensus": 0.004502,
-      "p_market": 0.00148,
-      "odds": 675.67,
-      "ev_percent": 204.16,
-      "kelly_fraction": 0.3,
+      "p_consensus": 0.004801,
+      "p_market": 0.001481,
+      "odds": 675.33,
+      "ev_percent": 224.26,
+      "kelly_fraction": 0.33,
       "ev_history": [
-        174.27,
         168.45,
         189.1,
         169.0,
@@ -1042,18 +1041,18 @@
         216.66,
         214.49,
         215.11,
-        204.16
+        204.16,
+        224.26
       ]
     },
     {
       "team": "Saudi Arabia",
-      "p_consensus": 0.003851,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 680.67,
-      "kelly_fraction": 0.34,
+      "p_consensus": 0.003601,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 629.58,
+      "kelly_fraction": 0.31,
       "ev_history": [
-        681.66,
         591.77,
         674.38,
         563.98,
@@ -1062,18 +1061,18 @@
         615.05,
         740.91,
         611.55,
-        680.67
+        680.67,
+        629.58
       ]
     },
     {
       "team": "Iraq",
-      "p_consensus": 0.002851,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 477.9,
-      "kelly_fraction": 0.24,
+      "p_consensus": 0.003051,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 518.12,
+      "kelly_fraction": 0.26,
       "ev_history": [
-        331.97,
         354.3,
         374.95,
         349.46,
@@ -1082,18 +1081,18 @@
         431.18,
         340.97,
         408.25,
-        477.9
+        477.9,
+        518.12
       ]
     },
     {
       "team": "Qatar",
-      "p_consensus": 0.002851,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 477.9,
-      "kelly_fraction": 0.24,
+      "p_consensus": 0.003051,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 518.12,
+      "kelly_fraction": 0.26,
       "ev_history": [
-        722.8,
         726.0,
         829.25,
         768.28,
@@ -1102,18 +1101,18 @@
         420.97,
         402.49,
         367.59,
-        477.9
+        477.9,
+        518.12
       ]
     },
     {
       "team": "Bosnia and Herzegovina",
-      "p_consensus": 0.002051,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 315.68,
+      "p_consensus": 0.002101,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 325.59,
       "kelly_fraction": 0.16,
       "ev_history": [
-        311.4,
         271.7,
         364.62,
         277.95,
@@ -1122,58 +1121,18 @@
         257.53,
         392.24,
         306.6,
-        315.68
-      ]
-    },
-    {
-      "team": "Ghana",
-      "p_consensus": 0.002051,
-      "p_market": 0.00148,
-      "odds": 675.67,
-      "ev_percent": 38.56,
-      "kelly_fraction": 0.06,
-      "ev_history": [
-        229.12,
-        168.45,
-        209.75,
-        237.1,
-        275.36,
-        201.05,
-        22.58,
-        29.9,
-        42.31,
-        38.56
-      ]
-    },
-    {
-      "team": "Cape Verde",
-      "p_consensus": 0.001801,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 264.99,
-      "kelly_fraction": 0.13,
-      "ev_history": [
-        301.11,
-        271.7,
-        199.42,
-        216.67,
-        234.78,
-        30.46,
-        2.15,
-        36.73,
-        316.76,
-        264.99
+        315.68,
+        325.59
       ]
     },
     {
       "team": "Jordan",
-      "p_consensus": 0.001651,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 234.57,
-      "kelly_fraction": 0.12,
+      "p_consensus": 0.002101,
+      "p_market": 0.0,
+      "odds": 0.0,
+      "ev_percent": 0.0,
+      "kelly_fraction": 0.0,
       "ev_history": [
-        270.26,
         302.67,
         313.0,
         196.24,
@@ -1182,18 +1141,58 @@
         277.95,
         279.43,
         204.95,
-        234.57
+        234.57,
+        0.0
+      ]
+    },
+    {
+      "team": "Ghana",
+      "p_consensus": 0.001701,
+      "p_market": 0.001481,
+      "odds": 675.33,
+      "ev_percent": 14.84,
+      "kelly_fraction": 0.02,
+      "ev_history": [
+        168.45,
+        209.75,
+        237.1,
+        275.36,
+        201.05,
+        22.58,
+        29.9,
+        42.31,
+        38.56,
+        14.84
+      ]
+    },
+    {
+      "team": "Cape Verde",
+      "p_consensus": 0.0016,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 224.26,
+      "kelly_fraction": 0.11,
+      "ev_history": [
+        271.7,
+        199.42,
+        216.67,
+        234.78,
+        30.46,
+        2.15,
+        36.73,
+        316.76,
+        264.99,
+        224.26
       ]
     },
     {
       "team": "New Zealand",
-      "p_consensus": 0.001601,
-      "p_market": 0.000493,
-      "odds": 2027.0,
-      "ev_percent": 224.43,
+      "p_consensus": 0.00155,
+      "p_market": 0.000494,
+      "odds": 2026.0,
+      "ev_percent": 214.12,
       "kelly_fraction": 0.11,
       "ev_history": [
-        270.26,
         178.78,
         251.05,
         267.74,
@@ -1202,12 +1201,13 @@
         308.6,
         115.36,
         174.45,
-        224.43
+        224.43,
+        214.12
       ]
     },
     {
       "team": "Haiti",
-      "p_consensus": 0.0011,
+      "p_consensus": 0.0015,
       "p_market": 0.0,
       "odds": 0.0,
       "ev_percent": 0.0,
@@ -1229,73 +1229,73 @@
   "opportunities": [
     {
       "team": "Colombia",
-      "p_consensus": 0.039463812334317006,
-      "p_market": 0.015293537247163294,
-      "p_stat": 0.0608,
+      "p_consensus": 0.0374112233670101,
+      "p_market": 0.01431391905231984,
+      "p_stat": 0.0567,
       "p_ml": 0.0181,
-      "odds": 65.38709677419355,
-      "ev": 1.5804241161825991,
-      "kelly_full": 0.024545665131092475,
-      "kelly_fraction": 0.006136416282773119,
-      "position_size": 61.36,
-      "edge": 0.024170275087153713
+      "odds": 69.86206896551725,
+      "ev": 1.6136254669504304,
+      "kelly_full": 0.02343271834830369,
+      "kelly_fraction": 0.005858179587075922,
+      "position_size": 58.58,
+      "edge": 0.023097304314690262
     },
     {
       "team": "Belgium",
-      "p_consensus": 0.027809733406692343,
-      "p_market": 0.011346817957572766,
-      "p_stat": 0.0335,
+      "p_consensus": 0.028808642592777833,
+      "p_market": 0.012339585389930897,
+      "p_stat": 0.0355,
       "p_ml": 0.0221,
-      "odds": 88.1304347826087,
-      "ev": 1.4508838963202337,
-      "kelly_full": 0.016651861085511668,
-      "kelly_fraction": 0.004162965271377917,
-      "position_size": 41.63,
-      "edge": 0.016462915449119576
+      "odds": 81.04,
+      "ev": 1.3346523957187157,
+      "kelly_full": 0.01667481753771509,
+      "kelly_fraction": 0.004168704384428772,
+      "position_size": 41.69,
+      "edge": 0.016469057202846936
     },
     {
       "team": "Mexico",
-      "p_consensus": 0.028860101035362375,
-      "p_market": 0.0123334977799704,
-      "p_stat": 0.0266,
+      "p_consensus": 0.027608282484745422,
+      "p_market": 0.012339585389930897,
+      "p_stat": 0.0241,
       "p_ml": 0.0311,
-      "odds": 81.08,
-      "ev": 1.3399769919471816,
-      "kelly_full": 0.016732979419919847,
-      "kelly_fraction": 0.004183244854979962,
-      "position_size": 41.83,
-      "edge": 0.016526603255391976
+      "odds": 81.04,
+      "ev": 1.2373752125637691,
+      "kelly_full": 0.0154594604268337,
+      "kelly_fraction": 0.003864865106708425,
+      "position_size": 38.65,
+      "edge": 0.015268697094814526
     },
     {
       "team": "Morocco",
-      "p_consensus": 0.03576251688090831,
-      "p_market": 0.020226936359151456,
-      "p_stat": 0.0294,
+      "p_consensus": 0.0380114034210263,
+      "p_market": 0.018262586377097725,
+      "p_stat": 0.0339,
       "p_ml": 0.0421,
-      "odds": 49.4390243902439,
-      "ev": 0.7680639443317354,
-      "kelly_full": 0.015856304993756874,
-      "kelly_fraction": 0.003964076248439218,
-      "position_size": 39.64,
-      "edge": 0.015535580521756857
+      "odds": 54.75675675675677,
+      "ev": 1.0813811711080894,
+      "kelly_full": 0.020116190714429008,
+      "kelly_fraction": 0.005029047678607252,
+      "position_size": 50.29,
+      "edge": 0.019748817043928578
     },
     {
       "team": "Japan",
-      "p_consensus": 0.025708998149352274,
-      "p_market": 0.01825357671435619,
-      "p_stat": 0.0281,
+      "p_consensus": 0.0245073522056617,
+      "p_market": 0.018262586377097725,
+      "p_stat": 0.0257,
       "p_ml": 0.0233,
-      "odds": 54.78378378378379,
-      "ev": 0.40843619591181246,
-      "kelly_full": 0.007594039823485961,
-      "kelly_fraction": 0.0018985099558714903,
-      "position_size": 18.99,
-      "edge": 0.0074554214349960846
+      "odds": 54.75675675675677,
+      "ev": 0.34194312347758415,
+      "kelly_full": 0.006360932915369841,
+      "kelly_fraction": 0.0015902332288424603,
+      "position_size": 15.9,
+      "edge": 0.006244765828563974
     }
   ],
   "summary": {
     "count": 5,
-    "total_position": 203.45,
-    "avg_ev": 1.109557
+    "total_position": 205.11,
+    "avg_ev": 1.121795
   }
 }
